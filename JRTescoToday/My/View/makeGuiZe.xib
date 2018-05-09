@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="makeGuiZe">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="519"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="32" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siU-v5-KR5">
+                    <rect key="frame" x="32" y="0.0" width="311" height="499"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="499" id="WCH-4L-gDn"/>
+                    </constraints>
+                    <attributedString key="attributedText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjB-UT-dYB">
+                    <rect key="frame" x="300" y="16" width="73" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="73" id="Xkq-M9-Ola"/>
+                        <constraint firstAttribute="height" constant="22" id="zd1-8T-Ok5"/>
+                    </constraints>
+                    <state key="normal" image="Ellipse-2.png"/>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qa-1P-751">
+                    <rect key="frame" x="32" y="38" width="311" height="466"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">分润规则：
+    1、用户可以分享自己的二维码或邀请链接邀请好友前来注册；
+    2、邀请奖励：
+    （1）若您邀请的好友注册为商户，并在平台开通店铺，则该店铺在平台产生的实际销售金额的2%作为您的邀请奖励，按天结算；
+    （2）若您邀请的好友注册为个人，并在平台任一店铺产生消费时，则好友该笔实际消费金额的3%作为您的邀请奖励，按笔结算。
+    3、邀请奖励将于商家单日或个人单笔消费订单结算完成后发放到您的“云惠钱包”；
+    4、邀请关系一旦确立，相应的邀请奖励发放也将一直保持；
+    5、邀请好友人数不受限制；
+    6、邀请奖励规则最终解释权归云惠生活平台所有。
+举例说明：
+A、D为平台个人用户。
+  ①若A邀请好友B注册为个人用户，当B在平台商家产生消费100元并使用云惠生活APP买单，实际消费金额为90元，那么A能得到的邀请奖励=好友B在平台商家实际消费金额*3%=90元*3%=2.7元。
+  ②若用户A邀请好友B注册为商家，并在平台开通店铺B。当用户D在店铺B产生消费100元并使用云惠生活APP买单，实际消费金额为90元，那么店铺B实际销售金额为90元，则A能得到的邀请奖励=店铺B实际销售金额*2%=90元*2%=1.8元。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vjB-UT-dYB" secondAttribute="trailing" constant="2" id="0kM-EH-rDU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="siU-v5-KR5" secondAttribute="trailing" constant="32" id="2oB-Ly-Wsh"/>
+                <constraint firstItem="vjB-UT-dYB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="B81-aa-fwI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4qa-1P-751" secondAttribute="trailing" constant="32" id="DcK-AD-8gb"/>
+                <constraint firstItem="siU-v5-KR5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="KwB-mA-xin"/>
+                <constraint firstItem="4qa-1P-751" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="buU-hd-aAr"/>
+                <constraint firstItem="4qa-1P-751" firstAttribute="top" secondItem="vjB-UT-dYB" secondAttribute="bottom" id="cJv-vz-7d2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4qa-1P-751" secondAttribute="bottom" constant="15" id="klk-np-lma"/>
+                <constraint firstItem="siU-v5-KR5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qQK-hz-lOz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="qingchu" destination="vjB-UT-dYB" id="sio-m3-1aA"/>
+            </connections>
+            <point key="canvasLocation" x="-186" y="10"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Ellipse-2.png" width="19" height="19"/>
+    </resources>
+</document>

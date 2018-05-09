@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AmontView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpp-Az-GX4">
+                    <rect key="frame" x="0.0" y="8" width="320" height="143"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合伙产品金额（元）" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGP-Nl-lIO">
+                            <rect key="frame" x="0.0" y="102" width="320" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="320" id="fbL-kA-d1P"/>
+                                <constraint firstAttribute="height" constant="21" id="qTJ-l1-NbQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YW1-56-Dhr">
+                            <rect key="frame" x="0.0" y="48" width="320" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="320" id="0Rh-y0-Aqt"/>
+                                <constraint firstAttribute="height" constant="28" id="w5S-sE-nt2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="hGP-Nl-lIO" firstAttribute="leading" secondItem="cpp-Az-GX4" secondAttribute="leading" id="8c0-I3-CNv"/>
+                        <constraint firstItem="YW1-56-Dhr" firstAttribute="top" secondItem="cpp-Az-GX4" secondAttribute="top" constant="48" id="GrM-ZM-OUb"/>
+                        <constraint firstAttribute="trailing" secondItem="hGP-Nl-lIO" secondAttribute="trailing" id="XMX-CY-ElO"/>
+                        <constraint firstAttribute="trailing" secondItem="YW1-56-Dhr" secondAttribute="trailing" id="gzK-OQ-Ryw"/>
+                        <constraint firstItem="hGP-Nl-lIO" firstAttribute="top" secondItem="YW1-56-Dhr" secondAttribute="bottom" constant="26" id="nMn-0A-HsR"/>
+                        <constraint firstAttribute="height" constant="143" id="nTM-36-4dg"/>
+                        <constraint firstAttribute="width" constant="320" id="y7U-5U-Wsi"/>
+                        <constraint firstItem="YW1-56-Dhr" firstAttribute="leading" secondItem="cpp-Az-GX4" secondAttribute="leading" id="yAW-Je-Y3h"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cpp-Az-GX4" secondAttribute="bottom" constant="13" id="M7I-iv-NKm"/>
+                <constraint firstAttribute="trailing" secondItem="cpp-Az-GX4" secondAttribute="trailing" id="SJ0-lV-dLH"/>
+                <constraint firstItem="cpp-Az-GX4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fSy-hu-6ed"/>
+                <constraint firstItem="cpp-Az-GX4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="s3C-T7-hcI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="HuoQi" destination="YW1-56-Dhr" id="EGu-ZX-942"/>
+                <outlet property="TiYan" destination="hGP-Nl-lIO" id="jTF-db-1Va"/>
+            </connections>
+            <point key="canvasLocation" x="-368" y="-56"/>
+        </view>
+    </objects>
+</document>

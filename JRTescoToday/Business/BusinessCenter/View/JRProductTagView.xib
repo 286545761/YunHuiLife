@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JRProductTagView">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="111"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpT-D6-sLt">
+                    <rect key="frame" x="0.0" y="0.0" width="416" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKV-yh-j36">
+                            <rect key="frame" x="15" y="7" width="31" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="x0i-cK-W3l"/>
+                            </constraints>
+                            <state key="normal" title="标签"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqU-Hw-ENb">
+                            <rect key="frame" x="315" y="7" width="32" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="i8A-sO-YdY"/>
+                            </constraints>
+                            <state key="normal" title="添加"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTU-po-8zl">
+                            <rect key="frame" x="362" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="t5B-kO-rzb"/>
+                                <constraint firstAttribute="width" constant="44" id="xqj-hb-QSx"/>
+                            </constraints>
+                            <state key="normal" image="xiala.png"/>
+                            <state key="selected" image="xiala-1.png"/>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入商品标签" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYq-hi-Sln">
+                            <rect key="frame" x="61" y="13.5" width="239" height="17"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="8nn-lt-3Sp"/>
+                        <constraint firstItem="zTU-po-8zl" firstAttribute="centerY" secondItem="fpT-D6-sLt" secondAttribute="centerY" id="Ne4-w7-cqu"/>
+                        <constraint firstAttribute="trailing" secondItem="zTU-po-8zl" secondAttribute="trailing" constant="10" id="VRY-Ag-6YK"/>
+                        <constraint firstItem="YqU-Hw-ENb" firstAttribute="centerY" secondItem="fpT-D6-sLt" secondAttribute="centerY" id="Vlf-L4-ChG"/>
+                        <constraint firstItem="AKV-yh-j36" firstAttribute="leading" secondItem="fpT-D6-sLt" secondAttribute="leading" constant="15" id="ie4-hX-zfd"/>
+                        <constraint firstItem="YqU-Hw-ENb" firstAttribute="leading" secondItem="tYq-hi-Sln" secondAttribute="trailing" constant="15" id="kl0-w0-1iy"/>
+                        <constraint firstItem="AKV-yh-j36" firstAttribute="centerY" secondItem="fpT-D6-sLt" secondAttribute="centerY" id="lbl-fn-YMB"/>
+                        <constraint firstItem="zTU-po-8zl" firstAttribute="leading" secondItem="YqU-Hw-ENb" secondAttribute="trailing" constant="15" id="rqO-Zk-fyH"/>
+                        <constraint firstItem="tYq-hi-Sln" firstAttribute="leading" secondItem="AKV-yh-j36" secondAttribute="trailing" constant="15" id="ysC-go-tYW"/>
+                        <constraint firstItem="tYq-hi-Sln" firstAttribute="centerY" secondItem="fpT-D6-sLt" secondAttribute="centerY" id="zZ1-rt-yce"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fpT-D6-sLt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6FX-02-tF4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fpT-D6-sLt" secondAttribute="trailing" id="Pgr-tY-EPf"/>
+                <constraint firstItem="fpT-D6-sLt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="nDY-hx-kGw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="addButton" destination="YqU-Hw-ENb" id="jn9-d2-frA"/>
+                <outlet property="inputTextView" destination="tYq-hi-Sln" id="sSk-xD-Uxv"/>
+                <outlet property="pullButton" destination="zTU-po-8zl" id="gtn-I4-Meh"/>
+                <outlet property="tagButton" destination="AKV-yh-j36" id="FLA-vu-pnt"/>
+                <outlet property="titleViewHeight" destination="8nn-lt-3Sp" id="HVf-BD-Jgm"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="-25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xiala-1.png" width="11" height="13"/>
+        <image name="xiala.png" width="11" height="13"/>
+    </resources>
+</document>

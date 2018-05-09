@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvs-0y-JCp">
+                    <rect key="frame" x="0.0" y="63" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.81543955180000005" green="0.81543955180000005" blue="0.81543955180000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="HRR-qC-HNt"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8S-zQ-Kla">
+                    <rect key="frame" x="19" y="25" width="245" height="30"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03shousuo.png" translatesAutoresizingMaskIntoConstraints="NO" id="KAO-WJ-AxQ">
+                            <rect key="frame" x="18" y="6" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="ITN-a2-XTA"/>
+                                <constraint firstAttribute="height" constant="16" id="jPC-U2-LQh"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="saf-Vj-ewp">
+                            <rect key="frame" x="42" y="0.0" width="182" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="182" id="JcH-3P-oDn"/>
+                                <constraint firstAttribute="height" constant="30" id="cnt-fM-gwc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.82644807450000002" green="0.82007264940000002" blue="0.28445580380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="saf-Vj-ewp" firstAttribute="leading" secondItem="KAO-WJ-AxQ" secondAttribute="trailing" constant="8" id="FEI-AE-ph3"/>
+                        <constraint firstItem="KAO-WJ-AxQ" firstAttribute="top" secondItem="C8S-zQ-Kla" secondAttribute="top" constant="6" id="KFe-Gd-GAj"/>
+                        <constraint firstAttribute="height" constant="30" id="NuK-NZ-djw"/>
+                        <constraint firstItem="saf-Vj-ewp" firstAttribute="top" secondItem="C8S-zQ-Kla" secondAttribute="top" id="Q3e-SV-L5a"/>
+                        <constraint firstAttribute="bottom" secondItem="saf-Vj-ewp" secondAttribute="bottom" id="X9h-jJ-HsY"/>
+                        <constraint firstAttribute="bottom" secondItem="KAO-WJ-AxQ" secondAttribute="bottom" constant="8" id="fgq-x3-GlB"/>
+                        <constraint firstItem="KAO-WJ-AxQ" firstAttribute="leading" secondItem="C8S-zQ-Kla" secondAttribute="leading" constant="18" id="pPg-3q-o44"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8a-PH-I5Y">
+                    <rect key="frame" x="272" y="28" width="40" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="6HA-LV-jt7"/>
+                        <constraint firstAttribute="width" constant="40" id="9Yk-ka-0So"/>
+                    </constraints>
+                    <state key="normal" title="取消"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cvs-0y-JCp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3w8-uU-PEn"/>
+                <constraint firstItem="U8a-PH-I5Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="28" id="4Yi-Yt-Cwo"/>
+                <constraint firstAttribute="trailing" secondItem="cvs-0y-JCp" secondAttribute="trailing" id="6YZ-aZ-Lqu"/>
+                <constraint firstItem="C8S-zQ-Kla" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="ReZ-P5-8gj"/>
+                <constraint firstAttribute="bottom" secondItem="C8S-zQ-Kla" secondAttribute="bottom" constant="9" id="TU9-Ca-pvi"/>
+                <constraint firstItem="U8a-PH-I5Y" firstAttribute="leading" secondItem="C8S-zQ-Kla" secondAttribute="trailing" constant="8" id="VW1-Gk-K1x"/>
+                <constraint firstAttribute="trailing" secondItem="U8a-PH-I5Y" secondAttribute="trailing" constant="8" id="YwX-CQ-h7K"/>
+                <constraint firstAttribute="bottom" secondItem="cvs-0y-JCp" secondAttribute="bottom" id="ZPo-gq-U1c"/>
+                <constraint firstItem="C8S-zQ-Kla" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="19" id="aXa-I8-cs2"/>
+                <constraint firstItem="cvs-0y-JCp" firstAttribute="top" secondItem="U8a-PH-I5Y" secondAttribute="bottom" constant="7" id="bs5-aP-zia"/>
+                <constraint firstAttribute="bottom" secondItem="U8a-PH-I5Y" secondAttribute="bottom" constant="8" id="qS2-eR-fC6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="quXiao" destination="U8a-PH-I5Y" id="cFm-hh-bRW"/>
+                <outlet property="shouText" destination="saf-Vj-ewp" id="0N8-0e-Rlo"/>
+                <outlet property="tiView" destination="C8S-zQ-Kla" id="cXs-Mq-IZ4"/>
+            </connections>
+            <point key="canvasLocation" x="-23" y="93"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="03shousuo.png" width="13" height="13"/>
+    </resources>
+</document>

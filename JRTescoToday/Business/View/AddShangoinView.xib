@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddShangoinView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wla-xo-qcC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jb-hc-Rqy">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="375" id="1hp-oi-dr9"/>
+                                <constraint firstAttribute="height" constant="150" id="dO2-Nh-g2d"/>
+                            </constraints>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加商品图片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnq-h4-H8u">
+                            <rect key="frame" x="0.0" y="94" width="375" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="375" id="53A-GX-tBF"/>
+                                <constraint firstAttribute="height" constant="18" id="Z9z-YZ-nhZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TianJia.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ghm-WB-8rf">
+                            <rect key="frame" x="161" y="40" width="53" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="7wK-oN-ouv"/>
+                                <constraint firstAttribute="width" constant="53" id="ase-tG-aJO"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="rnq-h4-H8u" firstAttribute="top" secondItem="Ghm-WB-8rf" secondAttribute="bottom" constant="8" id="0GN-zP-WqK"/>
+                        <constraint firstItem="Ghm-WB-8rf" firstAttribute="top" secondItem="wla-xo-qcC" secondAttribute="top" constant="40" id="0JV-h4-OdP"/>
+                        <constraint firstItem="rnq-h4-H8u" firstAttribute="leading" secondItem="wla-xo-qcC" secondAttribute="leading" id="3h3-R1-kbB"/>
+                        <constraint firstAttribute="trailing" secondItem="0jb-hc-Rqy" secondAttribute="trailing" id="4R8-K8-H55"/>
+                        <constraint firstItem="0jb-hc-Rqy" firstAttribute="top" secondItem="wla-xo-qcC" secondAttribute="top" id="Hoz-JY-8Bx"/>
+                        <constraint firstAttribute="width" constant="375" id="I6W-aQ-THi"/>
+                        <constraint firstItem="rnq-h4-H8u" firstAttribute="top" secondItem="Ghm-WB-8rf" secondAttribute="bottom" constant="8" id="Zwf-WP-BBe"/>
+                        <constraint firstItem="0jb-hc-Rqy" firstAttribute="leading" secondItem="wla-xo-qcC" secondAttribute="leading" id="dmU-1K-bkj"/>
+                        <constraint firstAttribute="trailing" secondItem="rnq-h4-H8u" secondAttribute="trailing" id="e6f-lB-Pgt"/>
+                        <constraint firstAttribute="bottom" secondItem="0jb-hc-Rqy" secondAttribute="bottom" id="rj2-sT-5py"/>
+                        <constraint firstItem="Ghm-WB-8rf" firstAttribute="centerX" secondItem="wla-xo-qcC" secondAttribute="centerX" id="sWi-rV-ZLH"/>
+                        <constraint firstAttribute="height" constant="150" id="vmQ-vb-iNP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94881395729999995" green="0.94881395729999995" blue="0.94881395729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wla-xo-qcC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="H3t-Ng-gsz"/>
+                <constraint firstAttribute="trailing" secondItem="wla-xo-qcC" secondAttribute="trailing" id="pnP-ne-5VD"/>
+                <constraint firstItem="wla-xo-qcC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sI2-9e-Uo7"/>
+                <constraint firstAttribute="bottom" secondItem="wla-xo-qcC" secondAttribute="bottom" constant="10" id="tAm-7Z-n1g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btntupian" destination="0jb-hc-Rqy" id="edg-wq-5ku"/>
+            </connections>
+            <point key="canvasLocation" x="-196" y="-169"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="TianJia.png" width="53" height="46"/>
+    </resources>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YinhangkaWeiViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1F5-VJ-0aH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="288"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weitianjia.png" translatesAutoresizingMaskIntoConstraints="NO" id="I0M-L5-gUZ">
+                            <rect key="frame" x="123" y="50" width="128" height="93"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="128" id="1DU-RN-xUU"/>
+                                <constraint firstAttribute="height" constant="93" id="Aze-bt-xI4"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有绑定银行卡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97Y-gv-Gkq">
+                            <rect key="frame" x="0.0" y="167" width="375" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="375" id="58W-Qd-Hyv"/>
+                                <constraint firstAttribute="height" constant="21" id="Sl6-uH-2l2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击右上角添加银行卡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnF-JV-od1">
+                            <rect key="frame" x="0.0" y="196" width="375" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="375" id="q3e-tu-quS"/>
+                                <constraint firstAttribute="height" constant="21" id="wFc-th-sR2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="288" id="5Zo-F6-bNI"/>
+                        <constraint firstItem="VnF-JV-od1" firstAttribute="top" secondItem="97Y-gv-Gkq" secondAttribute="bottom" constant="8" id="8Uq-we-1J4"/>
+                        <constraint firstItem="I0M-L5-gUZ" firstAttribute="centerX" secondItem="1F5-VJ-0aH" secondAttribute="centerX" id="Son-OM-nkv"/>
+                        <constraint firstItem="97Y-gv-Gkq" firstAttribute="top" secondItem="I0M-L5-gUZ" secondAttribute="bottom" constant="24" id="TGT-nW-dhh"/>
+                        <constraint firstItem="I0M-L5-gUZ" firstAttribute="top" secondItem="1F5-VJ-0aH" secondAttribute="top" constant="50" id="UE7-H3-cNI"/>
+                        <constraint firstItem="97Y-gv-Gkq" firstAttribute="centerX" secondItem="1F5-VJ-0aH" secondAttribute="centerX" id="Vnk-jr-nnK"/>
+                        <constraint firstItem="VnF-JV-od1" firstAttribute="centerX" secondItem="1F5-VJ-0aH" secondAttribute="centerX" id="xZE-K0-INt"/>
+                        <constraint firstAttribute="width" constant="375" id="xqH-gn-PxG"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑卡提示：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gm-rJ-C8J">
+                    <rect key="frame" x="16" y="317" width="203" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="203" id="U8H-ow-ia2"/>
+                        <constraint firstAttribute="height" constant="21" id="Upg-Vx-gzL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCb-Sc-j6U">
+                    <rect key="frame" x="16" y="296" width="324" height="310"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="324" id="2mZ-Vw-ctH"/>
+                        <constraint firstAttribute="height" constant="310" id="C2v-qq-myw"/>
+                    </constraints>
+                    <string key="text">
+1、为了您的资金安全，绑定时请认真核对您的银行卡信息，若相关信息填写错误将导致您无法充值、提现；
+2、绑定银行卡必须为储蓄卡，信用卡不可使用；
+3、云惠生活推荐绑定储蓄卡银行：中国银行、农业银行、工商银行、建设银行、中信银行，华夏银行，民生银行，招商银行；
+4、每个账号只可绑定一张银行卡，如需更换银行卡，请联系客服400-848-8521；
+5、绑卡成功后会收到一条支付5元的验证码短信，不会扣款，忽略即可。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94881395729999995" green="0.94881395729999995" blue="0.94881395729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Gm-rJ-C8J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Je5-1c-Yad"/>
+                <constraint firstItem="1F5-VJ-0aH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MZ3-Vk-FEj"/>
+                <constraint firstItem="1F5-VJ-0aH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="emR-Ls-cYZ"/>
+                <constraint firstItem="BCb-Sc-j6U" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-9.5" id="hEl-9o-aSR"/>
+                <constraint firstAttribute="trailing" secondItem="1F5-VJ-0aH" secondAttribute="trailing" id="ppy-QU-Bc2"/>
+                <constraint firstItem="BCb-Sc-j6U" firstAttribute="top" secondItem="3Gm-rJ-C8J" secondAttribute="bottom" constant="-42" id="rcE-zp-AaI"/>
+                <constraint firstItem="3Gm-rJ-C8J" firstAttribute="top" secondItem="1F5-VJ-0aH" secondAttribute="bottom" constant="29" id="yRr-Wv-NHk"/>
+            </constraints>
+            <point key="canvasLocation" x="-655.5" y="-62.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="weitianjia.png" width="114" height="84"/>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="pingLunbussView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDG-7F-3ek">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="你想要说的" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hEv-I6-y7x">
+                            <rect key="frame" x="52" y="7" width="203" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="UNb-Zg-zwJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyZ-YK-NZP">
+                            <rect key="frame" x="266" y="8" width="46" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="Ud2-c9-WcJ"/>
+                                <constraint firstAttribute="height" constant="30" id="d9v-FC-Wln"/>
+                            </constraints>
+                            <state key="normal" title="发表"/>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lbg-p4-raL">
+                            <rect key="frame" x="8" y="7" width="29" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="29" id="2nh-jK-AlB"/>
+                                <constraint firstAttribute="width" constant="29" id="5aE-1d-wpI"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="hEv-I6-y7x" secondAttribute="bottom" constant="7" id="6T0-yV-KCA"/>
+                        <constraint firstItem="hEv-I6-y7x" firstAttribute="top" secondItem="lDG-7F-3ek" secondAttribute="top" constant="7" id="9xz-TK-vml"/>
+                        <constraint firstAttribute="bottom" secondItem="lbg-p4-raL" secondAttribute="bottom" constant="8" id="MR1-53-77y"/>
+                        <constraint firstItem="HyZ-YK-NZP" firstAttribute="top" secondItem="lDG-7F-3ek" secondAttribute="top" constant="8" id="OGy-v5-UeN"/>
+                        <constraint firstItem="HyZ-YK-NZP" firstAttribute="leading" secondItem="hEv-I6-y7x" secondAttribute="trailing" constant="11" id="UMH-pP-KS5"/>
+                        <constraint firstItem="lbg-p4-raL" firstAttribute="leading" secondItem="lDG-7F-3ek" secondAttribute="leading" constant="8" id="Zrq-Ae-hUP"/>
+                        <constraint firstAttribute="bottom" secondItem="HyZ-YK-NZP" secondAttribute="bottom" constant="6" id="iVl-0h-hgs"/>
+                        <constraint firstAttribute="trailing" secondItem="HyZ-YK-NZP" secondAttribute="trailing" constant="8" id="rOI-SW-hd2"/>
+                        <constraint firstItem="hEv-I6-y7x" firstAttribute="leading" secondItem="lDG-7F-3ek" secondAttribute="leading" constant="52" id="stM-iM-ZLP"/>
+                        <constraint firstItem="lbg-p4-raL" firstAttribute="top" secondItem="lDG-7F-3ek" secondAttribute="top" constant="7" id="yrg-Tl-A07"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lDG-7F-3ek" secondAttribute="bottom" id="IQu-Ql-WWs"/>
+                <constraint firstItem="lDG-7F-3ek" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xtg-u1-gGo"/>
+                <constraint firstItem="lDG-7F-3ek" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nOi-PP-NcF"/>
+                <constraint firstAttribute="trailing" secondItem="lDG-7F-3ek" secondAttribute="trailing" id="oCH-vO-Tzm"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="faBiao" destination="HyZ-YK-NZP" id="WTG-cv-vAO"/>
+                <outlet property="pingLunField" destination="hEv-I6-y7x" id="8eS-7x-UVY"/>
+                <outlet property="view" destination="lDG-7F-3ek" id="kIX-Lz-PGG"/>
+            </connections>
+            <point key="canvasLocation" x="50" y="-173"/>
+        </view>
+    </objects>
+</document>

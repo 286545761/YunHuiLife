@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommHear">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lEs-0P-wX8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0t-b4-ejr">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nv-xK-DQk">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="Hyp-O8-fUO"/>
+                                        <constraint firstAttribute="width" constant="100" id="nmb-g4-jCQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                    <state key="normal" title="全部分类">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tk0-AX-eaL">
+                                    <rect key="frame" x="170" y="0.0" width="34" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="UGh-KJ-s12"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="34" id="nqp-VA-6q2"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                    <state key="normal" title="全城">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYe-bh-XbY">
+                                    <rect key="frame" x="259" y="0.0" width="99" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="99" id="50h-Cw-M1L"/>
+                                        <constraint firstAttribute="height" constant="44" id="Pte-g9-6hF"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                    <state key="normal" title="智能排序">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTp-YF-e8j">
+                                    <rect key="frame" x="343" y="11" width="9" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="9" id="eYg-xY-En5"/>
+                                        <constraint firstAttribute="height" constant="22" id="lvU-I5-zda"/>
+                                    </constraints>
+                                    <state key="normal" image="nav_rolled-leaf.png"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npe-Yq-bWm">
+                                    <rect key="frame" x="212" y="11" width="10" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="10" id="44f-3x-ryC"/>
+                                        <constraint firstAttribute="height" constant="22" id="f3Y-y5-Ppe"/>
+                                    </constraints>
+                                    <state key="normal" image="nav_rolled-leaf.png"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xR9-Vd-cwU">
+                                    <rect key="frame" x="90" y="11" width="10" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="10" id="Z8I-en-bwv"/>
+                                        <constraint firstAttribute="height" constant="22" id="n8E-gi-GTw"/>
+                                    </constraints>
+                                    <state key="normal" image="nav_rolled-leaf.png"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="npe-Yq-bWm" firstAttribute="top" secondItem="b0t-b4-ejr" secondAttribute="top" constant="11" id="2Kh-NS-GTc"/>
+                                <constraint firstAttribute="bottom" secondItem="nYe-bh-XbY" secondAttribute="bottom" id="8yi-2d-fxA"/>
+                                <constraint firstItem="npe-Yq-bWm" firstAttribute="leading" secondItem="tk0-AX-eaL" secondAttribute="trailing" constant="8" id="CLa-DS-Zrb"/>
+                                <constraint firstItem="5nv-xK-DQk" firstAttribute="leading" secondItem="b0t-b4-ejr" secondAttribute="leading" id="ERA-HH-gW0"/>
+                                <constraint firstAttribute="bottom" secondItem="xR9-Vd-cwU" secondAttribute="bottom" constant="11" id="IZ2-ex-R5N"/>
+                                <constraint firstItem="5nv-xK-DQk" firstAttribute="top" secondItem="b0t-b4-ejr" secondAttribute="top" id="Ig5-FN-Qi2"/>
+                                <constraint firstAttribute="height" constant="44" id="Jbn-GQ-4jg"/>
+                                <constraint firstAttribute="trailing" secondItem="nYe-bh-XbY" secondAttribute="trailing" constant="17" id="M9i-gD-BXa"/>
+                                <constraint firstItem="xR9-Vd-cwU" firstAttribute="centerY" secondItem="b0t-b4-ejr" secondAttribute="centerY" id="RTo-3U-tMH"/>
+                                <constraint firstItem="VTp-YF-e8j" firstAttribute="centerY" secondItem="b0t-b4-ejr" secondAttribute="centerY" id="VaO-Bh-Tmy"/>
+                                <constraint firstItem="xR9-Vd-cwU" firstAttribute="leading" secondItem="5nv-xK-DQk" secondAttribute="trailing" constant="-10" id="Wa5-Wa-w2c"/>
+                                <constraint firstItem="tk0-AX-eaL" firstAttribute="centerX" secondItem="b0t-b4-ejr" secondAttribute="centerX" id="YPv-5u-gn8"/>
+                                <constraint firstAttribute="width" constant="375" id="dfG-Z4-a48"/>
+                                <constraint firstItem="tk0-AX-eaL" firstAttribute="top" secondItem="b0t-b4-ejr" secondAttribute="top" id="gOV-o5-5Fk"/>
+                                <constraint firstItem="VTp-YF-e8j" firstAttribute="top" secondItem="b0t-b4-ejr" secondAttribute="top" constant="11" id="jVB-GT-ZdN"/>
+                                <constraint firstItem="xR9-Vd-cwU" firstAttribute="top" secondItem="b0t-b4-ejr" secondAttribute="top" constant="11" id="ncK-U9-o5Y"/>
+                                <constraint firstAttribute="bottom" secondItem="VTp-YF-e8j" secondAttribute="bottom" constant="11" id="ndb-In-Lwk"/>
+                                <constraint firstAttribute="bottom" secondItem="tk0-AX-eaL" secondAttribute="bottom" id="pLK-hv-HYg"/>
+                                <constraint firstAttribute="bottom" secondItem="5nv-xK-DQk" secondAttribute="bottom" id="rrA-D0-kWN"/>
+                                <constraint firstAttribute="bottom" secondItem="npe-Yq-bWm" secondAttribute="bottom" constant="11" id="sSI-uR-prw"/>
+                                <constraint firstAttribute="trailing" secondItem="VTp-YF-e8j" secondAttribute="trailing" constant="23" id="v1y-KX-GrY"/>
+                                <constraint firstItem="npe-Yq-bWm" firstAttribute="centerY" secondItem="b0t-b4-ejr" secondAttribute="centerY" id="zb6-af-wGv"/>
+                                <constraint firstItem="nYe-bh-XbY" firstAttribute="top" secondItem="b0t-b4-ejr" secondAttribute="top" id="zwQ-JQ-Q9b"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93043636659999995" green="0.93043636659999995" blue="0.93043636659999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="FP6-3Q-NOc"/>
+                        <constraint firstAttribute="trailing" secondItem="b0t-b4-ejr" secondAttribute="trailing" id="RMQ-bw-uHb"/>
+                        <constraint firstItem="b0t-b4-ejr" firstAttribute="leading" secondItem="lEs-0P-wX8" secondAttribute="leading" id="S8R-Y6-crk"/>
+                        <constraint firstItem="b0t-b4-ejr" firstAttribute="top" secondItem="lEs-0P-wX8" secondAttribute="top" id="UFw-aO-zwc"/>
+                        <constraint firstAttribute="height" constant="50" id="znl-F6-tRh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lEs-0P-wX8" secondAttribute="bottom" id="B5n-NP-jNe"/>
+                <constraint firstItem="lEs-0P-wX8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Fht-br-7tK"/>
+                <constraint firstItem="lEs-0P-wX8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UAc-W9-gmL"/>
+                <constraint firstAttribute="trailing" secondItem="lEs-0P-wX8" secondAttribute="trailing" id="bmu-uy-egJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="QuanCheng" destination="tk0-AX-eaL" id="tC1-Oq-c7y"/>
+                <outlet property="QuanbuFenLei" destination="xR9-Vd-cwU" id="Ujf-97-Qie"/>
+                <outlet property="btnQuanCheng" destination="npe-Yq-bWm" id="klH-1R-HOg"/>
+                <outlet property="btnZhiNengpaixun" destination="VTp-YF-e8j" id="d9J-am-aZT"/>
+                <outlet property="quanbufenlei" destination="5nv-xK-DQk" id="37c-U8-u3N"/>
+                <outlet property="zhinengpaixu" destination="nYe-bh-XbY" id="E4d-qp-IhA"/>
+            </connections>
+            <point key="canvasLocation" x="-608.5" y="-115"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav_rolled-leaf.png" width="9" height="5"/>
+    </resources>
+</document>

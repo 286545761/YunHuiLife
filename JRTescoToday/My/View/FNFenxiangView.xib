@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FNFenxiangView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOD-vH-j8I">
+                    <rect key="frame" x="0.0" y="496" width="375" height="171"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8e-j0-xL0">
+                            <rect key="frame" x="0.0" y="112" width="375" height="59"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="59" id="Ggu-EG-hS8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="quxai:" destination="iN0-l3-epB" eventType="touchUpInside" id="pto-fb-q4I"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipy-e3-6ci">
+                            <rect key="frame" x="0.0" y="120" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.70490056820000002" green="0.70490056820000002" blue="0.70490056820000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="zmb-YO-f3P"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzf-a7-3gH">
+                            <rect key="frame" x="158" y="51" width="59" height="100"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ipy-e3-6ci" secondAttribute="trailing" id="Daq-4H-wsg"/>
+                        <constraint firstItem="gzf-a7-3gH" firstAttribute="leading" secondItem="bOD-vH-j8I" secondAttribute="leading" constant="158" id="Eeo-VS-gpk"/>
+                        <constraint firstItem="gzf-a7-3gH" firstAttribute="top" secondItem="bOD-vH-j8I" secondAttribute="top" constant="51" id="Hio-NQ-hSu"/>
+                        <constraint firstItem="ipy-e3-6ci" firstAttribute="leading" secondItem="bOD-vH-j8I" secondAttribute="leading" id="Kz9-rl-N0J"/>
+                        <constraint firstAttribute="height" constant="171" id="PG8-8W-zFf"/>
+                        <constraint firstAttribute="bottom" secondItem="ipy-e3-6ci" secondAttribute="bottom" constant="50.5" id="TSn-3V-IxO"/>
+                        <constraint firstAttribute="bottom" secondItem="gzf-a7-3gH" secondAttribute="bottom" constant="20" id="VfY-tp-qO5"/>
+                        <constraint firstAttribute="bottom" secondItem="t8e-j0-xL0" secondAttribute="bottom" id="gZt-rH-HEn"/>
+                        <constraint firstAttribute="trailing" secondItem="t8e-j0-xL0" secondAttribute="trailing" id="mRU-vV-iB1"/>
+                        <constraint firstItem="t8e-j0-xL0" firstAttribute="leading" secondItem="bOD-vH-j8I" secondAttribute="leading" id="pja-54-39N"/>
+                        <constraint firstItem="gzf-a7-3gH" firstAttribute="centerX" secondItem="bOD-vH-j8I" secondAttribute="centerX" id="qgR-ie-l8L"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzl-fA-32G">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="497"/>
+                    <connections>
+                        <action selector="puxaio:" destination="iN0-l3-epB" eventType="touchUpInside" id="9VT-dw-u1u"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bzl-fA-32G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6qv-y0-4Zd"/>
+                <constraint firstAttribute="bottom" secondItem="Bzl-fA-32G" secondAttribute="bottom" constant="170" id="CFl-YM-8XD"/>
+                <constraint firstItem="Bzl-fA-32G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TL9-EO-Sfu"/>
+                <constraint firstAttribute="trailing" secondItem="bOD-vH-j8I" secondAttribute="trailing" id="etM-RD-keR"/>
+                <constraint firstItem="bOD-vH-j8I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fAG-xu-Z38"/>
+                <constraint firstAttribute="trailing" secondItem="Bzl-fA-32G" secondAttribute="trailing" id="ftd-HF-qKP"/>
+                <constraint firstAttribute="bottom" secondItem="bOD-vH-j8I" secondAttribute="bottom" id="kRg-Sq-SaB"/>
+            </constraints>
+            <connections>
+                <outlet property="ccc" destination="bOD-vH-j8I" id="KXV-hB-WN9"/>
+            </connections>
+            <point key="canvasLocation" x="-62" y="47"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

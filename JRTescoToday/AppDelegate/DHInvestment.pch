@@ -1,0 +1,195 @@
+//
+//  DHInvestment.pch
+//  DHInvestment
+//
+//  Created by JJS on 15/8/26.
+//  Copyright (c) 2015年 DuohaoTechnolog. All rights reserved.
+//
+
+#ifndef DHInvestment_DHInvestment_pch
+
+#define DHInvestment_DHInvestment_pch
+
+// 自定义Log
+#ifdef DEBUG
+#define DLog(...) NSLog(__VA_ARGS__)
+#else
+#define DLog(...)
+#endif
+#define NAVIGATION_BAR_HEIGHT 64          // NavigationBar高度
+
+#define TABBAR_HEIGHT     49              // tabBar高度
+// 版本信息
+#define IOS_7  [[[UIDevice currentDevice] systemVersion] floatValue] > 7.1
+#define All_VIEW_BG_COLOR   @"#efeff4"  // 所有控制器View的背景色
+
+#define WHITE_COLOR         @"#ffffff"  // “白颜色”
+#define MallClassKey   @"rootVCClassString"
+#define MallTitleKey   @"title234"
+#define MallImgKey     @"imageName"
+#define MallSelImgKey  @"selectedImageName"
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+#define HEXCOLOR(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16)) / 255.0 green:((float)((hex & 0xFF00) >> 8)) / 255.0 blue:((float)(hex & 0xFF)) / 255.0 alpha:1]
+
+//全局背景色
+#define DCBGColor RGB(245,245,245)
+
+#define PFR [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0 ? @"PingFangSC-Regular" : @"PingFang SC"
+
+#define BTN_NORMAL_COLOR            @"#8e8e93"  // 按钮默认的背景色
+
+#define BTN_RADIUS       5                      // 圆角
+#define BTN_HEIGHT       45                     // 按钮的高度
+#define BTN_TITLE_FONT   18                     // 按钮中的文字大小
+#define BTN_TITLE_COLOR_NOENABLE  @"#9d9d9d"    // 按钮文字颜色(不可点击时)
+#define BTN_BGCOLOR_NOENABLE      @"#d3d3d3"    // 按钮不可用的背景颜色
+#define BTN_TITLE_COLOR_ENABLE    @"#ffffff"    // 按钮文字颜色(可以点击)
+#define LINE_COLOR                @"#e5e5e5"    // 0.5高度的线条颜色 包括cell的分割线
+#define RED_COLOR   @"#46cbfe"
+#define TO_SCREEN_MARGIN    15                  // 一般的按钮距离屏幕两边的距离为15
+#define FRESH_RICE       @"FRESH_RICE" //投资成功通知
+#define DRAWCASH_SUCCESS @"DRAWCASH_SUCCESS"    //提现成功通知
+#define BunRed @"#ffca00"    //提现成功通知
+/** 屏幕高度 */
+#define ScreenH [UIScreen mainScreen].bounds.size.height
+/** 屏幕宽度 */
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenSize [[UIScreen mainScreen] bounds].size
+#define SCREEN_SIZE [[UIScreen mainScreen] bounds].size
+#define iPhone4  ([[UIScreen mainScreen] bounds].size.height == 480)
+#define iPhone5  ([[UIScreen mainScreen] bounds].size.height == 568)
+#define iPhone6p  ([[UIScreen mainScreen] bounds].size.height == 736)
+#define iPhone6  ([[UIScreen mainScreen] bounds].size.height == 667)
+#define iPhonex  ([[UIScreen mainScreen] bounds].size.height == 812)
+#define BTN_NORMAL_COLOR            @"#8e8e93"  // 按钮默认的背景色
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#import "checkSubmit.h"
+#import "UIView+DCExtension.h" // UIView分类
+#import "UIColor+DH.h"
+#import "YYAnimationIndicator.h"
+#import "MBProgressHUD+NJ.h"
+#import "NSString+DH.h"
+#import "UIBarButtonItem+DH.h"
+#import "IQKeyboardManager.h"
+#import "HttpTool.h"
+#import "BaseController.h"
+#import "Login.h"
+#import "DCConsts.h"
+#import "LoginController.h"
+//#import "CheckNet.h"
+#import "UIImage+Orientation.h"
+
+#define kAllViewBgColor @"#f6f6f6"  // 所有控制器View的背景色
+#define kNavHeadBgColor @"#ffa103"  // 所有导航头部的背景色
+#define kNormarlColor @"8e8e93"
+#define TitleColor      @"#ffffff"
+#define kSelectedlColor @"#46cbfe"
+
+#define kNavagationHeight 64
+#define kStateHeight 20
+#define kDockHeight 49              // Dock高度
+
+#define ButtonHeight    40
+#define BtnTitleFont    16
+
+#define FRESH_RICE       @"FRESH_RICE"      // 重新加载米缸
+#define ADD_USERINFO     @"ADD_USERINFO"    
+#define DELETE_USERINFO  @"DELETE_USERINFO"
+
+#define NO_DOCK  0
+#define HAS_DOCK 1
+
+#define NO_FRESH 0
+#define FRESH    1
+
+#define NO_CONNECT_NET @"无法连接到网络"
+
+// 首页
+#define kMargin 5
+// 圆角
+#define kRadius 4
+#define kFilePath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]\
+    stringByAppendingPathComponent:@"userAccount.data"]
+
+
+//#define kBaseURL @""
+
+//-----------------------Debug----------------------------
+//----------------------release-----------------------------
+//----------------------------------------------------
+#ifdef DEBUG
+//Debug状态API
+
+
+#define kBaseURL @"http://123.57.1.61:8092"
+
+#else
+//Release状态API
+
+#define kBaseURL  [[checkSubmit shareTools] checkIsSubmit] >=1 ?  @"http://papi.jryunhui.com":@"http://123.57.1.61:8092"
+
+//#define kBaseURL  [[[UIDevice currentDevice] systemVersion] floatValue] >= 0 ? @"http://123.57.1.61/papi" : @"http://papi.jryunhui.com"
+
+
+#endif
+//------------------------------------------------------
+
+ 
+//友盟appkey
+#define UmengAppkey @"561b0d0167e58ee8a100137c"
+#define NO_CONNECT_NET @"无法连接到网络"
+
+#define REMOVE_TABBAR_SUBVIEWS @"REMOVE_TABBAR_SUBVIEWS"
+
+#define REGISTE_SUCCESS @"REGISTE_SUCCESS"  // 注册成功
+
+#define LOGIN_SUCCESS @"LOGIN_SUCCESS"      // 登录成功
+
+#define PUBLIC_KEY @"publicKey"
+
+#define SIGNOUT @"Sign_out"               //退出登陆通知
+
+#define PHONE_NUM @"PHONE_NUM"
+
+#define UU_ID @"uuid"
+#define STATUS @"status"
+#define UserBoundCardStatus @"UserBoundCardStatus"
+//全局背景色
+#define DCBGColor RGB(245,245,245)
+
+#define PFR [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0 ? @"PingFangSC-Regular" : @"PingFang SC"
+
+#define PFR20Font [UIFont fontWithName:PFR size:20];
+#define PFR18Font [UIFont fontWithName:PFR size:18];
+#define PFR16Font [UIFont fontWithName:PFR size:16];
+#define PFR15Font [UIFont fontWithName:PFR size:15];
+#define PFR14Font [UIFont fontWithName:PFR size:14];
+#define PFR13Font [UIFont fontWithName:PFR size:13];
+#define PFR12Font [UIFont fontWithName:PFR size:12];
+#define PFR11Font [UIFont fontWithName:PFR size:11];
+#define PFR10Font [UIFont fontWithName:PFR size:10];
+#define BOUNDCARDSUCC @"BoundCardSucc"    //绑卡成功通知
+#define kAllViewZiColor @"#fc7eab"  // 所有控制器View的背景色
+#define GAME_BACK @"GAME_BACK"
+
+#define RE_GET_PUBLIC_KEY  @"RE_GET_PUBLIC_KEY"
+
+#define STATUS @"status"
+
+#define USER_BANK_CARD_STATUS @"USER_BANK_CARD_STATUS"
+
+#define FNUserDefaults [NSUserDefaults standardUserDefaults]
+
+
+
+
+
+
+#import "Masonry.h"
+
+
+
+#endif

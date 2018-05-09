@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JRReleaseRulesAlter">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="219"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bdi-5D-hpI">
+                    <rect key="frame" x="0.0" y="0.0" width="295" height="219"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完成需要条件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ai-Cx-WEC">
+                    <rect key="frame" x="15" y="23" width="265" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8s-KO-Haj">
+                    <rect key="frame" x="223" y="176" width="62" height="30"/>
+                    <state key="normal" title="我知道了">
+                        <color key="titleColor" red="0.88235294119999996" green="0.047058823530000002" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJJ-BO-kkM">
+                    <rect key="frame" x="15" y="55.5" width="265" height="107.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">1.请至少上传一张图片
+2.商品标题一定要填写
+3.商品描述一定要填写
+4.商品价格一定要填写
+5.商品分类一定要选择</string>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TJJ-BO-kkM" firstAttribute="top" secondItem="0Ai-Cx-WEC" secondAttribute="bottom" constant="13" id="5qH-rv-5cC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TJJ-BO-kkM" secondAttribute="trailing" constant="15" id="95Z-so-qDd"/>
+                <constraint firstItem="0Ai-Cx-WEC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="9yj-7T-nE1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="c8s-KO-Haj" secondAttribute="bottom" constant="13" id="IwZ-GE-uiS"/>
+                <constraint firstItem="TJJ-BO-kkM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Nfo-HQ-5oa"/>
+                <constraint firstItem="Bdi-5D-hpI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="OSz-GD-KNq"/>
+                <constraint firstItem="Bdi-5D-hpI" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="U1v-P2-xH7"/>
+                <constraint firstItem="Bdi-5D-hpI" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="URu-8v-E6Y"/>
+                <constraint firstItem="c8s-KO-Haj" firstAttribute="top" secondItem="TJJ-BO-kkM" secondAttribute="bottom" constant="13" id="cw1-uc-PYd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0Ai-Cx-WEC" secondAttribute="trailing" constant="15" id="le2-1B-1wk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="c8s-KO-Haj" secondAttribute="trailing" constant="10" id="sBd-EW-HcD"/>
+                <constraint firstItem="Bdi-5D-hpI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="udY-kf-JbW"/>
+                <constraint firstItem="0Ai-Cx-WEC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="23" id="yQA-Gw-PpL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="agreeButton" destination="c8s-KO-Haj" id="Xbv-hn-lHc"/>
+                <outlet property="titleLabel" destination="0Ai-Cx-WEC" id="eza-fF-Bc3"/>
+            </connections>
+            <point key="canvasLocation" x="-228.5" y="-180.5"/>
+        </view>
+    </objects>
+</document>

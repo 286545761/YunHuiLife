@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GWSynchronView">
+            <rect key="frame" x="0.0" y="0.0" width="194" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inG-fm-YlL">
+                    <rect key="frame" x="0.0" y="0.0" width="194" height="49"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同步积分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vd6-24-fVV">
+                            <rect key="frame" x="20" y="19.5" width="10" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="Lri-bE-kk2"/>
+                                <constraint firstAttribute="height" constant="10" id="kjQ-lB-DKh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6bD-Os-rl6">
+                            <rect key="frame" x="5" y="19" width="10" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="Gzc-jm-Pt3"/>
+                                <constraint firstAttribute="height" constant="10" id="Q8E-tD-fOt"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b42-6I-dz0">
+                            <rect key="frame" x="0.0" y="0.0" width="194" height="49"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="6bD-Os-rl6" firstAttribute="leading" secondItem="inG-fm-YlL" secondAttribute="leading" constant="5" id="CiI-zr-ZFP"/>
+                        <constraint firstItem="vd6-24-fVV" firstAttribute="leading" secondItem="6bD-Os-rl6" secondAttribute="trailing" constant="5" id="GCR-Fh-uMw"/>
+                        <constraint firstItem="6bD-Os-rl6" firstAttribute="centerY" secondItem="inG-fm-YlL" secondAttribute="centerY" id="Lnl-Cu-93h"/>
+                        <constraint firstItem="vd6-24-fVV" firstAttribute="centerY" secondItem="inG-fm-YlL" secondAttribute="centerY" id="StH-7M-QmF"/>
+                        <constraint firstItem="b42-6I-dz0" firstAttribute="leading" secondItem="inG-fm-YlL" secondAttribute="leading" id="XnN-qo-BGk"/>
+                        <constraint firstAttribute="trailing" secondItem="b42-6I-dz0" secondAttribute="trailing" id="ad8-ch-SLs"/>
+                        <constraint firstAttribute="bottom" secondItem="b42-6I-dz0" secondAttribute="bottom" id="d0l-Gg-0ay"/>
+                        <constraint firstItem="b42-6I-dz0" firstAttribute="top" secondItem="inG-fm-YlL" secondAttribute="top" id="owP-Pk-mOD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="inG-fm-YlL" secondAttribute="bottom" id="1md-wl-qLp"/>
+                <constraint firstItem="inG-fm-YlL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2TF-hT-zd0"/>
+                <constraint firstItem="inG-fm-YlL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eSb-7j-rjb"/>
+                <constraint firstAttribute="trailing" secondItem="inG-fm-YlL" secondAttribute="trailing" id="l0m-YE-WN4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="syImageViewHeight" destination="Q8E-tD-fOt" id="4ts-MF-e38"/>
+                <outlet property="syImageViewWidth" destination="Gzc-jm-Pt3" id="SzA-gi-NTe"/>
+                <outlet property="syLabelHeight" destination="kjQ-lB-DKh" id="VzY-fi-4R8"/>
+                <outlet property="syLabelWidth" destination="Lri-bE-kk2" id="IYE-lY-c65"/>
+                <outlet property="synchronImageView" destination="6bD-Os-rl6" id="Ad9-Yf-kIJ"/>
+                <outlet property="synchronLabel" destination="vd6-24-fVV" id="l1l-nm-bK9"/>
+                <outlet property="synchronSender" destination="b42-6I-dz0" id="qqO-hH-5Ed"/>
+                <outlet property="synchronVIew" destination="inG-fm-YlL" id="qwZ-Ys-Mdy"/>
+            </connections>
+            <point key="canvasLocation" x="118" y="-88.5"/>
+        </view>
+    </objects>
+</document>
