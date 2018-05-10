@@ -629,16 +629,16 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
 //        return 128;
 //    }
     
-    CGFloat cellHeight=100;
+    CGFloat cellHeight=90;
     
     commodle *mid=[[commodle alloc] init];
     mid= BussArray[indexPath.row];
     
-    if (![mid.acModel.atDiscounttypeString isEqualToString:@"-1"]) {
-        cellHeight+=25;
-    }
+//    if (![mid.acModel.atDiscounttypeString isEqualToString:@"-1"]) {
+//        cellHeight+=25;
+//    }
        
-    if (![mid.acModel.fullReductiontypeString isEqualToString:@"-1"]) {
+    if (![mid.acModel.fullReductiontypeString isEqualToString:@"-1"]&&![mid.acModel.atDiscounttypeString isEqualToString:@"-1"]) {
        cellHeight+=25;
     }
     return cellHeight;
@@ -873,7 +873,6 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
         CategoryArray1=[[NSMutableArray alloc] init];
         for (NSDictionary *sre1 in data[@"recommend"][@"merchantCategoryOneLevelModels"]) {
             CategoresModel *makdd=[[CategoresModel alloc]  initWithDict:sre1];
-           // [nihao addObject:makdd];
             [CategoryArray1 addObject:makdd];
 
 
@@ -882,15 +881,10 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
             CategoresModel *makdd=[[CategoresModel alloc]  initWithDict:sre12];
             // [nihao addObject:makdd];
             [CategoryArray addObject:makdd];
-
-
         }
         [self makeCatrgoreyView];
             BussArray=[[NSMutableArray alloc] init];
-        
-        
         NSMutableArray *nihao=[[NSMutableArray alloc] init];
-       // NSLog(@"1213%@",data);
         for (NSDictionary *sre in data[@"recommend"][@"merchantRecommendModels"]) {
            commodle *makdd=[[commodle alloc]  initWithDict:sre];
              [nihao addObject:makdd];
@@ -906,17 +900,10 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
         if (self.bannerListArray.count>0) {
            self.adsScroView.imageURLStringsGroup=self.bannerListArray;
         }
-   
         [BussArray addObjectsFromArray:nihao];
-       
          [_homeTableView reloadData];
-        
-     
     } failure:^(NSError *error) {
         NSLog(@"%@",kBaseURL);
-        
-        
-        
     } alertInfo:^(NSString *alertInfo) {
         
     }];
@@ -965,6 +952,15 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
     //变化后的字符串
     
     return YES;
+}
+#pragma mark ---------SDCycleScrollViewDelegate----------
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
+    
+    
+    
+    
+    
+    
 }
 
 @end

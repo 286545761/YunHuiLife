@@ -112,10 +112,21 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    CGFloat offY=-24;
+    if (ScreenH==812) {
+        offY=-44;
+    }
+//    if (P) {
+//        
+//    }
     
+    
+//    if (iPhone6p) {
+    
+//        }
     
      footView=[[DuoMeheadView alloc] init];
-    _mineTableView=[[UITableView alloc] initWithFrame:CGRectMake(0, -24, kScreenSize.width, kScreenSize.height) style:UITableViewStylePlain];
+    _mineTableView=[[UITableView alloc] initWithFrame:CGRectMake(0, offY, kScreenSize.width, kScreenSize.height) style:UITableViewStylePlain];
     _mineTableView.delegate=self;
     _mineTableView.dataSource=self;
     _mineTableView.backgroundColor=[UIColor  colorWithHexString:@"#f6f6f6"];
@@ -151,7 +162,7 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
 {
 
     footView.jifen.text=@"";
-    CGFloat topViewHeight1 = iPhone4||iPhone5 ? 10 : 0;
+    CGFloat topViewHeight1 =10;
     customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenSize.width, kScreenSize.width*0.237+topViewHeight1+64)];
     customView.backgroundColor=[UIColor colorWithHexString:@"#ff2d48"];
     UIImageView *inmaher=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"backgrond_mine"]];
@@ -193,8 +204,14 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
      //[sheZhi2344 set       : forState:UIControlStateNormal];
     //[sheZhi2344 setTitle:@"登录／注册" forState:UIControlStateNormal];
     sheZhi2344.titleLabel.font=[UIFont systemFontOfSize:13];
-    sheZhi2344.frame=CGRectMake(85, 80, 100,60);
+    CGFloat offY=80;
+//    if (ScreenH==812) {
+//        offY=100;
+//    }
+    
+    sheZhi2344.frame=CGRectMake(85, offY, 100,60);
     sheZhi2344.tag=3003;
+//    sheZhi2344.backgroundColor=[UIColor redColor];
     [sheZhi2344 addTarget:self action:@selector(sheZhi1234) forControlEvents:UIControlEventTouchUpInside];
     [customView addSubview:sheZhi2344];
   
@@ -208,7 +225,14 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
     sheZhi23.titleLabel.font=[UIFont  systemFontOfSize:13];
     [sheZhi23 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
    // [sheZhi23 setImage:[UIImage imageNamed:@"nav_btn_set"] forState:UIControlStateNormal];
-    sheZhi23.frame=CGRectMake(kScreenSize.width-80, 15, 100, 60);
+    
+    CGFloat sheZhi23OffY=15;
+    if (ScreenH==812) {
+        sheZhi23OffY=35;
+    }
+    
+    
+    sheZhi23.frame=CGRectMake(kScreenSize.width-80, sheZhi23OffY, 100, 60);
     sheZhi23.tag=3003;
     [sheZhi23 addTarget:self action:@selector(sheZhi1:) forControlEvents:UIControlEventTouchUpInside];
     [customView addSubview:sheZhi23];
@@ -230,10 +254,10 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
 {
     
     CGFloat topViewHeight1 = iPhone4||iPhone5 ? 10 : 0;
-   // customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenSize.width, kScreenSize.width*0.237+topViewHeight1+64)];
-    customView.backgroundColor=[UIColor colorWithHexString:@"#ff2d48"];
+    customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenSize.width, kScreenSize.width*0.237+topViewHeight1+64)];
+//    customView.backgroundColor=[UIColor colorWithHexString:@"#ff2d48"];
     UIImageView *inmaher=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"backgrond_mine"]];
-    inmaher.frame=CGRectMake(0, 0, kScreenSize.width, kScreenSize.width*0.237+topViewHeight1+64);
+    inmaher.frame=CGRectMake(0, -30, kScreenSize.width, kScreenSize.width*0.237+topViewHeight1+88);
     [customView addSubview:inmaher];
 
     _mineTableView.tableHeaderView=customView;
@@ -310,9 +334,18 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
     UIButton *sheZhi23=[UIButton buttonWithType:UIButtonTypeCustom];
       [sheZhi23 setTitle:@"设置" forState:UIControlStateNormal];
      sheZhi23.titleLabel.font=[UIFont  systemFontOfSize:13];
-    [sheZhi23 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [sheZhi23 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     //[sheZhi23 setImage:[UIImage imageNamed:@"nav_btn_set"] forState:UIControlStateNormal];
-    sheZhi23.frame=CGRectMake(kScreenSize.width-80, 15, 80, 60);
+    
+    CGFloat  sheZhi23OffY=15;
+    if (ScreenH==812) {
+        sheZhi23OffY=35;
+    }
+    
+    sheZhi23.frame=CGRectMake(kScreenSize.width-80, sheZhi23OffY, 80, 60);
+    
+    
+    
     sheZhi23.tag=3003;
     [sheZhi23 addTarget:self action:@selector(sheZhi1:) forControlEvents:UIControlEventTouchUpInside];
     [customView addSubview:sheZhi23];
@@ -587,7 +620,7 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section;
 {
     UIView *stringView=[[UIView alloc] init];
-    
+//    stringView.backgroundColor=[UIColor yellowColor];
     //footView=[[DuoMeheadView alloc] init];
     _mineTableView.tableFooterView=stringView;
     footView .frame=CGRectMake(0, 0, kScreenSize.width, 493);

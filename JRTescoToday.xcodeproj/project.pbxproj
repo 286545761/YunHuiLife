@@ -3724,10 +3724,10 @@
 				9DC842561FCE4C4000E2E1EA /* AllCategoriesController.h */,
 				9DC842571FCE4C4000E2E1EA /* AllCategoriesController.m */,
 				9DC842581FCE4C4000E2E1EA /* AllCategoriesController.xib */,
-				9DC8425B1FCE4F1200E2E1EA /* AllCategoriesView.h */,
 				9DC8425C1FCE4F1200E2E1EA /* AllCategoriesView.m */,
 				9DC8425E1FCE4FC300E2E1EA /* AllCategoriesModel.h */,
 				9DC8425F1FCE4FC300E2E1EA /* AllCategoriesModel.m */,
+				9DC8425B1FCE4F1200E2E1EA /* AllCategoriesView.h */,
 				42C94A0920A05638002F44A5 /* activityImageDetailsViewController.h */,
 				42C94A0A20A05638002F44A5 /* activityImageDetailsViewController.m */,
 				42C94A0B20A05638002F44A5 /* activityImageDetailsViewController.xib */,
@@ -5056,7 +5056,7 @@
 				TargetAttributes = {
 					9DD3E2D61F4A6A48009B4E88 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 9483AAB2E9;
+						DevelopmentTeam = FEC5NXJV2Z;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -6282,7 +6282,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9483AAB2E9;
+				DEVELOPMENT_TEAM = FEC5NXJV2Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JRTescoToday/Lib/UMSocial/SocialLibraries/QQ/QQSDK",
@@ -6325,7 +6325,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9483AAB2E9;
+				DEVELOPMENT_TEAM = FEC5NXJV2Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JRTescoToday/Lib/UMSocial/SocialLibraries/QQ/QQSDK",

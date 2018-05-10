@@ -28,21 +28,15 @@
     self.window.rootViewController = [[DCTabBarController alloc] init];
     
     [self.window makeKeyAndVisible];
-    [[checkSubmit shareTools] reomveSu];
-//    [WXApi registerApp:@"wxa96aae43da92d535"];
         [WXApi registerApp:@"wxe055fccf022ee5bb"];
-    //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
     
     /* 设置友盟appkey */
     [[UMSocialManager defaultManager] setUmSocialAppkey:@"5aa8e9cab27b0a5aa50000d5"];
-//      [[UMSocialManager defaultManager]
-////       setPlaform:UMSocialPlatformType_WechatSession appKey:@"wxa96aae43da92d535" appSecret:@"62a5fbc20957050c70808b539e1858d2" redirectURL:nil];
           [[UMSocialManager defaultManager]
            setPlaform:UMSocialPlatformType_WechatSession appKey:@"wxe055fccf022ee5bb" appSecret:@"0edf1c5efdc9b663955cc26abf82e316" redirectURL:nil];
-//    1106676725
-//    APP KEYLusccMvgEOy1kzvE
-    
        [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_QQ appKey:@"1106676725"/*设置QQ平台的appID*/  appSecret:@"LusccMvgEOy1kzvE" redirectURL:@"http://mobile.umeng.com/social"];
+     [[checkSubmit shareTools] reomveSu];
     [[checkSubmit shareTools] checkIsSubmit];
     
     
