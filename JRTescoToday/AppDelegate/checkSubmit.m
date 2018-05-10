@@ -93,8 +93,9 @@ static checkSubmit *_instance;
 }
 
 - (NSComparisonResult)shouldUpdateOnlineVersion {
-    //获取app地址
-    NSURL *appURLPath = [NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%@",@"1382504763"]];
+    //获取app地址  1382504763
+// 453691481
+    NSURL *appURLPath = [NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%@",@"453691481"]];
     //获取发布版本的Version
     NSString *string = [NSString stringWithContentsOfURL:appURLPath encoding:NSUTF8StringEncoding error:nil];
     
@@ -125,7 +126,7 @@ static checkSubmit *_instance;
     
     
     NSComparisonResult result = [nowVersion compare:onlineVersion];
-    NSLog(@"_+_+_++_+%ld",(long)result);
+//    NSLog(@"_+_+_++_+%ld",(long)result);
     return result;
     
     

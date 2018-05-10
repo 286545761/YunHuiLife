@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -29,12 +29,13 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VH-8k-O2B">
                     <rect key="frame" x="32" y="268" width="256" height="40"/>
+                    <color key="backgroundColor" red="0.9980532527" green="0.75737565760000003" blue="0.1999986768" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="UfD-UF-bF2"/>
                         <constraint firstAttribute="width" constant="256" id="e0E-a0-yeg"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                    <state key="normal" title="确认提现" backgroundImage="button.png">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="确认提现">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
@@ -201,7 +202,7 @@
                         <constraint firstAttribute="height" constant="200" id="6Qw-XJ-cwb"/>
                         <constraint firstAttribute="width" constant="297" id="syM-45-XbG"/>
                     </constraints>
-                    <mutableString key="text">提现规则：
+                    <string key="text">提现规则：
 1、只支持提现到账户绑定的银行卡；
 2、账户余额100元以上方可提现，单笔提现金额最小100元，不限制提现次数；
 3、每月前3次提现免费（提现费用由平台垫付），从第4次起收取提现金额0.3%的手续费，直接从余额当中扣除；
@@ -211,7 +212,7 @@
 2、工作日18:00之后提现，则T+2到账；
 3、非工作日提现，则T+2到账；
 注释：每周休息日、国家法定节假日为非工作日。请合理安排时间提现，如有疑问请咨询客服热线400-848-8521。
-</mutableString>
+</string>
                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -223,7 +224,7 @@
                         <constraint firstAttribute="width" constant="297" id="6fF-X5-Ut9"/>
                         <constraint firstAttribute="height" constant="200" id="ANu-Uw-cl3"/>
                     </constraints>
-                    <mutableString key="text">提现规则：
+                    <string key="text">提现规则：
 1、只支持提现到账户绑定的银行卡；
 2、账户余额100元以上方可提现，单笔提现金额最小100元，不限制提现次数；
 3、每月前5次提现免费（提现费用由平台垫付），从第6次起收取提现金额0.3%的手续费，直接从余额当中扣除；
@@ -233,7 +234,7 @@
 2、工作日18:00之后提现，则T+2到账；
 3、非工作日提现，则T+2到账；
 注释：每周休息日、国家法定节假日为非工作日。请合理安排时间提现，如有疑问请咨询客服热线400-848-8521。
-</mutableString>
+</string>
                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -283,6 +284,5 @@
     </objects>
     <resources>
         <image name="BankBack.png" width="345" height="100"/>
-        <image name="button.png" width="345" height="44"/>
     </resources>
 </document>

@@ -204,7 +204,7 @@
                                                                                     
                                                                                     }];
     
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/wallet" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"wallet" params:paramDic success:^(id data) {
         
         
         NSLog(@"%@",data);
@@ -228,7 +228,7 @@
                                                                                     }];
    // [Login loginRenZengPhone:nil andPwdnum:nil];
     
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/user_center/get_account" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"user_center/get_account" params:paramDic success:^(id data) {
         
         // _yuyujine.text=[NSString stringWithFormat:@"%@",data[@"amount"]];;
          _zhufumima=[NSString stringWithFormat:@"%@",data[@"payPassword"]];

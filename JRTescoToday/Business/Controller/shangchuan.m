@@ -73,7 +73,7 @@
         [imagArray  addObject:imagev[@"idCardOpposite"]];
         [imagArray  addObjectsFromArray:imagev[@"otherImage"]];
     }
-    request = [httpClient multipartFormRequestWithMethod:@"POST" path:[NSString stringWithFormat:@"/merchant/merchantUploadImg?access_token=%@",[defaults objectForKey:@"usersid"]]       parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+    request = [httpClient multipartFormRequestWithMethod:@"POST" path:[NSString stringWithFormat:@"merchant/merchantUploadImg?access_token=%@",[defaults objectForKey:@"usersid"]]       parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         
         
         for (UIImage *imagev1 in imagArray) {

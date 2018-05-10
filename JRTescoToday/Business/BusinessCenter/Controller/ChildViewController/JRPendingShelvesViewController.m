@@ -77,7 +77,7 @@
 #pragma mark - 数据处理 1
 - (void)loadData {
     NSString *token = [FNUserDefaults objectForKey:@"usersid"];
-    [JRBusinessCenterCore query_requestBusinessManagerWithToken:token type:@"1" pageNum:[NSString stringWithFormat:@"%ld",self.page] pageSize:nil Successed:^(NSDictionary *data) {
+    [JRBusinessCenterCore query_requestBusinessManagerWithToken:token type:@"1" pageNum:[NSString stringWithFormat:@"%ld",(long)self.page] pageSize:nil Successed:^(NSDictionary *data) {
         NSArray *managerAllProduct = data[@"list"];
         //总页数
         self.allPages = [data[@"pages"] integerValue];

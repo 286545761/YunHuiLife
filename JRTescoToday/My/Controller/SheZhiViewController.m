@@ -174,7 +174,7 @@
                                                                                     
                                                                                     }];
     
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/wallet" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"wallet" params:paramDic success:^(id data) {
         
         
         NSLog(@"%@",data);

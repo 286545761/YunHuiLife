@@ -28,6 +28,7 @@
     self.window.rootViewController = [[DCTabBarController alloc] init];
     
     [self.window makeKeyAndVisible];
+    [[checkSubmit shareTools] reomveSu];
 //    [WXApi registerApp:@"wxa96aae43da92d535"];
         [WXApi registerApp:@"wxe055fccf022ee5bb"];
     //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];

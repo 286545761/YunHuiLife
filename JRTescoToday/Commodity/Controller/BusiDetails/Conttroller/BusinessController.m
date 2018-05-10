@@ -910,7 +910,7 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
         //NSString *srrrr=@"";
         NSMutableArray *maqq=[[NSMutableArray alloc] init];
         if(total==0||(pageNum-1)*10<total) {
-            [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/merchants/%@/comments",idennn] params:paramDic success:^(id data) {
+            [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"merchants/%@/comments",idennn] params:paramDic success:^(id data) {
                 
                 for (NSDictionary *dict in data[@"comments"][@"list"]) {
                     PingLunModel *ma=[[PingLunModel alloc] initWithDict:dict];
@@ -951,7 +951,7 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
         //NSString *srrrr=@"";
         NSMutableArray *maqq=[[NSMutableArray alloc] init];
         if(total1==0||(pageNum-1)*10<total1) {
-            [HttpTool getWithBaseURL:kBaseURL path:[NSString stringWithFormat:@"/merchants/%@/comments",idennn] params:paramDic success:^(id data) {
+            [HttpTool getWithBaseURL:kBaseURL path:[NSString stringWithFormat:@"merchants/%@/comments",idennn] params:paramDic success:^(id data) {
                 
                 for (NSDictionary *dict in data[@"comments"][@"list"]) {
                     PingLunModel *ma=[[PingLunModel alloc] initWithDict:dict];
@@ -991,7 +991,7 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
         //NSString *srrrr=@"";
         NSMutableArray *maqq=[[NSMutableArray alloc] init];
         if(total2==0||(pageNum-1)*10<total2) {
-            [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/merchants/%@/comments",idennn] params:paramDic success:^(id data) {
+            [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"merchants/%@/comments",idennn] params:paramDic success:^(id data) {
                 
                 for (NSDictionary *dict in data[@"comments"][@"list"]) {
                     PingLunModel *ma=[[PingLunModel alloc] initWithDict:dict];
@@ -1031,7 +1031,7 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
         //NSString *srrrr=@"";
         NSMutableArray *maqq=[[NSMutableArray alloc] init];
         if(total3==0||(pageNum-1)*10<total3) {
-            [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/merchants/%@/comments",idennn] params:paramDic success:^(id data) {
+            [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"merchants/%@/comments",idennn] params:paramDic success:^(id data) {
                 
                 for (NSDictionary *dict in data[@"comments"][@"list"]) {
                     PingLunModel *ma=[[PingLunModel alloc] initWithDict:dict];
@@ -1840,7 +1840,7 @@ else
                                                 }];
     }
     NSMutableArray *ma=[[NSMutableArray alloc] init];
-    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/merchants/%@",_idn] params:paramDic12 success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"merchants/%@",_idn] params:paramDic12 success:^(id data) {
         
         
        shopView.shopNameLabel.text=[NSString stringWithFormat:@"%@",data[@"name"]];
@@ -1995,7 +1995,7 @@ else
         
         
         NSMutableArray *ma=[[NSMutableArray alloc] init];//13269083056
-        [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/merchants/%@/goods",_idn] params:nil success:^(id data) {
+        [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"merchants/%@/goods",_idn] params:nil success:^(id data) {
             
             
            shopView.shopNameLabel.text=[NSString stringWithFormat:@"%@",data[@"name"]];
@@ -2136,7 +2136,7 @@ else
     
     
     NSLog(@"_+_+==%@",paramDic12);
-    [HttpTool postWithBaseURL:kBaseURL path:[NSString  stringWithFormat:@"/merchants/%@/collect",idnn] params:paramDic12 success:^(id data) {
+    [HttpTool postWithBaseURL:kBaseURL path:[NSString  stringWithFormat:@"merchants/%@/collect",idnn] params:paramDic12 success:^(id data) {
         
         
         NSString *codeStr=[NSString stringWithFormat:@"%@",data[@"code"]];
@@ -2160,54 +2160,7 @@ else
     }];
     
 
-//
-//
-//    // uid
-//    [FNUserDefaults objectForKey:@"MD5Pwd"];
-//
-//
-//
-//    NSDictionary *headers = @{ @"content-Type": @"application/json",
-//                               };
-//
-//
-////    http://p.jryunhui.com/api/merchants/d5730a27-267b-11e8-a215-702084e1f310/collect?access_token=ffc570bc-315a-4925-ad14-8a98a1f68491
-//    NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic12 options:0 error:nil];
-//    NSString *urlstring=[NSString  stringWithFormat:@"%@/merchant/%@/collect?access_token=%@",kBaseURL,idnn,[FNUserDefaults objectForKey:@"usersid"]];
-//    NSURL *url = [NSURL URLWithString:urlstring];
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-//
-//    [request setHTTPMethod:@"POST"];
-//    [request setAllHTTPHeaderFields:headers];
-//
-//    [request setHTTPBody:postData];
-//    NSLog(@"%@", [request allHTTPHeaderFields]);
-//
-//    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue new]  completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-//
-//
-//
-//        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-//
-//
-//        NSLog(@"%@",dict);
-//        //5.回到主线程,进行更新页面
-//
-//        dispatch_sync(dispatch_get_main_queue(), ^{
-//            if ([[NSString  stringWithFormat:@"%@",dict[@"code"]] isEqualToString:@"5000"])
-//            {
-//              [MBProgressHUD showError:@"收藏成功"];
-//            }
-//        });
-//
-//
-//
-//
-//
-//
-//    }];
-//
-//
+
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -2259,7 +2212,7 @@ else
          NSLog(@"-----------------------------------dfssdfsdsf---------------------------------------------------");
          NSMutableArray *maqq=[[NSMutableArray alloc] init];
         
-             [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/merchants/%@/goods/categories" ,_idn] params:paramDic success:^(id data) {
+             [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"merchants/%@/goods/categories" ,_idn] params:paramDic success:^(id data) {
                  NSLog(@"dfdfsfsfsffrrrrrrrr5555%@",data);
                  for (NSDictionary *dict in data) {
                      BussFenLeiModel *ma=[[BussFenLeiModel alloc] initWithDict:dict];
@@ -2317,7 +2270,7 @@ else
         
         
        
-        [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/merchants/%@/goods",ID] params:nil success:^(id data) {
+        [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"merchants/%@/goods",ID] params:nil success:^(id data) {
             
             
            NSMutableArray *ma=[[NSMutableArray alloc] init];

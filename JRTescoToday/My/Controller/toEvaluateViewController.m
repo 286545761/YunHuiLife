@@ -149,7 +149,7 @@ static NSString *placeString=@"请填写您的评价:";
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:dic options:0 error:nil];
 //person/orders/comments
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/person/orders/comments?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@person/orders/comments?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
 
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];

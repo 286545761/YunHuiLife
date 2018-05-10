@@ -237,7 +237,7 @@
         NSLog(@"%@",currentTimeString);
         [ makeche addTarget:self action:@selector(AdvertisingBtn) forControlEvents:UIControlEventTouchUpInside];
         NSString *ponee=self.mobileNumTextFileld.text;
-        userPortrait=[NSString stringWithFormat:@"%@/kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
+        userPortrait=[NSString stringWithFormat:@"%@kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
         //make.tuXing ;
         
         [make.tuXing sd_setImageWithURL:[NSURL URLWithString:userPortrait] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
@@ -295,7 +295,7 @@
        
         [postData  appendData:[[NSString stringWithFormat:@"&grant_type=%@",uuid]  dataUsingEncoding:NSUTF8StringEncoding]];
         
-        NSString *urlstring=[NSString  stringWithFormat:@"%@/uaa/login",kBaseURL];
+        NSString *urlstring=[NSString  stringWithFormat:@"%@uaa/login",kBaseURL];
         NSURL *url = [NSURL URLWithString:urlstring];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
         
@@ -431,7 +431,7 @@
     NSLog(@"%@",currentTimeString);
     [ makeche addTarget:self action:@selector(AdvertisingBtn) forControlEvents:UIControlEventTouchUpInside];
     NSString *ponee=self.mobileNumTextFileld.text;
-   userPortrait=[NSString stringWithFormat:@"%@/kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
+   userPortrait=[NSString stringWithFormat:@"%@kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
     //make.tuXing ;
     
     [make.tuXing sd_setImageWithURL:[NSURL URLWithString:userPortrait] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
@@ -490,7 +490,7 @@
     
     
   
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/v3.0/user/user-info",kBaseURL];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@v3.0/user/user-info",kBaseURL];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlstring]
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:10.0];
@@ -638,7 +638,7 @@
     NSLog(@"%@",currentTimeString);
     [ makeche addTarget:self action:@selector(AdvertisingBtn) forControlEvents:UIControlEventTouchUpInside];
     NSString *ponee=self.mobileNumTextFileld.text;
-    userPortrait=[NSString stringWithFormat:@"%@/kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
+    userPortrait=[NSString stringWithFormat:@"%@kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
     //make.tuXing ;
     
     [make.tuXing sd_setImageWithURL:[NSURL URLWithString:userPortrait] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
@@ -706,7 +706,7 @@
         
         [postData  appendData:[[NSString stringWithFormat:@"&grant_type=%@",uuid]  dataUsingEncoding:NSUTF8StringEncoding]];
         
-        NSString *urlstring=[NSString  stringWithFormat:@"%@/uaa/login",kBaseURL];
+        NSString *urlstring=[NSString  stringWithFormat:@"%@uaa/login",kBaseURL];
         NSURL *url = [NSURL URLWithString:urlstring];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
         
@@ -863,7 +863,7 @@
     // [postData  appendData:[@"&origin=ios"dataUsingEncoding:NSUTF8StringEncoding]];
     [postData  appendData:[[NSString stringWithFormat:@"&grant_type=%@",uuid]  dataUsingEncoding:NSUTF8StringEncoding]];
     //NSData *postData = [NSJSONSerialization dataWithJSNObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/uaa/login",kBaseURL];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@uaa/login",kBaseURL];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     

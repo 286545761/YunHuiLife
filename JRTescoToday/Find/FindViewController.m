@@ -23,7 +23,7 @@
     UIWebView *webView = [[UIWebView alloc] init];
     webView.frame = CGRectMake(0, 20, kScreenSize.width, kScreenSize.height);
     self.view.backgroundColor = [UIColor colorWithHexString:kAllViewBgColor];
-    //http://123.57.1.61
+   
     NSURL *url = [NSURL URLWithString:@"http://static.jregou.com/view/find.html"];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     // 加载网页请求

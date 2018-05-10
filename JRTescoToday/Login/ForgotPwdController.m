@@ -223,7 +223,7 @@
     NSLog(@"%@",currentTimeString);
     [ makeche addTarget:self action:@selector(AdvertisingBtn) forControlEvents:UIControlEventTouchUpInside];
     NSString *ponee=_phoneNumTextField.text;
-   userPortrait=[NSString stringWithFormat:@"%@/kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
+   userPortrait=[NSString stringWithFormat:@"%@kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
     //make.tuXing ;
     
     [make.tuXing sd_setImageWithURL:[NSURL URLWithString:userPortrait] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
@@ -260,7 +260,7 @@
     NSLog(@"%@",currentTimeString);
     [ makeche addTarget:self action:@selector(AdvertisingBtn) forControlEvents:UIControlEventTouchUpInside];
     NSString *ponee=_phoneNumTextField.text;
-userPortrait=[NSString stringWithFormat:@"%@/kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
+userPortrait=[NSString stringWithFormat:@"%@kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
     //make.tuXing ;
     
     [make.tuXing sd_setImageWithURL:[NSURL URLWithString:userPortrait] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
@@ -324,7 +324,7 @@ userPortrait=[NSString stringWithFormat:@"%@/kaptcha.jpg?phone=%@&timeee=%@",kBa
     
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/forget",kBaseURL];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@forget",kBaseURL];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
@@ -462,7 +462,7 @@ _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0,queue);
     
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/forget/sms",kBaseURL];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@forget/sms",kBaseURL];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     

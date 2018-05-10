@@ -44,10 +44,10 @@
     NSString *pathString;
 
     if ([price isEqualToString:@"-1"]) {
-         pathString=[NSString stringWithFormat:@"/merchants/activity/optimal/%@?amount=%@",_theStoreNewID,_strbtn2];
+         pathString=[NSString stringWithFormat:@"merchants/activity/optimal/%@?amount=%@",_theStoreNewID,_strbtn2];
             originalPriceString=_strbtn2;
     }else{
-      pathString=[NSString stringWithFormat:@"/merchants/activity/optimal/%@?amount=%@",_theStoreNewID,price];
+      pathString=[NSString stringWithFormat:@"merchants/activity/optimal/%@?amount=%@",_theStoreNewID,price];
             originalPriceString=price;
     }
     
@@ -59,7 +59,7 @@
         if ([price isEqualToString:@"-1"]) {
             shang.zhe.text=[NSString stringWithFormat:@"-¥%ld",[_strbtn2 integerValue]-[theFinalPriceString integerValue]];
         }else{
-          shang.zhe.text=[NSString stringWithFormat:@"-¥%ld",[price integerValue]-[theFinalPriceString integerValue]];
+            shang.zhe.text=[NSString stringWithFormat:@"-¥%ld",[price integerValue]-[theFinalPriceString integerValue]];
         }
         
         
@@ -79,16 +79,7 @@
     _acModel=acModel;
 }
 -(void)storeActivity{
-// GET /merchants/{merchantId}/activities
-//    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/merchants/%@/activities",@"cfa31762-268e-11e8-a215-702084e1f310"]  params:nil success:^(id data) {
-//
-//        NSLog(@"sssss%@",data);
-//
-//    } failure:^(NSError *error) {
-//
-//    } alertInfo:^(NSString *alertInfo) {
-//
-//    }];
+
 
 }
 
@@ -203,7 +194,7 @@
     
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/merchants/orders?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@merchants/orders?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     

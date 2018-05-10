@@ -78,7 +78,7 @@
     NSMutableDictionary *paramDic = [NSMutableDictionary dictionaryWithDictionary:@{@"access_token":[FNUserDefaults objectForKey:@"usersid"]
                                                                                                     }];
     
-    [HttpTool getWithBaseURL:kBaseURL path:[NSString stringWithFormat:@"/wallet/auth"] params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL path:[NSString stringWithFormat:@"wallet/auth"] params:paramDic success:^(id data) {
         realNameString=[NSString stringWithFormat:@"%@",data[@"name"]];
         IdNumberString=[NSString stringWithFormat:@"%@",data[@"identity"]];
     } failure:^(NSError *error) {
@@ -151,66 +151,7 @@
         [MBProgressHUD showError:@"银行名字不能为空"];
         return;
     }
-//    NSMutableDictionary *paramDic = [NSMutableDictionary dictionaryWithDictionary:@{
-//                                                                                    @"bankName":strings,
-//                                                                                    @"bankCard":_BankNo.text,
-//                                                                                      @"phone":_bankPhone.text,
-//                                                                                     @"bankCode":strings1,
-//                                                                                    @"payAmount":@"5",@"type":@"2",
-//                                                                                    }];
-//
-//
-//    // uid
-//    [FNUserDefaults objectForKey:@"MD5Pwd"];
-//
-//
-//
-//    NSDictionary *headers = @{ @"content-Type": @"application/json",
-//                               };
-//
-//
-//
-//    NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-//    NSString *urlstring=[NSString  stringWithFormat:@"%@/wallet/cards?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
-//    NSURL *url = [NSURL URLWithString:urlstring];
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-//
-//    [request setHTTPMethod:@"POST"];
-//    [request setAllHTTPHeaderFields:headers];
-//
-//    [request setHTTPBody:postData];
-//    NSLog(@"%@", [request allHTTPHeaderFields]);
-//
-//    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue new]  completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-//
-//
-//
-//        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-//
-//
-//        NSLog(@"%@",dict);
-//        //5.回到主线程,进行更新页面
-//
-//        dispatch_sync(dispatch_get_main_queue(), ^{
-//            if ([[NSString  stringWithFormat:@"%@",dict[@"code"]] isEqualToString:@"5000"])
-//            {
-//                 [self.navigationController popToRootViewControllerAnimated:YES];
-//                 [[NSNotificationCenter defaultCenter] postNotificationName:@"maketou1267" object:nil];
-//                 [MBProgressHUD showError:@"绑卡成功"];
-//            }
-//            else
-//            {
-//                 [MBProgressHUD showError:dict[@"msg"]];
-//            }
-//        });
-//
-//
-//
-//
-//
-//
-//    }];
-//
+
     
     NSDictionary *paramDic = @{@"bankName":strings,
                                @"bankCard":_BankNo.text,
@@ -224,10 +165,10 @@
     [FNUserDefaults objectForKey:@"MD5Pwd"];
     NSDictionary *headers = @{ @"content-Type": @"application/json"};
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/wallet/cards?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@wallet/cards?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
     NSURL *url = [NSURL URLWithString:urlstring];
     //    NSLog(@"baseUrl =  %@",kNewBaseURL1);
-    NSLog(@"path = %@",@"/wallet/cards");
+    NSLog(@"path = %@",@"wallet/cards");
     NSLog(@"paramsDict = %@",paramDic);
     
  
@@ -281,7 +222,7 @@
                                                                                     
                                                                                     }];
      // NSMutableArray *maqq=[[NSMutableArray alloc] init];
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/wallet/banks" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"wallet/banks" params:paramDic success:^(id data) {
          [make12 removeAllObjects];
         [make123 removeAllObjects];
         for (NSDictionary *data1 in data) {

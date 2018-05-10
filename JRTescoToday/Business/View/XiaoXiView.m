@@ -25,7 +25,7 @@
     NSDictionary *headers = @{
                               @"content-type":  @"application/json",
                                 };
-    if ([nsss isEqualToString:@"/goods/addGoods"]) {
+    if ([nsss isEqualToString:@"goods/addGoods"]) {
         paramDic = [NSMutableDictionary dictionaryWithDictionary:@{
                                                                                         @"name":name,
                                                                                         @"descp":descp,

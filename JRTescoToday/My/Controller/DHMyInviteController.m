@@ -51,112 +51,7 @@
 
 -  (void)loadMyInviteData
 {
-//    [FNUserDefaults objectForKey:@"MD5Pwd"];
-//    NSLog(@"%@",[FNUserDefaults objectForKey:@"MD5Pwd"]);
-//    //NSString*str=@"18311467990:8fcbc4997fa16e6394079085f7bd6ecb";
-//    NSString* str = [NSString stringWithFormat:@"%@:%@",[UserAccount getUserLoginInfo].userMobile,[FNUserDefaults objectForKey:@"MD5Pwd"]];
-//    NSLog(@"%@",str);
-//    NSData *data= [str dataUsingEncoding:NSUTF8StringEncoding];
-//    NSString *str2=[self bs64:data];
-//    NSString*str1=[NSString stringWithFormat:@"Basic %@",str2];
-//    NSLog(@"%@",str1);
-    
-//    // NSData *postData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
-//    NSString *urlstring=[NSString  stringWithFormat:@"%@/v3.1/invite/inviteReward?pageNum=%@",kBaseURL,[NSString stringWithFormat:@"%d",pageNum]];
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlstring]
-//                                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
-//                                                       timeoutInterval:10.0];
-//    [request setHTTPMethod:@"GET"];
-//    [request  setValue:[FNUserDefaults objectForKey:@"usersid"] forHTTPHeaderField:@"x-auth-token"];
-//    if (total==0||(pageNum-1)*10<total) {
-//        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue new]  completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-//            
-////            if (!data) {
-////                [_myInviteTableView.header endRefreshing];
-////                [_myInviteTableView.footer endRefreshing];
-////                [YYAnimationIndicator stopAnimationWithLoadText:@"YES" withType:YES];
-////                return ;
-////            }
-//            if (connectionError==nil) {
-//                
-//                NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-//                
-//                
-//                NSLog(@"%@",dict);
-//                //5.回到主线程,进行更新页面
-//                
-//                dispatch_sync(dispatch_get_main_queue(), ^{
-//                    if ([[NSString  stringWithFormat:@"%@",dict[@"code"]] isEqualToString:@"5000"]) {
-//                        datas = [dict objectForKey:@"data"];
-//                        _myInviteModel = [[DHMyInviteModel alloc]init];
-//                        total=[datas[@"total"] intValue];
-//                        for (NSDictionary* dic in [datas objectForKey:@"list"]) {
-//                            
-//                            
-//                            //        userId：用户id
-//                            //        phone：手机号
-//                            //        amount：奖励金额
-//                            //        isInvest：是否投资
-//                            //        time：邀请时间
-//                            
-//                            
-//                            //NSNumber* userId =  dic [@"userId"];
-//                            // NSNumber* phone =  dic [@"phone"];
-//                            
-//                            //                            NSNumber* time =  dic [@"time"];
-//                            
-//                            DHMyInviteListModel* investCashListModel = [[DHMyInviteListModel alloc]init];
-//                            
-//                            //                            NSString *str=[NSString stringWithFormat:@"%@",[time stringValue]];
-//                            //                            NSDate *timeDate = [[NSDate alloc]initWithTimeIntervalSince1970:[str longLongValue]/1000.0];
-//                            //                            NSDateFormatter *dateTime=[[NSDateFormatter alloc] init];
-//                            //                            dateTime.dateFormat=@"yyyy-MM-dd";
-//                            investCashListModel.time = dic [@"time"];
-//                            // NSLog(@"%@",datas[@"amount"] );
-//                            // NSString *str21 = [  [NSString stringWithFormat:@"%@",[dic objectForKey:@"amount"]] stringByReplacingOccurrencesOfString:@"," withString:@""];
-//                            //investCashListModel.amount = [NSString stringWithFormat:@"%.2f",[str21 floatValue] ];
-//                            investCashListModel.phone = dic [@"phone"];
-//                            
-//                            // investCashListModel.isInvest =[NSString  stringWithFormat:@"%@",dic [@"invest"] ];;
-//                            
-//                            // investCashListModel.userId = [userId stringValue];
-//                            
-//                            [_myInviteModel.list addObject:investCashListModel];
-//                            [_myInviteTableView.header endRefreshing];
-//                            [_myInviteTableView.footer endRefreshing];
-//                        }
-//                        if (pageNum == 1) {
-//                            [totalDataMuArray removeAllObjects];
-//                        }
-//                        
-//                        // 存储每次刷新请求的数据
-//                        [totalDataMuArray addObjectsFromArray:_myInviteModel.list];
-//                        [_myInviteTableView reloadData];
-//                    }
-//                    [YYAnimationIndicator stopAnimationWithLoadText:@"YES" withType:YES];
-//                    if ([[NSString  stringWithFormat:@"%@",dict[@"open"]] isEqualToString:@"1"]) {
-//                        [MBProgressHUD showError:dict[@"msg"]];
-//                    }
-//                    
-//                });
-//                
-//                
-//            }
-//            else{
-//                [YYAnimationIndicator stopAnimationWithLoadText:@"YES" withType:YES];
-//                [_myInviteTableView.header endRefreshing];
-//                [_myInviteTableView.footer endRefreshing];
-//            }
-//            
-//            
-//            //4.解析
-//            
-//            
-//        }];
-//        
-//    }
-//    
-    
+
     
 }
 
@@ -364,7 +259,7 @@
     
     NSMutableArray *marray=[[NSMutableArray alloc] init];
        if(total==0||(pageNum)*10<total) {
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/person/invitation/records" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"person/invitation/records" params:paramDic success:^(id data) {
         
         for (NSMutableDictionary *dict in data[@"list"]) {
              MyFriendModel *ma=[[MyFriendModel alloc] initWithDict:dict];

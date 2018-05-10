@@ -857,11 +857,15 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
         [FNUserDefaults setObject:makdd.tagsName  forKey:@"Categoriesname"];
         [FNUserDefaults setObject:[NSString stringWithFormat:@"%@",makdd.tagsId]     forKey:@"Categories"];
         [self.tabBarController setSelectedIndex:1];
+        
     }
 }
 -(void)downLoad
 {
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/" params:nil success:^(id data) {
+    
+    
+
+    [HttpTool getWithBaseURL:kBaseURL  path:@"" params:nil success:^(id data) {
         NSLog(@"%@",kBaseURL);
         //#import "CategoresModel.h"
         
@@ -909,6 +913,9 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
         
      
     } failure:^(NSError *error) {
+        NSLog(@"%@",kBaseURL);
+        
+        
         
     } alertInfo:^(NSString *alertInfo) {
         
@@ -922,7 +929,7 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
                                                                                     }];
     //   [Login loginRenZengPhone:nil andPwdnum:nil];
     NSLog(@"qqqqq%@",[FNUserDefaults objectForKey:@"usersid"]);
-    [HttpTool getWithBaseURL:kBaseURL path:@"/user_center/get_account" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL path:@"user_center/get_account" params:paramDic success:^(id data) {
         
 
 

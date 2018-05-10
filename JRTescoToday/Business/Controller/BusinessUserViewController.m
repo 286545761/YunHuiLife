@@ -342,7 +342,7 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
     {
            
         }
-    else if(btnr.tag==3002)//  http://123.57.1.61:8092/kaptcha.jpg?ipone=18311467990
+    else if(btnr.tag==3002)
     {
         SheZhiViewController *mak=[[SheZhiViewController alloc] init];
         mak.zhangtai=@"1";
@@ -574,7 +574,7 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
     
     
     
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/user_center/person",kBaseURL];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@user_center/person",kBaseURL];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlstring]
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:10.0];
@@ -703,7 +703,7 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
                                                                                     
                                                                                     }];
     
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/user_center/merchant" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"user_center/merchant" params:paramDic success:^(id data) {
         
         NSLog(@"nnnn%@",data[@"msg"]);
         
@@ -789,7 +789,7 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
                                                                                          
                                                                                          }];
          
-         [HttpTool getWithBaseURL:kBaseURL  path:@"/user_center/get_account" params:paramDic success:^(id data) {
+         [HttpTool getWithBaseURL:kBaseURL  path:@"user_center/get_account" params:paramDic success:^(id data) {
              
               payPassword=[NSString stringWithFormat:@"%@",data[@"payPassword"]];
              // _yuyujine.text=[NSString stringWithFormat:@"%@",data[@"amount"]];;

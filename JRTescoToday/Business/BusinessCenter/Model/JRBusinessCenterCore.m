@@ -15,7 +15,7 @@
     //
     NSDictionary *paramsDict = [NSDictionary dictionaryWithObjectsAndKeys:token,@"access_token",type,@"type",pageNumber,@"pageNum", pageSize,@"pageSize",nil];
     //
-    [HttpTool getWithBaseURL:kBaseURL path:@"/goods/findGoodsBymid" params:paramsDict success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL path:@"goods/findGoodsBymid" params:paramsDict success:^(id data) {
         successed(data);
     } failure:^(NSError *error) {
         failed(nil);
@@ -27,7 +27,7 @@
     //
     NSDictionary *paramsDict = [NSDictionary dictionaryWithObjectsAndKeys:token,@"access_token",type,@"type",ID,@"goodsId",nil];
     //
-    [HttpTool quttWithBaseURL:kBaseURL path:@"/goods/optionGoodsById" params:paramsDict success:^(id data) {
+    [HttpTool quttWithBaseURL:kBaseURL path:@"goods/optionGoodsById" params:paramsDict success:^(id data) {
         successed(data);
 
     } failure:^(NSError *error) {
@@ -40,7 +40,7 @@
 + (void)query_requestBussinessProductCategoryWithToken:(NSString *)token Successed:(Finish_Block)successed failed:(FaildBlock)failed {
     NSDictionary *paramsDict = [NSDictionary dictionaryWithObjectsAndKeys:token,@"access_token",nil];
     //
-    [HttpTool getWithBaseURL:kBaseURL path:@"/goods/findCategory" params:paramsDict success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL path:@"goods/findCategory" params:paramsDict success:^(id data) {
         successed(data);
     } failure:^(NSError *error) {
         failed(nil);
@@ -56,7 +56,7 @@
     NSDictionary *headers = @{ @"content-Type": @"application/json",
                                };
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramsDict options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/goods/createMerchant?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@goods/createMerchant?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
@@ -87,7 +87,7 @@
 + (void)query_requestBussinessProductAllTagWithID:(NSString *)ID Successed:(SuccessBlock)successed failed:(FaildBlock)failed {
     
     NSDictionary *paramsDict = [NSDictionary dictionaryWithObjectsAndKeys:ID,@"id",nil];
-    [HttpTool getWithBaseURL:kBaseURL path:@"/goods/findGoodsLabelById" params:paramsDict success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL path:@"goods/findGoodsLabelById" params:paramsDict success:^(id data) {
       
         successed(data);
     } failure:^(NSError *error) {
@@ -100,7 +100,7 @@
     
     
     NSDictionary *paramsDict = [NSDictionary dictionaryWithObjectsAndKeys:ID,@"id",nil];
-    [HttpTool getWithBaseURL:kBaseURL path:@"/goods/findGoodsById" params:paramsDict success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL path:@"goods/findGoodsById" params:paramsDict success:^(id data) {
         
         successed(data);
     } failure:^(NSError *error) {
@@ -129,7 +129,7 @@
     
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *path = @"/goods/editGoods";
+    NSString *path = @"goods/editGoods";
     NSLog(@"======%@",tagArr);
 
  
@@ -219,7 +219,7 @@
     //multipart
     NSDictionary *headers = @{@"Content-Type":@"application/json"};
     
-    NSString *path = @"/goods/addGoods";
+    NSString *path = @"goods/addGoods";
 
     NSString *lablesStr = tagArr[0];
     

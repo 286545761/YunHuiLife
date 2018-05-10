@@ -115,25 +115,13 @@
     stringByAppendingPathComponent:@"userAccount.data"]
 
 
-//#define kBaseURL @""
-
-//-----------------------Debug----------------------------
-//----------------------release-----------------------------
-//----------------------------------------------------
 #ifdef DEBUG
 //Debug状态API
-
-
-#define kBaseURL @"http://123.57.1.61:8092"
+#define kBaseURL @"http://123.57.1.61:8092/"
 
 #else
 //Release状态API
-
-#define kBaseURL  [[checkSubmit shareTools] checkIsSubmit] >=1 ?  @"http://papi.jryunhui.com":@"http://123.57.1.61:8092"
-
-//#define kBaseURL  [[[UIDevice currentDevice] systemVersion] floatValue] >= 0 ? @"http://123.57.1.61/papi" : @"http://papi.jryunhui.com"
-
-
+#define kBaseURL  [[checkSubmit shareTools] checkIsSubmit] <1 ? @"http://123.57.1.61/papi/": @"http://papi.jryunhui.com/"
 #endif
 //------------------------------------------------------
 

@@ -471,7 +471,7 @@
     marray=[[NSMutableArray alloc] init];
       if(total==0||(pageNum-1)*10<total) {
     
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/invest/getInvestFixedRecord" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"invest/getInvestFixedRecord" params:paramDic success:^(id data) {
         for (NSMutableDictionary *dict in data[@"infos"][@"list"])
         {
           model=[[MeAmonModel alloc] initWithDict:dict];
@@ -514,7 +514,7 @@
     if(total==0||(pageNum-1)*10<total)
     {
         
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/invest/getInvestFixedRecord" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"invest/getInvestFixedRecord" params:paramDic success:^(id data) {
         for (NSMutableDictionary *dict in data[@"infos"][@"list"])
         {
             model=[[MeAmonModel alloc] initWithDict:dict];

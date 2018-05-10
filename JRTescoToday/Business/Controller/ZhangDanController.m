@@ -207,7 +207,7 @@
     NSMutableArray *ma=[[NSMutableArray alloc] init];
     if(total==0||(pageNum-1)*10<total) {
         
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/wallet/bills" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"wallet/bills" params:paramDic success:^(id data) {
         
         for (NSDictionary *dict in data[@"list"]) {
             ZahngdanModel *zhang=[[ZahngdanModel alloc] initWithDict:dict];

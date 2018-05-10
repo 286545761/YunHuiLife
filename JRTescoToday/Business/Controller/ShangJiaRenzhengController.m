@@ -314,7 +314,7 @@
     
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/merchant/merchantIdent?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@merchant/merchantIdent?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
@@ -561,7 +561,7 @@
     ;
     //NSString *srrrr=@"";
     NSMutableArray *maqq=[[NSMutableArray alloc] init];
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/merchant/agent" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"merchant/agent" params:paramDic success:^(id data) {
         
         ;
         
@@ -619,7 +619,7 @@
     ;
     //NSString *srrrr=@"";
     NSMutableArray *maqq=[[NSMutableArray alloc] init];
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/system/showProvince" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"system/showProvince" params:paramDic success:^(id data) {
         
        ;
         
@@ -682,7 +682,7 @@
     ;
     //NSString *srrrr=@"";
     NSMutableArray *maqq=[[NSMutableArray alloc] init];
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/system/showCityByProvinceName" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"system/showCityByProvinceName" params:paramDic success:^(id data) {
         
         ;
         
@@ -758,7 +758,7 @@
     ;
     //NSString *srrrr=@"";
     NSMutableArray *maqq=[[NSMutableArray alloc] init];
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/system/showCountyByCityName" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"system/showCountyByCityName" params:paramDic success:^(id data) {
         
         ;
         
@@ -831,7 +831,7 @@
     ;
     //NSString *srrrr=@"";
     NSMutableArray *maqq=[[NSMutableArray alloc] init];
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/merchant/findAllOnelevelCategory" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"merchant/findAllOnelevelCategory" params:paramDic success:^(id data) {
         
         ;
         
@@ -906,7 +906,7 @@
     ;
     //NSString *srrrr=@"";
     NSMutableArray *maqq=[[NSMutableArray alloc] init];
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/merchant/findAllNextlevelCategory" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"merchant/findAllNextlevelCategory" params:paramDic success:^(id data) {
         
         ;
         

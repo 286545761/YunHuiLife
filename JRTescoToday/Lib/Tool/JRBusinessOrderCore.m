@@ -27,7 +27,7 @@
         paramDic = [NSMutableDictionary dictionaryWithDictionary:@{@"access_token":tokenStr, @"pageNum":pageNumStr, @"pageSize":pageSizeStr, @"status":typeStr}];
     }
     //GET /person/orders
-    [HttpTool getWithBaseURL:kBaseURL path:@"/person/orders" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL path:@"person/orders" params:paramDic success:^(id data) {
         success(data);
     } failure:^(NSError *error) {
         
@@ -41,7 +41,7 @@
     NSString *token = [JRUserDefault getTOKEN];
     NSMutableDictionary *paramDic = [NSMutableDictionary dictionaryWithDictionary:@{@"access_token":token}];
     ///person/orders
-    NSString *urlStr = [NSString stringWithFormat:@"%@/%@",@"/person/orders",ID];
+    NSString *urlStr = [NSString stringWithFormat:@"%@/%@",@"person/orders",ID];
     [HttpTool getWithBaseURL:kBaseURL path:urlStr params:paramDic success:^(id data) {
         success(data);
     } failure:^(NSError *error) {

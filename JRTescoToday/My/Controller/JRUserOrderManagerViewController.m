@@ -245,7 +245,7 @@ typedef NS_ENUM(NSInteger, Order_type) {
 
     
     
-    NSURL *url =[NSURL URLWithString:[NSString stringWithFormat:@"%@/person/cancel_order/%@?access_token=%@",kBaseURL,model.orderCode,[JRUserDefault getTOKEN]]];
+    NSURL *url =[NSURL URLWithString:[NSString stringWithFormat:@"%@person/cancel_order/%@?access_token=%@",kBaseURL,model.orderCode,[JRUserDefault getTOKEN]]];
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
@@ -290,21 +290,7 @@ typedef NS_ENUM(NSInteger, Order_type) {
         
     }] resume];
     
-  
-//    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/person/cancel_order/%@",model.orderCode] params:paramDic success:^(id data) {
-//        NSLog(@"%@",kBaseURL);
-//
-//
-//
-//
-//
-//
-//
-//    } failure:^(NSError *error) {
-//
-//    } alertInfo:^(NSString *alertInfo) {
-//
-//    }];
+
     
     
 }

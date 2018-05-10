@@ -135,12 +135,16 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>是否允许此App访问媒体库?</string>
 	<key>NSCameraUsageDescription</key>
-	<string>需要用户同意授权我们才调用，为用户在App中一种头像展示用来与其他用户区分</string>
+	<string>是否允许此App使用你的相机？</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>我们需要通过您的地理位置信息获取您周边的相关数据</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>NSLocationWhenInUseUsageDescription用户授权后使用</string>
+	<string>是否允许此App访问位置信息？</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>需要用户同意授权我们才调用，为用户在App中一种头像展示用来与其他用户区分</string>
+	<string>是否允许此App访问相册</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

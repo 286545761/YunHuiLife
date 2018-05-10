@@ -39,7 +39,7 @@
     
 
     
-    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/wallet/bills/%@",_idn] params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"wallet/bills/%@",_idn] params:paramDic success:^(id data) {
         _jiayishuoming.text=[NSString stringWithFormat:@"%@",data[@"tradeRemark"]];
          _duifangzhanghu.text=[NSString stringWithFormat:@"%@",data[@"tradeAccountName"]];
          _zhifufangshi.text=[NSString stringWithFormat:@"%@",data[@"payType"]];

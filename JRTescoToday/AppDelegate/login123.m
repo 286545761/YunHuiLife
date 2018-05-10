@@ -49,7 +49,7 @@
     // [postData  appendData:[@"&origin=ios"dataUsingEncoding:NSUTF8StringEncoding]];
     [postData  appendData:[[NSString stringWithFormat:@"&grant_type=%@",uuid]  dataUsingEncoding:NSUTF8StringEncoding]];
     //NSData *postData = [NSJSONSerialization dataWithJSNObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/login/",kBaseURL];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@login/",kBaseURL];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     

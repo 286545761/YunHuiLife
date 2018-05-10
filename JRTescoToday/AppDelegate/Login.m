@@ -16,18 +16,6 @@
     
     
     // 还原确认用户是否认证
-   
-    
-
-    
-    //NSString *MD5Pwd =@"";           [FNUserDefaults setObject:[NSString stringWithFormat:@"%@",dict[@"data"][@"refresh_token"]]forKey:@"oldusersid"];
-    // uid
-   // [NSString  stringWithFormat:@""];
-    // 提示框    NSString *urlstring=[NSString  stringWithFormat:@"%@/login/%@",kBaseURL,leixing];
-   
-   // [FNUserDefaults objectForKey:@"MD5Pwd"]; [FNUserDefaults setObject:leixing forKey:@"oldusersid12"];
-    
-    
     NSDictionary *headers = @{@"content-type": @"application/x-www-form-urlencoded",
                               };
     
@@ -37,7 +25,7 @@
    
     [postData  appendData:[@"&grant_type=refresh_token"dataUsingEncoding:NSUTF8StringEncoding]];
    //  [postData  appendData:[[NSString stringWithFormat:@"&sign=%@",uuid]  dataUsingEncoding:NSUTF8StringEncoding]];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/login/%@",kBaseURL,[FNUserDefaults objectForKey:@"oldusersid12"]];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@login/%@",kBaseURL,[FNUserDefaults objectForKey:@"oldusersid12"]];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     NSLog(@"%@",[FNUserDefaults objectForKey:@"usersuuid"]);

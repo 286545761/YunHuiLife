@@ -60,7 +60,7 @@
                                                                                     
                                                                                     }];
     
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/wallet" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"wallet" params:paramDic success:^(id data) {
         
         
         NSLog(@"%@",data);
@@ -150,7 +150,7 @@
     
     //POST /pay/recharge_create
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:100 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/wallet/recharge?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@wallet/recharge?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
@@ -192,61 +192,7 @@
 -(void)downLoad12:(NSString *)idnn12
 {
     
-//
-//    NSMutableDictionary *paramDic = [NSMutableDictionary dictionaryWithDictionary:@{
-//                                                                                @"orderid":idnn12
-//                                                                                    }];
-//
-//
-//    // uid
-//    [FNUserDefaults objectForKey:@"MD5Pwd"];
-//
-//
-//
-//    NSDictionary *headers = @{ @"content-Type": @"application/json",
-//                               };
-//
-//
-//
-//    NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-//    NSString *urlstring=[NSString  stringWithFormat:@"%@/pay/recharge_sms?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
-//    NSURL *url = [NSURL URLWithString:urlstring];
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-//
-//    [request setHTTPMethod:@"POST"];
-//    [request setAllHTTPHeaderFields:headers];
-//
-//    [request setHTTPBody:postData];
-//    NSLog(@"%@", [request allHTTPHeaderFields]);
-//
-//    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue new]  completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-//
-//
-//
-//        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-//
-//
-//        NSLog(@"%@",dict);
-//        //5.回到主线程,进行更新页面
-//
-//        dispatch_sync(dispatch_get_main_queue(), ^{
-//            if ([[NSString  stringWithFormat:@"%@",dict[@"code"]] isEqualToString:@"5000"])
-//            {
-//
-//
-//            }
-//
-//             NSLog(@"呃呃呃呃%@",dict[@"msg"]);
-//        });
-//
-//
-//
-//
-//
-//
-//    }];
-    
-    
+
 }
 - (IBAction)chongzhi:(id)sender {
     
@@ -286,7 +232,7 @@
     
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/wallet/recharge?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@wallet/recharge?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     

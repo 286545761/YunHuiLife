@@ -59,7 +59,7 @@
                                                                                     
                                                                                     }];
     
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/order/userOrderDetail" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"order/userOrderDetail" params:paramDic success:^(id data) {
         
         _name.text=[NSString stringWithFormat:@"%@",data[@"merchantName"]];
         [_weizhi setTitle:[NSString stringWithFormat:@"%@",data[@"merchantAddress"]] forState:UIControlStateNormal];
@@ -84,7 +84,7 @@
                                                                                     
                                                                                     }];
     
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/order/merchantOrderDetail" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"order/merchantOrderDetail" params:paramDic success:^(id data) {
         
         //_name.text=[NSString stringWithFormat:@"%@",data[@"merchantName"]];
        // [_weizhi setTitle:[NSString stringWithFormat:@"%@",data[@"merchantAddress"]] forState:UIControlStateNormal];

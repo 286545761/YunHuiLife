@@ -419,7 +419,7 @@
     
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/goods/createMerchant?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@goods/createMerchant?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
@@ -468,7 +468,7 @@
                                                                                     
                                                                                     }];
     NSMutableArray *marray=[[NSMutableArray alloc] init];
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/goods/findCategory" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"goods/findCategory" params:paramDic success:^(id data) {
         
         for (NSDictionary *dict in data) {
             FenleiModel *fen=[[FenleiModel alloc] initWithDict:dict];
@@ -520,12 +520,12 @@
      [YYAnimationIndicator loadAnimationWithController:self setLoadText:@"正在提交..."];
     
     if (![_bianji isEqualToString:@"编辑"]) {
-      [str touxiangshangchaun:image andName:_name.text andDescp:_miaoshu.text andGoodsPrice:_jiage.text andStandard:_guige.text andGoodsCategoryId:@"bdefae1f-a1e3-11e7-8afd-1051721c39fe" andstr:@"/goods/addGoods" andID:@""];
+      [str touxiangshangchaun:image andName:_name.text andDescp:_miaoshu.text andGoodsPrice:_jiage.text andStandard:_guige.text andGoodsCategoryId:@"bdefae1f-a1e3-11e7-8afd-1051721c39fe" andstr:@"goods/addGoods" andID:@""];
          [self.navigationController popViewControllerAnimated:YES];
     }else
     {
         NSLog(@"%@",_idn);
-        [str touxiangshangchaun:image andName:_name.text andDescp:_miaoshu.text andGoodsPrice:_jiage.text andStandard:_guige.text andGoodsCategoryId:idnn andstr:@"/goods/editGoods" andID:_idn];
+        [str touxiangshangchaun:image andName:_name.text andDescp:_miaoshu.text andGoodsPrice:_jiage.text andStandard:_guige.text andGoodsCategoryId:idnn andstr:@"goods/editGoods" andID:_idn];
        
     }
     // sleep(1);

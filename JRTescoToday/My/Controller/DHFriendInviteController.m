@@ -159,116 +159,6 @@
     
     
     
-////    [FNUserDefaults objectForKey:@"MD5Pwd"];
-////    NSLog(@"%@",[FNUserDefaults objectForKey:@"MD5Pwd"]);
-////    //NSString*str=@"18311467990:8fcbc4997fa16e6394079085f7bd6ecb";
-////    NSString* str = [NSString stringWithFormat:@"%@:%@",[UserAccount getUserLoginInfo].userMobile,[FNUserDefaults objectForKey:@"MD5Pwd"]];
-////    NSLog(@"%@",str);
-////    NSData *data= [str dataUsingEncoding:NSUTF8StringEncoding];
-////    NSString *str2=[self bs64:data];
-////    NSString*str1=[NSString stringWithFormat:@"Basic %@",str2];
-////    NSLog(@"%@",str1);
-//    
-//    // NSData *postData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
-//    NSString *urlstring=[NSString  stringWithFormat:@"%@/v3.1/invite/invite_reward_send_record?type=%@&pageNum=%@",kBaseURL,_type,[NSString stringWithFormat:@"%ld",pageNum]];
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlstring]
-//                                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
-//                                                       timeoutInterval:10.0];
-//    [request setHTTPMethod:@"GET"];
-//     [request  setValue:[FNUserDefaults objectForKey:@"usersid"] forHTTPHeaderField:@"x-auth-token"];
-//    if (total==0||(pageNum-1)*10<total) {
-//        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue new]  completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-//            
-//            if (!data) {
-//                [_friendInviteTableView.header endRefreshing];
-//                [_friendInviteTableView.footer endRefreshing];
-//                [YYAnimationIndicator stopAnimationWithLoadText:@"YES" withType:YES];
-//                return ;
-//            }
-//            if (connectionError==nil) {
-//                
-//                NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-//                
-//                
-//                NSLog(@"%@",dict);
-//                //5.回到主线程,进行更新页面
-//                _friendInviteModel = [[DHFriendInviteModel alloc]init];
-//                dispatch_sync(dispatch_get_main_queue(), ^{
-//                    if ([[NSString  stringWithFormat:@"%@",dict[@"code"]] isEqualToString:@"5000"]) {
-//                        [YYAnimationIndicator stopAnimationWithLoadText:@"YES" withType:YES];
-//                        datas = [dict objectForKey:@"data"];
-//                        total=[datas[@"total"] intValue];
-//                        for (NSDictionary* dic in [datas objectForKey:@"list"]) {
-//                            
-//                            
-//                            //        userId：用户id
-//                            //        phone：手机号
-//                            //        amount：奖励金额
-//                            //        isInvest：是否投资
-//                            //        time：邀请时间
-//                            
-//                            
-//                            
-//                            //  NSNumber* userId =  dic [@"userId"];
-//                            //NSNumber* phone =  dic [@"phone"];
-//                            // boo* isInvest =  dic [@"isInvest"];
-//                            //                           // NSNumber* time =  dic [@"time"];
-//                            
-//                            
-//                            DHFriendInviteListModel* investCashListModel = [[DHFriendInviteListModel alloc]init];
-//                            
-//                            //                            NSString *str=[NSString stringWithFormat:@"%@",[time stringValue]];
-//                            //                            NSDate *timeDate = [[NSDate alloc]initWithTimeIntervalSince1970:[str longLongValue]/1000.0];
-//                            //                            NSDateFormatter *dateTime=[[NSDateFormatter alloc] init];
-//                            //                            dateTime.dateFormat=@"yyyy-MM-dd";
-//                            investCashListModel.time =  dic [@"time"];
-//                            NSString *str21 = [  [NSString stringWithFormat:@"%@",[dic objectForKey:@"amount"]  ] stringByReplacingOccurrencesOfString:@"," withString:@""];
-//                            investCashListModel.amount = [NSString stringWithFormat:@"%.2f",[str21 floatValue] ];
-//                            investCashListModel.frientIn=  [NSString stringWithFormat:@"%@", dic[@"userLevel"]  ]          ;
-//                            investCashListModel.phone = dic [@"phone"];
-//                            ;
-//                            investCashListModel.isInvest = [NSString  stringWithFormat:@"%@",dic [@"invest"] ];
-//                            
-//                            // investCashListModel.userId = [userId stringValue];
-//                            
-//                            [_friendInviteModel.list addObject:investCashListModel];
-//                            
-//                            
-//                        }
-//                        
-//                        // 如果是下拉清空数组
-//                        if (pageNum == 1) {
-//                            [totalDataMuArray removeAllObjects];
-//                        }
-//                        
-//                        // 存储每次刷新请求的数据
-//                        [totalDataMuArray addObjectsFromArray:_friendInviteModel.list];
-//                        [_friendInviteTableView reloadData];
-//                        [_friendInviteTableView.header endRefreshing];
-//                        [_friendInviteTableView.footer endRefreshing];
-//                    }
-//                    [YYAnimationIndicator stopAnimationWithLoadText:@"YES" withType:YES];
-//                    if ([[NSString  stringWithFormat:@"%@",dict[@"open"]] isEqualToString:@"1"]) {
-//                        [MBProgressHUD showError:dict[@"msg"]];
-//                    }
-//                    
-//                });
-//                
-//                
-//            }
-//            else{
-//                [YYAnimationIndicator stopAnimationWithLoadText:@"YES" withType:YES];
-//                [_friendInviteTableView.header endRefreshing];
-//                [_friendInviteTableView.footer endRefreshing];
-//            }
-//            
-//            
-//            //4.解析
-//            
-//            
-//        }];
-//        
-//    }
     
     
     
@@ -503,7 +393,7 @@
                                                                                     }];
     NSMutableArray *array=[[NSMutableArray alloc] init];
        if(total==0||(pageNum-1)*10<total) {
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/person/invitation/rewards" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"person/invitation/rewards" params:paramDic success:^(id data) {
         
         for (NSDictionary *dict in data[@"list"]) {
             FenLunModel *ma=[[FenLunModel alloc] initWithDict:dict];

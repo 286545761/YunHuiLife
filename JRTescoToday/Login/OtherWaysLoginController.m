@@ -110,24 +110,7 @@
     // 还原确认用户是否认证
     NSUserDefaults *myUserDefaults = [NSUserDefaults standardUserDefaults];
     NSString *str=@"2";
-//    NSDictionary *dic=@{
-//                        @"phone": _mobileNumTextField.text,
-//                        @"code": _validateTextField.text,
-//                        @"grant_type": @"phone_code"
-//
-//
-//                        };
-//    [myUserDefaults setObject:str forKey:@"renzhen"];
-//    [HttpTool postWithBaseURL:kBaseURL path:@"/uaa/login/code" params:dic success:^(id data) {
-//
-//
-//
-//
-//    } failure:^(NSError *error) {
-//
-//    } alertInfo:^(NSString *alertInfo) {
-//
-//    }];
+
     
    
  
@@ -143,7 +126,7 @@
      [postData  appendData:[[NSString stringWithFormat:@"&grant_type=%@",@"phone_code"]  dataUsingEncoding:NSUTF8StringEncoding]];
    
 
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/uaa/login/code",kBaseURL];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@uaa/login/code",kBaseURL];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     NSString *authStr = [NSString stringWithFormat:@"%@:%@", @"jrygou-person", @"jrygou-person-secret"];
@@ -294,7 +277,7 @@
     NSLog(@"%@",currentTimeString);
     [ makeche addTarget:self action:@selector(AdvertisingBtn) forControlEvents:UIControlEventTouchUpInside];
     NSString *ponee=_mobileNumTextField.text;
-    userPortrait=[NSString stringWithFormat:@"%@/kaptcha.jpg?phone=%@&timeee=%@",kBaseURL , ponee,currentTimeString];
+    userPortrait=[NSString stringWithFormat:@"%@kaptcha.jpg?phone=%@&timeee=%@",kBaseURL , ponee,currentTimeString];
     //make.tuXing ;
     
     [make.tuXing sd_setImageWithURL:[NSURL URLWithString:userPortrait] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
@@ -336,7 +319,7 @@
     NSLog(@"%@",currentTimeString);
     [ makeche addTarget:self action:@selector(AdvertisingBtn) forControlEvents:UIControlEventTouchUpInside];
     NSString *ponee=_mobileNumTextField.text;
-    userPortrait=[NSString stringWithFormat:@"%@/kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
+    userPortrait=[NSString stringWithFormat:@"%@kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
     //make.tuXing ;
     
     [make.tuXing sd_setImageWithURL:[NSURL URLWithString:userPortrait] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
@@ -394,7 +377,7 @@
     
     
     
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/v3.0/user/user-info",kBaseURL];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@v3.0/user/user-info",kBaseURL];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlstring]
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:10.0];
@@ -507,7 +490,7 @@
     
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/uaa/login/sms",kBaseURL];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@uaa/login/sms",kBaseURL];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     

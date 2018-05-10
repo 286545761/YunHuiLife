@@ -30,7 +30,7 @@
     NSDictionary *paramDic = @{@"access_token":[FNUserDefaults objectForKey:@"usersid"]                                                     
                                };
     
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/wallet/cards" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"wallet/cards" params:paramDic success:^(id data) {
         
         _bankName.text=[NSString stringWithFormat:@"%@",data[0][@"bankName"]];
        [_bankImage sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",data[0][@"bankIcon"]]] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];

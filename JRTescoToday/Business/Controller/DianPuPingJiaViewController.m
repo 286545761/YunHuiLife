@@ -396,7 +396,7 @@
     //NSString *srrrr=@"";
     NSMutableArray *maqq=[[NSMutableArray alloc] init];
      if(total==0||(pageNum-1)*10<total) {
-    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/comment/findCommentByShopIdPage/%@" ,_idn] params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"comment/findCommentByShopIdPage/%@" ,_idn] params:paramDic success:^(id data) {
         
         for (NSDictionary *dict in data[@"list"]) {
             PingLunModel *ma=[[PingLunModel alloc] initWithDict:dict];
@@ -432,7 +432,7 @@
     //NSString *srrrr=@"";
     NSMutableArray *maqq=[[NSMutableArray alloc] init];
      if(total1==0||(pageNum-1)*10<total1) {
-    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/comment/findGoodCommentByShopIdPage/%@" ,_idn] params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"comment/findGoodCommentByShopIdPage/%@" ,_idn] params:paramDic success:^(id data) {
         
         for (NSDictionary *dict in data[@"list"]) {
             PingLunModel *ma=[[PingLunModel alloc] initWithDict:dict];
@@ -468,7 +468,7 @@
     //NSString *srrrr=@"";
     NSMutableArray *maqq=[[NSMutableArray alloc] init];
      if(total2==0||(pageNum-1)*10<total2) {
-    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/comment/findMediumCommentByShopIdPage/%@" ,_idn] params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"comment/findMediumCommentByShopIdPage/%@" ,_idn] params:paramDic success:^(id data) {
         
         for (NSDictionary *dict in data[@"list"]) {
             PingLunModel *ma=[[PingLunModel alloc] initWithDict:dict];
@@ -502,7 +502,7 @@
     //NSString *srrrr=@"";
     NSMutableArray *maqq=[[NSMutableArray alloc] init];
      if(total3==0||(pageNum-1)*10<total3) {
-    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"/comment/findBadCommentByShopIdPage/%@" ,_idn] params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:[NSString stringWithFormat:@"comment/findBadCommentByShopIdPage/%@" ,_idn] params:paramDic success:^(id data) {
         
         for (NSDictionary *dict in data[@"list"]) {
             PingLunModel *ma=[[PingLunModel alloc] initWithDict:dict];

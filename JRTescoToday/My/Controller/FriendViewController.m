@@ -12,7 +12,7 @@
 #import "YaoQingView.h"
 #import "makeGuiZe.h"
 #import "CrossDevicesLayout.h"
-@interface FriendViewController ()
+@interface FriendViewController ()<UIGestureRecognizerDelegate>
 {
     YaoQingView *mak;
     UIButton *tixianjiluj1;
@@ -23,11 +23,17 @@
     UIButton *makeQingchuBtn;
     
 }
+@property (weak, nonatomic) IBOutlet UILabel *getaplabel;
+@property (weak, nonatomic) IBOutlet UIView *tapBaseView;
 @property (weak, nonatomic) IBOutlet UILabel *leijishouyi;
 @property (weak, nonatomic) IBOutlet UILabel *jiashu;
 @property (weak, nonatomic) IBOutlet UILabel *jiashu1;
 @property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
 @property (weak, nonatomic) IBOutlet UIScrollView *baseScroll;
+/*
+ *<# #>
+ */
+@property(strong,nonatomic)UIButton *dianButton;
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *InviteFriendsimageView;
@@ -35,6 +41,10 @@
  *
  */
 @property(strong,nonatomic)UILabel* theRulesLabel;
+/*
+ *
+ */
+@property(strong,nonatomic)UIButton *geButton;
 
 @end
 
@@ -57,6 +67,22 @@
     self.navigationItem.rightBarButtonItems  = @[settingBtnItem];
 
     
+}
+-(UIButton *)geButton{
+    if (!_geButton) {
+        _geButton =[[UIButton alloc]init];
+        [_geButton addTarget:self action:@selector(Ge:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    return _geButton;
+}
+-(UIButton *)dianButton{
+    if (!_dianButton) {
+        _dianButton =[[UIButton alloc]init];
+        [_dianButton addTarget:self action:@selector(Dian:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    return _dianButton;
 }
 -(UILabel *)theRulesLabel{
     if (!_theRulesLabel) {
@@ -89,14 +115,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"我的邀请";
+    self.baseScroll.userInteractionEnabled=YES;
     self.bgImageView.backgroundColor=[UIColor whiteColor];
-    self.baseScroll.contentSize=CGSizeMake(ScreenW, 1500);
-//    [self.baseScroll addSubview:self.th]
-//    [self.theRulesLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self.InviteFriendsimageView.mas_bottom);
-//        make.left.right.equalTo(self.baseScroll);
-//        make.height.equalTo(@525);
-//    }];
+    self.tapBaseView.userInteractionEnabled=YES; self.baseScroll.contentSize=CGSizeMake(ScreenW, 1500);
+    self.baseScroll.delaysContentTouches = NO;
     self.view.frame=CGRectMake(0, 0, kScreenSize.width, kScreenSize.height);
     self.extendedLayoutIncludesOpaqueBars = NO;
     self.edgesForExtendedLayout = UIRectEdgeBottom | UIRectEdgeLeft | UIRectEdgeRight;
@@ -115,6 +137,24 @@
         [self.view addSubview:mak];
     }
     [self downLoad];
+    [self.baseScroll addSubview:self.dianButton];
+
+    [self.dianButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.baseScroll.mas_top).offset(100);
+        make.left.equalTo(self.baseScroll.mas_left).offset(0);
+        make.size.mas_equalTo(CGSizeMake(ScreenW/2, 100));
+        
+    }];
+    
+    [self.baseScroll addSubview:self.geButton];
+    
+//    self.geButton.backgroundColor=[UIColor redColor];
+    
+    [self.geButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.width.equalTo(self.dianButton);
+        
+        make.left.equalTo(self.dianButton.mas_right);
+    }];
     
 }
 -(void)btnQingchu
@@ -151,6 +191,16 @@
     DHFriendInviteController *yew=[[DHFriendInviteController alloc] init];
     [self.navigationController pushViewController:yew animated:YES];
 }
+
+-(void)dianTap{
+    
+    DHMyInviteController *yew=[[DHMyInviteController alloc] init];
+    yew.mq=@"2";
+    yew.title=@"邀请店铺记录";
+    yew.ge=_jiashu1.text;
+    [self.navigationController pushViewController:yew animated:YES];
+    
+}
 - (IBAction)Dian:(id)sender {
     DHMyInviteController *yew=[[DHMyInviteController alloc] init];
     yew.mq=@"2";
@@ -158,6 +208,7 @@
     yew.ge=_jiashu1.text;
     [self.navigationController pushViewController:yew animated:YES];
 }
+
 - (IBAction)Ge:(id)sender {
     DHMyInviteController *yew=[[DHMyInviteController alloc] init];
     yew.mq=@"1";
@@ -172,7 +223,7 @@
                                                                                     
                                                                                     }];
     
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/person/invitation" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"person/invitation" params:paramDic success:^(id data) {
         _leijishouyi.text=[NSString stringWithFormat:@"￥%@",data[@"toltalReward"]]  ;
         _jiashu.text=[NSString stringWithFormat:@"%@",data[@"totalPerson"]]  ;;
         _jiashu1.text=[NSString stringWithFormat:@"%@",data[@"totalMerchant"]]  ;;;
@@ -189,5 +240,7 @@
         
     }];
 }
+
+
 
 @end

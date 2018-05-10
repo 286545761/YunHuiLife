@@ -158,7 +158,7 @@
     NSMutableArray *ma=[[NSMutableArray alloc] init];
     
      if(total==0||(pageNum-1)*10<total) {
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/person/collects" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"person/collects" params:paramDic success:^(id data) {
         for (NSDictionary *dict in data[@"list"]) {
             ShouCahngModel *na=[[ShouCahngModel alloc] initWithDict:dict];
             [ma addObject:na];
@@ -241,7 +241,7 @@
     NSDictionary *headers = @{ @"content-Type": @"application/json",
                                };
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring = [NSString stringWithFormat:@"%@/merchants/%@/collect?access_token=%@",kBaseURL,na.idn,[FNUserDefaults objectForKey:@"usersid"]];;
+    NSString *urlstring = [NSString stringWithFormat:@"%@merchants/%@/collect?access_token=%@",kBaseURL,na.idn,[FNUserDefaults objectForKey:@"usersid"]];;
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     

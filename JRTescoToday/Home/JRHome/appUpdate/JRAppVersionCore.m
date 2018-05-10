@@ -15,11 +15,11 @@
 @implementation JRAppVersionCore
 + (void)checkAppVerionForUpdate:(CheckUpdateBlock)updateBlock {
     NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
-    //http://123.57.1.61:8092/system/checkNewVersion?type=0&version=1.0.0
+  
     NSString *currentAppVersion = [infoDic objectForKey:@"CFBundleShortVersionString"];
     NSDictionary *paramsDict = [NSDictionary dictionaryWithObjectsAndKeys:currentAppVersion,@"version", nil];
     
-    [HttpTool getWithBaseURL:kBaseURL path:@"/system/check/0" params:paramsDict success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL path:@"system/check/0" params:paramsDict success:^(id data) {
         NSDictionary *dict = data;
         JRAppVersionModel *model = [JRAppVersionModel appVersionModelWithResultDict:dict];
         updateBlock(model,nil);

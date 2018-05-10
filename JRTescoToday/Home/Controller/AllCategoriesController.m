@@ -62,7 +62,7 @@
 }
 -(void)downLoad
 {
-    [HttpTool getWithBaseURL:kBaseURL path:@"/merchants/categories" params:nil success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL path:@"merchants/categories" params:nil success:^(id data) {
         NSLog(@"%@",kBaseURL);
   [self MakeUiView:data];
         NSLog(@"%@",data);

@@ -631,27 +631,10 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
 }
 -(void)download1
 {
-//    NSMutableDictionary *paramDic = [NSMutableDictionary dictionaryWithDictionary:@{@"access_token":[FNUserDefaults objectForKey:@"usersid"],
-//                                                                                  
-//                                                                                    
-//                                                                                    }];
-//
-//    [HttpTool getWithBaseURL:kBaseURL  path:@"/user_center" params:paramDic success:^(id data) {
-//        
-//        
-//        NSLog(@"%@",data);
-//        
-//        
-//        
-//    } failure:^(NSError *error) {
-//        
-//    } alertInfo:^(NSString *alertInfo) {
-//        
-//    }];
 
     
     
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/user_center/person",kBaseURL];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@user_center/person",kBaseURL];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlstring]
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:10.0];
@@ -793,7 +776,7 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
                                                                                         
                                                                                         }];
         
-        [HttpTool getWithBaseURL:kBaseURL  path:@"/person" params:paramDic success:^(id data) {
+        [HttpTool getWithBaseURL:kBaseURL  path:@"person" params:paramDic success:^(id data) {
             //[Login loginRenZengPhone:nil andPwdnum:nil];
              [self makeUi];
             accountAmount=[NSString  stringWithFormat:@"%@",data[@"accountBalance"]];
@@ -860,7 +843,7 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
                                                                                         }];
      //   [Login loginRenZengPhone:nil andPwdnum:nil];
         NSLog(@"qqqqq%@",[FNUserDefaults objectForKey:@"usersid"]);
-        [HttpTool getWithBaseURL:kBaseURL  path:@"/user_center/get_account" params:paramDic success:^(id data) {
+        [HttpTool getWithBaseURL:kBaseURL  path:@"user_center/get_account" params:paramDic success:^(id data) {
             
            // _yuyujine.text=[NSString stringWithFormat:@"%@",data[@"amount"]];;34940cb1-5c78-4962-9578-67963a4941b8  71d86d20-a2af-4605-a5f8-cdfa82909067
             bankCard=[NSString stringWithFormat:@"%@",data[@"bankCard"]];

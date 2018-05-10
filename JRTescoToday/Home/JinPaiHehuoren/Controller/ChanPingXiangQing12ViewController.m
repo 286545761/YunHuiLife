@@ -248,7 +248,7 @@
                                                                                     
                                                                                     }];
     
-    [HttpTool getWithBaseURL:kBaseURL path:@"/invest/getFixedProject" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL path:@"invest/getFixedProject" params:paramDic success:^(id data) {
         [maa.name setTitle:data[@"name"] forState:UIControlStateNormal];
         maa.rate.text=[NSString stringWithFormat:@"%@~%@",data[@"minRate"],data[@"maxRate"]];
         maa.day.text=[NSString stringWithFormat:@"%@个月",data[@"day"]];
@@ -296,7 +296,7 @@
         
         
         NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-        NSString *urlstring=[NSString  stringWithFormat:@"%@/invest/createInvestFixed?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+        NSString *urlstring=[NSString  stringWithFormat:@"%@invest/createInvestFixed?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
         NSURL *url = [NSURL URLWithString:urlstring];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
         
@@ -346,7 +346,7 @@
                                                                                     
                                                                                     }];
     
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/wallet" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"wallet" params:paramDic success:^(id data) {
         
         
         NSLog(@"%@",data);

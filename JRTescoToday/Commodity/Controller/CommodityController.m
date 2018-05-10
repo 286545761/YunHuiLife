@@ -969,7 +969,7 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
   
     if(total==0||(pageNum-1)*10<total) {
         
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/merchants" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"merchants" params:paramDic success:^(id data) {
         
                 NSLog(@"%@",data);
         categoryCountList=[[NSMutableArray alloc] init];

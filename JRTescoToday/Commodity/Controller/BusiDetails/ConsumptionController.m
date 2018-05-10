@@ -104,7 +104,7 @@
 // 加载打折后的价格
 -(void)loadtheDiscountPrice{
 ////    http://p.jryunhui.com/api/merchants/activity/optimal/9365f35d-30ba-11e8-a215-702084e1f310?amount=20&access_token=8b79c24d-7394-4ed8-8122-b9e8ad1a8eca
-    NSString *pathString=[NSString stringWithFormat:@"/merchants/activity/optimal/%@?amount=%@",_theStoreID,_zhifuText.text];
+    NSString *pathString=[NSString stringWithFormat:@"merchants/activity/optimal/%@?amount=%@",_theStoreID,_zhifuText.text];
     [HttpTool getWithBaseURL:kBaseURL  path:pathString params:nil success:^(id data) {
 
         _nnnnn=[NSString stringWithFormat:@"%@",data];
@@ -186,7 +186,7 @@
     
         
         // 优惠买单// 支付订单   //    //    type (integer): 1,易购钱包 2,微信公众账号支付 3,微信支付APP个人版 4,微信支付APP商家版 5,支付宝支付APP）
-       urlstring=[NSString  stringWithFormat:@"%@/merchants/orders/pay?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+       urlstring=[NSString  stringWithFormat:@"%@merchants/orders/pay?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
         paramDic=@{
                    @"orderCode":self.theOrderNumberString,
                    @"payType":num,
@@ -209,7 +209,7 @@
         
         
 //        POST /merchants/orders/discount/pay
-        urlstring=[NSString  stringWithFormat:@"%@/merchants/orders/discount/pay?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+        urlstring=[NSString  stringWithFormat:@"%@merchants/orders/discount/pay?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
         paramDic=@{
                    @"amount":_nnnnn,
                    @"merchantCode":self.theStoreCode,
@@ -342,195 +342,8 @@
     
     
         }];
-    
-
 
     
-    
-    
-    
-    
-    
-    
-    
-    
-
-//
-//
-//
-//
-//    // 上一次
-//
-////    amount (number): 支付金额 ,
-////    goodsCount (integer): 团购数量 ,
-////    goodsId (string): 团购商品ID ,
-////    merchantCode (string): 商铺编码 ,
-////    oamount (number): 原价 ,
-////    openid (string, optional): wap微信支付必传 ,
-////    orderType (integer): 1团购2优惠买单 ,
-////    payPassword (string): 支付密码 ,
-//    //    type (integer): 1,易购钱包 2,微信公众账号支付 3,微信支付APP个人版 4,微信支付APP商家版 5,支付宝支付APP）
-////}
-//    NSMutableDictionary *paramDic;
-//    if ([_OrderType isEqualToString:@"2"]) {
-//        paramDic = [NSMutableDictionary dictionaryWithDictionary:@{
-//                                                                   @"amount":_nnnnn,
-//                                                                   @"merchantCode":_theStoreCode
-//                                                                   ,@"payPassword":code,
-//                                                                   @"type":num,
-//                                                                   @"oamount":_zhifuText.text,
-//                                                                   @"orderType":_OrderType}];
-//
-//
-//
-//    }else{
-//        paramDic = [NSMutableDictionary dictionaryWithDictionary:@{
-//                                                                   @"amount":_nnnnn,
-//                                                                   @"merchantCode":_theStoreID
-//                                                                   ,@"payPassword":code,
-//                                                                   @"type":num,
-//                                                                   @"goodsId":_cgBUS,
-//                                                                   @"goodsCount":@([_theNumber intValue])                                        ,
-//                                                                   @"oamount":_theOriginalPrice,
-//                                                                   @"orderType":_OrderType}];
-//
-//
-//    }
-//
-//
-//
-//
-//
-//    // uid
-//    [FNUserDefaults objectForKey:@"MD5Pwd"];
-//
-//
-//
-//    NSDictionary *headers = @{ @"content-Type": @"application/json"};
-//
-//    if ([num isEqualToString:@"1"]) {
-//
-//    }
-//    else{
-//        [YYAnimationIndicator loadAnimationWithController:self setLoadText:@"正在跳转第三方支付平台..."];
-//    }
-//
-//    NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-//    NSString *urlstring=[NSString  stringWithFormat:@"%@/merchants/orders?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
-//    NSURL *url = [NSURL URLWithString:urlstring];
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-//
-//    [request setHTTPMethod:@"POST"];
-//    [request setAllHTTPHeaderFields:headers];
-//
-//    [request setHTTPBody:postData];
-//    NSLog(@"%@", [request allHTTPHeaderFields]);
-//
-//    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue new]  completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-//
-//
-//
-//        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-//
-//
-//        NSLog(@"%@",dict);
-//        //5.回到主线程,进行更新页面
-//
-//        dispatch_sync(dispatch_get_main_queue(), ^{
-//          // [MBProgressHUD showError:dict[@"msg"]];
-//            if ([[NSString  stringWithFormat:@"%@",dict[@"code"]] isEqualToString:@"5000"])
-//            {
-//                idnn =dict[@"data"][@"orderNo"];
-//                 [YYAnimationIndicator stopAnimationWithLoadText:@"YES" withType:YES];
-//
-//                if ([num isEqualToString:@"5"]) {
-////                    orderStringyuser=
-//                    NSString *appScheme = @"alisdkdemo";
-////                    NSDictionary *apPayDic=dict[@"data"][@"respObject"];
-//                    NSString *orderString = dict[@"data"][@"respObject"];
-//
-//                    NSData * orderInfoData=[orderString dataUsingEncoding:NSUTF8StringEncoding];
-//                    NSDictionary *orderDic=[NSJSONSerialization JSONObjectWithData:orderInfoData options:NSJSONReadingMutableLeaves error:nil];
-//
-////
-//
-//                    // NOTE: 调用支付结果开始支付
-//                    [[AlipaySDK defaultService] payOrder:orderDic[@"orderInfo"] fromScheme:appScheme callback:^(NSDictionary *resultDic) {
-//                        NSLog(@"reslut = %@",resultDic);
-//                        if ([[NSString stringWithFormat:@"%@",resultDic[@"resultStatus"]] isEqualToString:@"9000"]) {
-//                            ZhiFuChengGongViewController *ma=[[ZhiFuChengGongViewController alloc] init];
-//                            NSString *resultDicString=[NSString stringWithFormat:@"%@",resultDic[@"memo"]];
-//                            if (resultDicString.length>0) {
-//                                      [MBProgressHUD showError:resultDicString];
-//                            }
-//
-//                            ma.dingdan=[NSString stringWithFormat:@"%@",dict[@"data"][@"orderNo"]];
-//                            ma.qian=_shifu.text;
-//                            ma.zhifubao=@"支付宝";
-//
-//                            [FNUserDefaults removeObjectForKey:@"zhifubao"];
-//                            [self.navigationController pushViewController:ma animated:YES];
-//
-//                        }else{
-//                            // [MBProgressHUD showError:[NSString stringWithFormat:@"%@",resultDic[@"memo"]]];
-//                            zhifushibaixxViewController *ma=[[zhifushibaixxViewController alloc] init];
-//
-//                             [self.navigationController pushViewController:ma animated:YES];
-//                            [FNUserDefaults removeObjectForKey:@"zhifubao"];
-//
-//                        }
-//
-//
-//                    }];
-//
-//                }else if([num isEqualToString:@"1"])
-//                {
-//                    ZhiFuChengGongViewController *ma=[[ZhiFuChengGongViewController alloc] init];
-//                    ma.dingdan=[NSString stringWithFormat:@"%@",dict[@"data"][@"orderCode"]];
-//                    ma.qian=_shifu.text;
-//                    ma.zhifubao=@"云惠钱包";
-//
-//                    [FNUserDefaults removeObjectForKey:@"zhifubao"];
-//                    [self.navigationController pushViewController:ma animated:YES];
-//                }else
-//                {
-//                    NSData *JSONData = [dict[@"data"][@"respObject"] dataUsingEncoding:NSUTF8StringEncoding];
-//                    NSDictionary *responseJSON = [NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingMutableLeaves error:nil];
-//
-////                    NSString *ip=[NSString stringWithFormat:@"%@",responseJSON[@"appid"]];
-////                    NSLog(@"-=-%@",ip);
-//                    PayReq *request = [[PayReq alloc] init];
-//                    request.openID=[NSString stringWithFormat:@"%@",responseJSON[@"appid"]];
-//                    request.partnerId = [NSString stringWithFormat:@"%@",responseJSON[@"partnerid"]];;
-//                    request.prepayId= [NSString stringWithFormat:@"%@",responseJSON[@"prepayid"]];
-//                    request.package =[NSString stringWithFormat:@"%@",responseJSON[@"package"]];
-//                    request.nonceStr=[NSString stringWithFormat:@"%@",responseJSON[@"noncestr"]];
-//                    request.timeStamp=[[NSString stringWithFormat:@"%@",responseJSON[@"timestamp"]] intValue];
-//                    request.sign=[NSString stringWithFormat:@"%@",responseJSON[@"sign"]];
-//
-//                    [WXApi sendReq:request];
-//
-//
-//
-//                }
-//
-//
-//            }
-//            else{
-//                zhifushibaixxViewController *ma=[[zhifushibaixxViewController alloc] init];
-//                [self.navigationController pushViewController:ma animated:YES];
-//                [YYAnimationIndicator stopAnimationWithLoadText:@"YES" withType:YES];
-//            }
-//            NSLog(@"%@",dict[@"msg"]);
-//        });
-//
-//
-//
-//
-//
-//
-//    }];
-//
     
 }
 
@@ -761,7 +574,7 @@
                                                                                     
                                                                                     }];
     
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/person" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"person" params:paramDic success:^(id data) {
         theBalanceMoneyString=[NSString stringWithFormat:@"%@",data[@"accountBalance"]];
         _keyongyue.text=[NSString stringWithFormat:@"可用余额￥%.2f",[data[@"accountBalance"] floatValue] ];
 //        bankCard=[NSString stringWithFormat:@"可用余额￥%@",data[@"identity"]];;

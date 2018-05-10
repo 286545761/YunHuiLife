@@ -196,7 +196,7 @@
     NSMutableArray *marray=[[NSMutableArray alloc] init];
 
      if(total==0||(pageNum-1)*10<total) {
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/goods/findGoodsBymid/" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"goods/findGoodsBymid/" params:paramDic success:^(id data) {
         
         for (NSDictionary *dict in data[@"list"]) {
            ShangpingModel *ma=[[ShangpingModel alloc] initWithDict:dict];
@@ -243,7 +243,7 @@
     
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/goods/deleteGoodsById?access_token=%@&goodsId=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"],idns];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@goods/deleteGoodsById?access_token=%@&goodsId=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"],idns];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     

@@ -233,7 +233,7 @@
     
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/goods/createMerchant?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@goods/createMerchant?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
@@ -282,7 +282,7 @@
                                                                                     
                                                                                     }];
     NSMutableArray *marray=[[NSMutableArray alloc] init];
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/goods/findCategory" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"goods/findCategory" params:paramDic success:^(id data) {
         
         for (NSDictionary *dict in data) {
             FenleiModel *fen=[[FenleiModel alloc] initWithDict:dict];

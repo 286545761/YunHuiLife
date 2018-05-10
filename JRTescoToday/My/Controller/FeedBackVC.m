@@ -187,7 +187,7 @@
 
   
     NSLog(@"nihao%@",_idnn);
-     NSString *urlstring=[NSString stringWithFormat:@"%@/comment/saveUserComment?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+     NSString *urlstring=[NSString stringWithFormat:@"%@comment/saveUserComment?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     

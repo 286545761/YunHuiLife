@@ -215,7 +215,7 @@
 -(void)downLoad
 {
    
-    [HttpTool getWithBaseURL:kBaseURL path:[NSString stringWithFormat:@"/merchants/goods/%@",_strbtn]  params:nil success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL path:[NSString stringWithFormat:@"merchants/goods/%@",_strbtn]  params:nil success:^(id data) {
         
         array3=@[@"美食",@"酒店娱乐",@"生活服务你好多福多寿",@"生活服务你好多福多寿"];
         _text.text=[NSString stringWithFormat:@"%@",data[@"descp"]];

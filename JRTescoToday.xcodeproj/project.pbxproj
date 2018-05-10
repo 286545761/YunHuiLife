@@ -113,7 +113,6 @@
 		9D0606AB2019C04900CEC95D /* BussFenLeiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0606AA2019C04900CEC95D /* BussFenLeiModel.m */; };
 		9D0F83AF1F5E3DF500798EA2 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F83AD1F5E3DF500798EA2 /* MapViewController.m */; };
 		9D0F83B01F5E3DF500798EA2 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F83AE1F5E3DF500798EA2 /* MapViewController.xib */; };
-		9D0F83B21F5E42AA00798EA2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0F83B11F5E42AA00798EA2 /* MapKit.framework */; };
 		9D0F83C31F5E743600798EA2 /* tab_btn_code_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F83B71F5E743600798EA2 /* tab_btn_code_default@2x.png */; };
 		9D0F83C41F5E743600798EA2 /* tab_btn_code_default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F83B81F5E743600798EA2 /* tab_btn_code_default@3x.png */; };
 		9D0F83C51F5E743600798EA2 /* tab_btn_code_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F83B91F5E743600798EA2 /* tab_btn_code_pressed@2x.png */; };
@@ -1200,7 +1199,6 @@
 		9D0F83AC1F5E3DF500798EA2 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		9D0F83AD1F5E3DF500798EA2 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		9D0F83AE1F5E3DF500798EA2 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
-		9D0F83B11F5E42AA00798EA2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9D0F83B71F5E743600798EA2 /* tab_btn_code_default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_btn_code_default@2x.png"; sourceTree = "<group>"; };
 		9D0F83B81F5E743600798EA2 /* tab_btn_code_default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_btn_code_default@3x.png"; sourceTree = "<group>"; };
 		9D0F83B91F5E743600798EA2 /* tab_btn_code_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_btn_code_pressed@2x.png"; sourceTree = "<group>"; };
@@ -2553,7 +2551,6 @@
 				9DFF51C81F67E7260080D3D5 /* TencentOpenAPI.framework in Frameworks */,
 				9DFF51CA1F67E7260080D3D5 /* libSocialSina.a in Frameworks */,
 				9DFF51D21F67E7260080D3D5 /* UMSocialNetwork.framework in Frameworks */,
-				9D0F83B21F5E42AA00798EA2 /* MapKit.framework in Frameworks */,
 				9DFF51D61F67E7260080D3D5 /* UShareUI.framework in Frameworks */,
 				9DFF51D41F67E7260080D3D5 /* libUMSocialLog.a in Frameworks */,
 				9DFF51CE1F67E7260080D3D5 /* libSocialWeChat.a in Frameworks */,
@@ -4846,7 +4843,6 @@
 				9DFF51DB1F67E7C80080D3D5 /* SystemConfiguration.framework */,
 				9DFF51D91F67E7AD0080D3D5 /* CoreGraphics.framework */,
 				9DFF51D71F67E79F0080D3D5 /* libsqlite3.tbd */,
-				9D0F83B11F5E42AA00798EA2 /* MapKit.framework */,
 				9DFB9AF91F5D2FEA0041FEB2 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
@@ -5064,6 +5060,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
 								enabled = 0;
 							};
 							com.apple.Push = {

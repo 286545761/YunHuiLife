@@ -112,10 +112,13 @@
                         <constraint firstAttribute="height" constant="88" id="vEI-4V-84P"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZG-Ze-NBR">
-                    <rect key="frame" x="16" y="319" width="345" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="确认提现" backgroundImage="button.png">
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZG-Ze-NBR">
+                    <rect key="frame" x="20" y="326" width="335" height="30"/>
+                    <color key="backgroundColor" red="0.9980532527" green="0.75737565760000003" blue="0.1999986768" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2o0-Tv-6Y1"/>
+                    </constraints>
+                    <state key="normal" title="确认提现">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
@@ -164,8 +167,11 @@
             <constraints>
                 <constraint firstItem="diN-45-EB3" firstAttribute="top" secondItem="aD5-Z8-RuV" secondAttribute="bottom" constant="10" id="1EL-7T-TjA"/>
                 <constraint firstItem="diN-45-EB3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3gX-On-CRm"/>
+                <constraint firstAttribute="trailing" secondItem="3ZG-Ze-NBR" secondAttribute="trailing" constant="20" id="86b-6l-UsB"/>
                 <constraint firstAttribute="trailing" secondItem="ZZs-Ry-LgA" secondAttribute="trailing" id="FVf-1C-xff"/>
                 <constraint firstItem="ZZs-Ry-LgA" firstAttribute="top" secondItem="aD5-Z8-RuV" secondAttribute="bottom" constant="176" id="URh-kw-7bE"/>
+                <constraint firstItem="3ZG-Ze-NBR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="XQd-n4-85W"/>
+                <constraint firstItem="3ZG-Ze-NBR" firstAttribute="top" secondItem="ZZs-Ry-LgA" secondAttribute="bottom" constant="15" id="h6r-Xb-1y5"/>
                 <constraint firstAttribute="trailing" secondItem="diN-45-EB3" secondAttribute="trailing" id="jgo-LE-TkR"/>
                 <constraint firstItem="ZZs-Ry-LgA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lkB-pi-Nr0"/>
             </constraints>
@@ -174,6 +180,5 @@
     </objects>
     <resources>
         <image name="BankBack.png" width="345" height="100"/>
-        <image name="button.png" width="345" height="44"/>
     </resources>
 </document>

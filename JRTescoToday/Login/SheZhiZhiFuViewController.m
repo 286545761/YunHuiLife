@@ -131,7 +131,7 @@
     NSLog(@"%@",currentTimeString);
     [ makeche addTarget:self action:@selector(AdvertisingBtn) forControlEvents:UIControlEventTouchUpInside];
     NSString *ponee=[FNUserDefaults objectForKey:@"usersid"];
-    userPortrait=[NSString stringWithFormat:@"%@/kaptcha.jpg?access_token=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
+    userPortrait=[NSString stringWithFormat:@"%@kaptcha.jpg?access_token=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
     //make.tuXing ;
     
     [make.tuXing sd_setImageWithURL:[NSURL URLWithString:userPortrait] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
@@ -169,7 +169,7 @@
     NSLog(@"%@",currentTimeString);
     [ makeche addTarget:self action:@selector(AdvertisingBtn) forControlEvents:UIControlEventTouchUpInside];
     NSString *ponee=[FNUserDefaults objectForKey:@"usersid"];
-    userPortrait=[NSString stringWithFormat:@"%@/kaptcha.jpg?access_token=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
+    userPortrait=[NSString stringWithFormat:@"%@kaptcha.jpg?access_token=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
     //make.tuXing ;
     
     [make.tuXing sd_setImageWithURL:[NSURL URLWithString:userPortrait] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
@@ -220,7 +220,7 @@
     
 //    http://p.jryunhui.com/api/wallet/pay_password/sms?access_token=6d32e1aa-323b-4fc8-ba8a-ea0b77e74d84
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/wallet/pay_password/sms?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@wallet/pay_password/sms?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
@@ -305,37 +305,13 @@
 }
 -(void)downLoad
 {
-    //    NSMutableDictionary *paramDic = [NSMutableDictionary dictionaryWithDictionary:@{@"access_token":[FNUserDefaults objectForKey:@"usersid"],
-    //                                                              @"code":_yanma.text,@"newPassword":_confirmNewPwdTextField.text,@"oldPassword":_oldPwdTextField.text,
-    //
-    //                                                                                    }];
-    //
-    //    [HttpTool quttWithBaseURL:kBaseURL  path:@"/setting/password" params:paramDic success:^(id data) {
-    //
-    //
-    //
-    //        NSLog(@"%@",data);
-    //
-    //
-    //
-    //
-    //    } failure:^(NSError *error) {
-    //
-    //    } alertInfo:^(NSString *alertInfo) {
-    //
-    //    }];
-    
-    [self.view endEditing:YES];
-    
+   
     [self.view endEditing:YES];
     
 
+
     
-    //    if (![NSString stringValidateMobile:self.mobileNumTextField.text]) {
-    //        [MBProgressHUD showError:@"手机号码不正确"];
-    //        return;
-    //    }
-    
+
     
     
     // 再次验证手机号是否合法
@@ -358,7 +334,7 @@
     
 //    POST /wallet/pay_password
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/wallet/pay_password?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@wallet/pay_password?access_token=%@",kBaseURL,[FNUserDefaults objectForKey:@"usersid"]];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     

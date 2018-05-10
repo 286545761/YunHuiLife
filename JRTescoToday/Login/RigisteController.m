@@ -237,7 +237,7 @@
     NSLog(@"%@",currentTimeString);
     [ makeche addTarget:self action:@selector(AdvertisingBtn) forControlEvents:UIControlEventTouchUpInside];
      NSString *ponee=_mobileNumTextField.text;
-    userPortrait=[NSString stringWithFormat:@"%@/kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
+    userPortrait=[NSString stringWithFormat:@"%@kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
     //make.tuXing ;
     
     [make.tuXing sd_setImageWithURL:[NSURL URLWithString:userPortrait] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
@@ -309,7 +309,7 @@ paramDic = [NSMutableDictionary dictionaryWithDictionary:@{@"phone":self.mobileN
     NSDictionary *headers = @{ @"content-Type": @"application/json",
                                };
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/regist",kBaseURL];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@regist",kBaseURL];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
@@ -456,7 +456,7 @@ paramDic = [NSMutableDictionary dictionaryWithDictionary:@{@"phone":self.mobileN
     
     
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/regist/sms",kBaseURL];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@regist/sms",kBaseURL];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
@@ -547,7 +547,7 @@ paramDic = [NSMutableDictionary dictionaryWithDictionary:@{@"phone":self.mobileN
     NSLog(@"%@",currentTimeString);
     [ makeche addTarget:self action:@selector(AdvertisingBtn) forControlEvents:UIControlEventTouchUpInside];
     NSString *ponee=_mobileNumTextField.text;
-    userPortrait=[NSString stringWithFormat:@"%@/kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
+    userPortrait=[NSString stringWithFormat:@"%@kaptcha.jpg?phone=%@&timeee=%@",kBaseURL,ponee,currentTimeString];
     //make.tuXing ;
     
     [make.tuXing sd_setImageWithURL:[NSURL URLWithString:userPortrait] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
@@ -593,7 +593,7 @@ paramDic = [NSMutableDictionary dictionaryWithDictionary:@{@"phone":self.mobileN
     NSDictionary *headers = @{ @"content-Type": @"application/json",
                                };
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/register/%@",kBaseURL,leixing];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@register/%@",kBaseURL,leixing];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
@@ -678,7 +678,7 @@ paramDic = [NSMutableDictionary dictionaryWithDictionary:@{@"phone":self.mobileN
     NSDictionary *headers = @{ @"content-Type": @"application/json",
                                };
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring=[NSString  stringWithFormat:@"%@/register/%@",kBaseURL,leixing];
+    NSString *urlstring=[NSString  stringWithFormat:@"%@register/%@",kBaseURL,leixing];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     

@@ -202,7 +202,7 @@
     NSMutableArray *maarray=[[NSMutableArray alloc] init];
     
     if(total==0||(pageNum-1)*10<total) {
-    [HttpTool getWithBaseURL:kBaseURL path:@"/invest/getFixedProjects" params:nil success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL path:@"invest/getFixedProjects" params:nil success:^(id data) {
         
         
         for (NSMutableDictionary *dict in data[@"list"]) {
@@ -241,7 +241,7 @@
     
                                                                                         }];
     
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/invest/getInvestFixedAccount" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"invest/getInvestFixedAccount" params:paramDic success:^(id data) {
         
         
 //        for (NSMutableDictionary *dict in data[@"list"]) {

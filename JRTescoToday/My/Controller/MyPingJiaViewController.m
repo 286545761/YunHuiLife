@@ -257,7 +257,7 @@
         }];
     if(total==0||(pageNum-1)*10<total) {
     NSMutableArray *array=[[NSMutableArray alloc] init];
-    [HttpTool getWithBaseURL:kBaseURL  path:@"/person/comments" params:paramDic success:^(id data) {
+    [HttpTool getWithBaseURL:kBaseURL  path:@"person/comments" params:paramDic success:^(id data) {
         
         for (NSDictionary *dict in data[@"list"]) {
             PingModel *ping=[[PingModel alloc] initWithDict:dict];
