@@ -402,8 +402,8 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
     if ([febxuangString isEqualToString:@""]) {
         
         share=[[FNFenxiangView alloc] init];
-        
-        [share  makeUmengHeadUrl:nil andTitle:self.title andShareContent:nil andShare:3];
+        share.typeShare=@"1";
+        [share  makeUmengHeadUrl:nil andTitle:self.title andShareContent:nil andShare:1];
         
         weixin=share.btn1;
         [weixin addTarget:self action:@selector(ShareButtion:) forControlEvents:UIControlEventTouchUpInside];
@@ -417,7 +417,7 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
         qq=share.btn2;
         [qq addTarget:self action:@selector(ShareButtion:) forControlEvents:UIControlEventTouchUpInside];
         qq.tag=2;
-        
+      
         zone=share.btn3;
         [zone addTarget:self action:@selector(ShareButtion:) forControlEvents:UIControlEventTouchUpInside];
         zone.tag=3;

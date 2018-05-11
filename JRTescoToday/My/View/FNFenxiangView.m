@@ -68,6 +68,11 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
     }];
    [self.ccc removeFromSuperview];
 }
+-(void)setTypeShare:(NSString *)typeShare{
+    
+    
+    _typeShare=typeShare;
+}
 
 -(void)MakeUiView
 {
@@ -126,6 +131,12 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
     
     NSLog(@"sadasdasd%f",self.frame.size.width);
     NSArray *array=@[@"微信",@"朋友圈",@"QQ",@"空间"];
+    
+    if ([_typeShare isEqualToString:@"1"]) {
+//        array=@[@"微信",@"朋友圈"];
+        self.btn2.alpha=0.f;
+        self.btn3.alpha=0.f;
+    }
    // NSArray *array1=@[@"WEixin",@"Pengyou",@"QQ",@"XinLang"];
     for (int i=0; i<=_string; i++)
     {

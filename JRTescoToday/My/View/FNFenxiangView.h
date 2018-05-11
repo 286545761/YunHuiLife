@@ -19,6 +19,10 @@
 @property(nonatomic,strong)  UIButton *btn1;
 @property(nonatomic,strong)  UIButton *btn2;
 @property(nonatomic,strong)  UIButton *btn3;
+/*
+ *<# #>
+ */
+@property(copy,nonatomic)NSString *typeShare;
 
 -(void)makeUmengHeadUrl:(NSString *)headUrl andTitle:(NSString *)title andShareContent:(NSString *)content andShare:(int)string;
 @end

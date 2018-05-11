@@ -54,18 +54,18 @@
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden=NO;
 //    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
-    UIButton *settingBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    settingBtn.frame=CGRectMake(kScreenSize.width-70, 10, 60, 60);
-    [settingBtn addTarget:self action:@selector(enterTeamCard) forControlEvents:UIControlEventTouchUpInside];
-    [settingBtn setTitle:@"分润规则" forState:UIControlStateNormal];
-    [settingBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    // settingBtn.backgroundColor=[UIColor blackColor];
-    string=@"1";
-    settingBtn.titleLabel.font=[UIFont systemFontOfSize:12];
-
-    UIBarButtonItem *settingBtnItem = [[UIBarButtonItem alloc] initWithCustomView:settingBtn];
-    self.navigationItem.rightBarButtonItems  = @[settingBtnItem];
-
+//    UIButton *settingBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    settingBtn.frame=CGRectMake(kScreenSize.width-70, 10, 60, 60);
+//    [settingBtn addTarget:self action:@selector(enterTeamCard) forControlEvents:UIControlEventTouchUpInside];
+//    [settingBtn setTitle:@"分润规则" forState:UIControlStateNormal];
+//    [settingBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    // settingBtn.backgroundColor=[UIColor blackColor];
+//    string=@"1";
+//    settingBtn.titleLabel.font=[UIFont systemFontOfSize:12];
+//
+//    UIBarButtonItem *settingBtnItem = [[UIBarButtonItem alloc] initWithCustomView:settingBtn];
+//    self.navigationItem.rightBarButtonItems  = @[settingBtnItem];
+  
     
 }
 -(UIButton *)geButton{
@@ -88,6 +88,8 @@
     if (!_theRulesLabel) {
         _theRulesLabel =[[UILabel alloc]init];
         _theRulesLabel.textColor=[UIColor colorWithHexString:@"#333333"];
+        _theRulesLabel.text=@"分润规则：\n1、用户可以分享自己的二维码或邀请链接邀请好友前来注册；2、邀请奖励：\n（1）若您邀请的好友注册为商户，并在平台开通店铺，则该店铺在平台产生的实际销售金额的2%作为您的邀请奖励，按天结算；\n（2）若您邀请的好友注册为个人，并在平台任一店铺产生消费时，则好友该笔实际消费金额的3%作为您的邀请奖励，按笔结算。\n3、邀请奖励将于商家单日或个人单笔消费订单结算完成后发放到您的“云惠钱包”；\n4、邀请关系一旦确立，相应的邀请奖励发放也将一直保持；\n5、邀请好友人数不受限制；\n6、邀请奖励规则最终解释权归云惠生活平台所有。\n 举例说明：\n A、D为平台个人用户。\n①若A邀请好友B注册为个人用户，当B在平台商家产生消费100元并使用云惠生活APP买单，实际消费金额为90元，那么A能得到的邀请奖励=好友B在平台商家实际消费金额*3%=90元*3%=2.7元。\n②若用户A邀请好友B注册为商家，并在平台开通店铺B。当用户D在店铺B产生消费100元并使用云惠生活APP买单，实际消费金额为90元，那么店铺B实际销售金额为90元，则A能得到的邀请奖励=店铺B实际销售金额*2%=90元*2%=1.8元。";
+        _theRulesLabel.numberOfLines=0;
         _theRulesLabel.font=[UIFont systemFontOfSize:13];
     }
     
@@ -117,7 +119,7 @@
     self.title=@"我的邀请";
     self.baseScroll.userInteractionEnabled=YES;
     self.bgImageView.backgroundColor=[UIColor whiteColor];
-    self.tapBaseView.userInteractionEnabled=YES; self.baseScroll.contentSize=CGSizeMake(ScreenW, 1500);
+    self.tapBaseView.userInteractionEnabled=YES; self.baseScroll.contentSize=CGSizeMake(ScreenW, 1200);
     self.baseScroll.delaysContentTouches = NO;
     self.view.frame=CGRectMake(0, 0, kScreenSize.width, kScreenSize.height);
     self.extendedLayoutIncludesOpaqueBars = NO;
@@ -154,6 +156,19 @@
         make.top.bottom.width.equalTo(self.dianButton);
         
         make.left.equalTo(self.dianButton.mas_right);
+    }];
+    
+    
+    
+//    self.theRulesLabel.backgroundColor=[UIColor yellowColor];
+    [self.baseScroll addSubview:self.theRulesLabel];
+    
+    
+    [self.theRulesLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view.mas_left).offset(10);
+        make.right.equalTo(self.view.mas_right).offset(-10);
+        make.top.equalTo(self.InviteFriendsimageView.mas_bottom).offset(0);
+        make.height.equalTo(@425);
     }];
     
 }
