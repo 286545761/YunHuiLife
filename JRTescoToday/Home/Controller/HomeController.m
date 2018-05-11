@@ -722,17 +722,15 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
         
         UIButton *makbtn=[UIButton buttonWithType:UIButtonTypeCustom];
         makbtn.frame=CGRectMake(x*kScreenSize.width/4+kScreenSize.width/20, y, kScreenSize.width/10, kScreenSize.width/10);
-    UIImageView *img=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"gengduo"]];
-        if (i==7) {
+    UIImageView *img=[[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"fenlei0%d.png",i+1]]];
+        
+
+        
+
+
+            [img sd_setImageWithURL:[NSURL URLWithString:makdd.img] placeholderImage:[UIImage imageNamed:[NSString stringWithFormat:@"fenlei0%d.png",i+1]] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
     
-//            [img sd_setImageWithURL:[NSURL URLWithString:makdd.img] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
-        }else{
- 
-            [img sd_setImageWithURL:[NSURL URLWithString:makdd.img] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageProgressiveDownload | SDWebImageRefreshCached];
-        }
-       
-//        [img sd_setImageWithURL:[NSURL URLWithString:makdd.img] placeholderImage:nil options:SDWebImageProgressiveDownload];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
              [makbtn setImage:img.image forState:UIControlStateNormal];
         });
      

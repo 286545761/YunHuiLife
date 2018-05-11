@@ -31,6 +31,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)shareFrieButton:(id)sender {
+    
+    
+    NSLog(@"立即邀请");
+}
 
 /*
 #pragma mark - Navigation

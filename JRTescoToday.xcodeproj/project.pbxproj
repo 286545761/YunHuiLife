@@ -5056,7 +5056,7 @@
 				TargetAttributes = {
 					9DD3E2D61F4A6A48009B4E88 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = FEC5NXJV2Z;
+						DevelopmentTeam = 9483AAB2E9;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -6282,7 +6282,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FEC5NXJV2Z;
+				DEVELOPMENT_TEAM = 9483AAB2E9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JRTescoToday/Lib/UMSocial/SocialLibraries/QQ/QQSDK",
@@ -6325,7 +6325,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FEC5NXJV2Z;
+				DEVELOPMENT_TEAM = 9483AAB2E9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JRTescoToday/Lib/UMSocial/SocialLibraries/QQ/QQSDK",

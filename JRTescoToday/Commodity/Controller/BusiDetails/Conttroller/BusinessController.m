@@ -396,6 +396,9 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
 // 分享
 -(void)enterTeamCard
 {
+    
+    
+    
     if ([febxuangString isEqualToString:@""]) {
         
         share=[[FNFenxiangView alloc] init];

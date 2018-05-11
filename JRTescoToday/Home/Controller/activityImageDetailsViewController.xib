@@ -26,13 +26,30 @@
                         <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activityImageDetails" translatesAutoresizingMaskIntoConstraints="NO" id="Qwf-YK-6gd">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="1054"/>
                         </imageView>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ea-KF-12q">
+                            <rect key="frame" x="20" y="994" width="335" height="40"/>
+                            <color key="backgroundColor" red="0.9980532527" green="0.75737565760000003" blue="0.1999986768" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="M3A-mG-pb3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="立即邀请">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="shareFrieButton:" destination="-1" eventType="touchUpInside" id="zYh-Fq-79e"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
                         <constraint firstItem="Qwf-YK-6gd" firstAttribute="leading" secondItem="yxv-qH-Dix" secondAttribute="leading" id="FLO-df-dcP"/>
                         <constraint firstAttribute="bottom" secondItem="Qwf-YK-6gd" secondAttribute="bottom" id="FOV-L3-pi9"/>
+                        <constraint firstAttribute="trailing" secondItem="5Ea-KF-12q" secondAttribute="trailing" constant="20" id="XQD-Jn-VBm"/>
                         <constraint firstItem="Qwf-YK-6gd" firstAttribute="top" secondItem="yxv-qH-Dix" secondAttribute="top" id="XkA-8n-6cA"/>
+                        <constraint firstItem="5Ea-KF-12q" firstAttribute="leading" secondItem="yxv-qH-Dix" secondAttribute="leading" constant="20" id="YP9-sl-WRl"/>
                         <constraint firstAttribute="trailing" secondItem="Qwf-YK-6gd" secondAttribute="trailing" id="oqP-Zp-v4w"/>
                         <constraint firstItem="Qwf-YK-6gd" firstAttribute="centerX" secondItem="yxv-qH-Dix" secondAttribute="centerX" id="qFy-cE-miz"/>
+                        <constraint firstAttribute="bottom" secondItem="5Ea-KF-12q" secondAttribute="bottom" constant="20" id="vDk-bi-LvI"/>
                     </constraints>
                 </scrollView>
             </subviews>
