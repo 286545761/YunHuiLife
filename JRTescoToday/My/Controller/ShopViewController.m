@@ -170,7 +170,7 @@
         total =[data[@"total"]  intValue];
         [_items1 addObjectsFromArray:ma];
         [_shopTableView reloadData];
-        NSLog(@"%@",data);
+  
         [_shopTableView.header endRefreshing];
         [_shopTableView.footer endRefreshing];
     } failure:^(NSError *error) {
@@ -228,7 +228,7 @@
 {
     ShouCahngModel *na = _items1[idnn];
     NSMutableDictionary *paramDic = [NSMutableDictionary dictionaryWithDictionary:@{
-                                                                                    @"ids":na.idn,
+                                                                                    @"ids":na.merchantId,
                                                                                    
                                                                                     }];
     
@@ -241,7 +241,7 @@
     NSDictionary *headers = @{ @"content-Type": @"application/json",
                                };
     NSData *postData = [NSJSONSerialization dataWithJSONObject:paramDic options:0 error:nil];
-    NSString *urlstring = [NSString stringWithFormat:@"%@merchants/%@/collect?access_token=%@",kBaseURL,na.idn,[FNUserDefaults objectForKey:@"usersid"]];;
+    NSString *urlstring = [NSString stringWithFormat:@"%@merchants/%@/collect?access_token=%@",kBaseURL,na.merchantId,[FNUserDefaults objectForKey:@"usersid"]];
     NSURL *url = [NSURL URLWithString:urlstring];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     

@@ -44,6 +44,7 @@
 
 - (IBAction)clickScanCodeTestVoucher:(id)sender {
     [self.delegate pushToScanCodeAndTestVoucherViewController];
+    
 }
 
 #pragma mark - 数据处理
