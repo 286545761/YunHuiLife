@@ -444,8 +444,6 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
     if (btn1.tag==0)
     {
         [self shareWebPageToPlatformType:UMSocialPlatformType_WechatTimeLine];
-        
-        
     }
     else if(btn1.tag==1)
     {
