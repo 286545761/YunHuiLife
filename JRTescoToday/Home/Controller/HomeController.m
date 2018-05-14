@@ -42,6 +42,7 @@
 //#import "WDW3D_Animation.h"
 #import "SDCycleScrollView.h"
 #import "JRAppVersionCore.h"
+#import "listThreeMajorActivitiesViewController.h"
 #import "activityImageDetailsViewController.h"
 
 static NSString* const UMS_Title = @"【友盟+】社会化组件U-Share";
@@ -151,10 +152,26 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downLoadFinish) name:@"tokenRenZheng1234" object:nil];
    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(Shrink) name:@"Shrink" object:nil];
 //    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0,ScreenW,  CGCrossDevicesHeight(150)+CGCrossDevicesHeight(105)+CGCrossDevicesHeight(50)+kScreenSize.width/5+125)];
-     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0,ScreenW,  150+105+50+kScreenSize.width/5+125)];
+     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0,ScreenW,  150+105+50+kScreenSize.width/5+125+250)];
     view.backgroundColor = [UIColor yellowColor];
     headerView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([JRHomeHeaderView class]) owner:nil options:nil] lastObject];
     headerView.frame = CGRectMake(0, 0, ScreenW, view.bounds.size.height);
+    UITapGestureRecognizer *whereToGoTap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(whereToGoTapAction)];
+    
+    
+    [headerView.whereToGoImageView addGestureRecognizer:whereToGoTap];
+    
+    UITapGestureRecognizer *polyFashionTap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(polyFashionAction)];
+    [headerView.polyFashionImageView addGestureRecognizer:polyFashionTap];
+    
+    UITapGestureRecognizer *veryAffordableTap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(veryAffordableAction)];
+    [headerView.veryAffordableImageView addGestureRecognizer:veryAffordableTap];
+    
+    
+    
+    
+    
+    
     [view addSubview:headerView];
     headerView.delegate = self;
     UITapGestureRecognizer *activityTap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(gotoSeeActivit)];
@@ -169,6 +186,34 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
     [self setUpNav];
     [self downLoad];
 }
+#pragma mark ---------去哪玩----------
+-(void)whereToGoTapAction{
+    listThreeMajorActivitiesViewController * listThreeMajorActivitiesVC=[[listThreeMajorActivitiesViewController alloc]init];
+    listThreeMajorActivitiesVC.title=@"去哪玩";
+    [self.navigationController pushViewController:listThreeMajorActivitiesVC animated:YES];
+    
+    
+    
+}
+#pragma mark ---------狠会吃----------
+-(void)veryAffordableAction{
+    listThreeMajorActivitiesViewController * listThreeMajorActivitiesVC=[[listThreeMajorActivitiesViewController alloc]init];
+    listThreeMajorActivitiesVC.title=@"狠会吃";
+    [self.navigationController pushViewController:listThreeMajorActivitiesVC animated:YES];
+    
+    
+}
+#pragma mark ---------聚时尚----------
+-(void)polyFashionAction{
+    listThreeMajorActivitiesViewController * listThreeMajorActivitiesVC=[[listThreeMajorActivitiesViewController alloc]init];
+    listThreeMajorActivitiesVC.title=@"聚时尚";
+    [self.navigationController pushViewController:listThreeMajorActivitiesVC animated:YES];
+    
+    
+}
+
+
+
 #pragma mark ---------查看活动详情----------
 -(void)gotoSeeActivit{
     
@@ -957,5 +1002,13 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
     
     
 }
+
+
+
+
+
+
+
+
 
 @end

@@ -20,4 +20,21 @@
 
 @property (nonatomic, assign)id<JRHomeHeaderViewDelegate>delegate;
 @property (weak, nonatomic) IBOutlet UIImageView *activityImageView;
+
+#pragma mark ---------狠会吃----------
+
+@property (weak, nonatomic) IBOutlet UIImageView *veryAffordableImageView;
+/*
+ *聚时尚
+ */
+
+@property (weak, nonatomic) IBOutlet UIImageView *polyFashionImageView;
+/*
+ *去哪玩
+ */
+@property (weak, nonatomic) IBOutlet UIImageView *whereToGoImageView;
+
+
+
+
 @end
