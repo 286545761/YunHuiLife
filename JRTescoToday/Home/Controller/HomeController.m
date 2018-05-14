@@ -865,7 +865,7 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
 
     [HttpTool getWithBaseURL:kBaseURL  path:@"" params:nil success:^(id data) {
         NSLog(@"%@",kBaseURL);
-        //#import "CategoresModel.h"
+
         
         CategoryArray=[[NSMutableArray alloc] init];
         CategoryArray1=[[NSMutableArray alloc] init];
@@ -915,10 +915,7 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
     //   [Login loginRenZengPhone:nil andPwdnum:nil];
     NSLog(@"qqqqq%@",[FNUserDefaults objectForKey:@"usersid"]);
     [HttpTool getWithBaseURL:kBaseURL path:@"user_center/get_account" params:paramDic success:^(id data) {
-        
-
-
-        
+    
     } failure:^(NSError *error) {
         
     } alertInfo:^(NSString *alertInfo) {

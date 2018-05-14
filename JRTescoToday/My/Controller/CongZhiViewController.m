@@ -7,9 +7,10 @@
 //
 
 #import "CongZhiViewController.h"
-#import "LLPaySdk.h"
+//#import "LLPaySdk.h"
 
-@interface CongZhiViewController ()<LLPaySdkDelegate>
+@interface CongZhiViewController ()
+
 {
      __block int timeout; //倒计时时间
     NSString *strii;
@@ -22,7 +23,7 @@
 /*
  *连连支付
  */
-@property(strong,nonatomic)LLPaySdk *llPay;
+//@property(strong,nonatomic)LLPaySdk *llPay;
 
 @end
 
@@ -45,14 +46,14 @@
     [self downLoad];
     
 }
--(LLPaySdk *)llPay{
-    if (!_llPay) {
-        _llPay =[[LLPaySdk alloc]init];
-        _llPay.sdkDelegate=self;
-    }
-    
-    return _llPay;
-}
+//-(LLPaySdk *)llPay{
+//    if (!_llPay) {
+//        _llPay =[[LLPaySdk alloc]init];
+//        _llPay.sdkDelegate=self;
+//    }
+//
+//    return _llPay;
+//}
 -(void)downLoad
 {
     NSMutableDictionary *paramDic = [NSMutableDictionary dictionaryWithDictionary:@{@"access_token":[FNUserDefaults objectForKey:@"usersid"],
@@ -265,9 +266,9 @@
 //
         NSData *inFoData=[dict[@"data"][@"respObject"] dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *infoDict=[NSJSONSerialization JSONObjectWithData:inFoData options:NSJSONReadingAllowFragments error:nil];
-        
-        
-        [self.llPay  presentLLPaySDKInViewController:self withPayType:LLPayTypeQuick andTraderInfo:infoDict];
+//
+//
+//        [self.llPay  presentLLPaySDKInViewController:self withPayType:LLPayTypeQuick andTraderInfo:infoDict];
        
         
         
@@ -277,23 +278,23 @@
     
     
 }
-- (void)paymentEnd:(LLPayResult)resultCode withResultDic:(NSDictionary*)dic{
-    NSString *result_pay=[NSString stringWithFormat:@"%@",dic[@"result_pay"]];
-    if ([result_pay isEqualToString:@"SUCCESS"]) {
-        
-        [MBProgressHUD showSuccess:@"充值成功"];
-        
-        [self.navigationController popViewControllerAnimated:YES];
-
-        
-    }else{
-        NSString *result_Message=[NSString stringWithFormat:@"%@",dic[@"ret_msg"]];
-
-        [MBProgressHUD showError:result_Message];
-    }
-    
-    
-}
+//- (void)paymentEnd:(LLPayResult)resultCode withResultDic:(NSDictionary*)dic{
+//    NSString *result_pay=[NSString stringWithFormat:@"%@",dic[@"result_pay"]];
+//    if ([result_pay isEqualToString:@"SUCCESS"]) {
+//
+//        [MBProgressHUD showSuccess:@"充值成功"];
+//
+//        [self.navigationController popViewControllerAnimated:YES];
+//
+//
+//    }else{
+//        NSString *result_Message=[NSString stringWithFormat:@"%@",dic[@"ret_msg"]];
+//
+//        [MBProgressHUD showError:result_Message];
+//    }
+//
+//
+//}
 
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

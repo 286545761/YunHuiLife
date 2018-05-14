@@ -9,8 +9,9 @@
 #import "ShiNameBngKaViewController.h"
 #import "TuXingView.h"
 #import "ShiNameBankList.h"
-#import "LLPaySdk.h"
-@interface ShiNameBngKaViewController ()<LLPaySdkDelegate>
+//#import "LLPaySdk.h"
+@interface ShiNameBngKaViewController ()
+
 
 {
     UIButton *_guiZeBtn;
@@ -38,7 +39,7 @@
 /*
  *连连支付
  */
-@property(strong,nonatomic)LLPaySdk *llPay;
+//@property(strong,nonatomic)LLPaySdk *llPay;
 @end
 
 @implementation ShiNameBngKaViewController
@@ -62,14 +63,14 @@
     self.extendedLayoutIncludesOpaqueBars = NO;
     self.edgesForExtendedLayout = UIRectEdgeBottom | UIRectEdgeLeft | UIRectEdgeRight;
 }
--(LLPaySdk *)llPay{
-    if (!_llPay) {
-        _llPay =[[LLPaySdk alloc]init];
-        _llPay.sdkDelegate=self;
-    }
-    
-    return _llPay;
-}
+//-(LLPaySdk *)llPay{
+//    if (!_llPay) {
+//        _llPay =[[LLPaySdk alloc]init];
+//        _llPay.sdkDelegate=self;
+//    }
+//
+//    return _llPay;
+//}
 -(void)loadRealName{
     
 //    GET /wallet/auth
@@ -153,12 +154,13 @@
     }
 
     
-    NSDictionary *paramDic = @{@"bankName":strings,
+    NSDictionary *paramDic = @{
+//                               @"bankName":strings,
                                @"bankCard":_BankNo.text,
                                @"phone":_bankPhone.text,
                                @"bankCode":strings1,
                                @"name":realNameString,
-                               @"source":@"app",
+//                               @"source":@"app",
                               @"identity":IdNumberString};
     NSLog(@"paradic = %@",paramDic);
     // uid
@@ -178,17 +180,25 @@
         [request setHTTPBody:postData];
         [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue new]  completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-            NSLog(@"%@",dict);
+//            NSLog(@"%@",dict);
             //5.回到主线程,进行更新页面
             dispatch_sync(dispatch_get_main_queue(), ^{
                 if ([[NSString  stringWithFormat:@"%@",dict[@"code"]] isEqualToString:@"5000"])
                 {
-                    NSDictionary *dataDict = dict[@"data"];
-                    NSString *signOrder = dataDict[@"respObject"];
-                    NSData *da = [signOrder dataUsingEncoding:NSUTF8StringEncoding];
-                    NSDictionary *orderDict = [NSJSONSerialization JSONObjectWithData:da options:0 error:nil];
-                    NSLog(@"服务器 = %@",orderDict);
-                    [self.llPay  presentLLPaySDKInViewController:self withPayType:LLPayTypeQuick andTraderInfo:orderDict];
+                    
+//                    dispatch_async(dispatch_get_main_queue(), ^{
+                                [MBProgressHUD showSuccess:@"绑卡成功"];
+                        
+                                [self.navigationController popViewControllerAnimated:NO];
+                                  [[NSNotificationCenter defaultCenter]postNotificationName:@"maketou1267" object:nil];
+//                    });
+                    
+//                    NSDictionary *dataDict = dict[@"data"];
+//                    NSString *signOrder = dataDict[@"respObject"];
+//                    NSData *da = [signOrder dataUsingEncoding:NSUTF8StringEncoding];
+//                    NSDictionary *orderDict = [NSJSONSerialization JSONObjectWithData:da options:0 error:nil];
+//                    NSLog(@"服务器 = %@",orderDict);
+//                    [self.llPay  presentLLPaySDKInViewController:self withPayType:LLPayTypeQuick andTraderInfo:orderDict];
                 }
                 else
                 {
@@ -283,21 +293,21 @@
     [makeView12 removeFromSuperview];
     
 }
-- (void)paymentEnd:(LLPayResult)resultCode withResultDic:(NSDictionary*)dic{
-    NSString *result_pay=[NSString stringWithFormat:@"%@",dic[@"result_pay"]];
-    if ([result_pay isEqualToString:@"SUCCESS"]) {
-       
-        [MBProgressHUD showSuccess:@"绑卡成功"];
-        
-        [self.navigationController popViewControllerAnimated:NO];
-          [[NSNotificationCenter defaultCenter]postNotificationName:@"maketou1267" object:nil];
-      
-    }else{
-        NSString *result_Message=[NSString stringWithFormat:@"%@",dic[@"ret_msg"]];
-        
-        [MBProgressHUD showError:result_Message];
-    }
-    
-    
-}
+//- (void)paymentEnd:(LLPayResult)resultCode withResultDic:(NSDictionary*)dic{
+//    NSString *result_pay=[NSString stringWithFormat:@"%@",dic[@"result_pay"]];
+//    if ([result_pay isEqualToString:@"SUCCESS"]) {
+//
+//        [MBProgressHUD showSuccess:@"绑卡成功"];
+//
+//        [self.navigationController popViewControllerAnimated:NO];
+//          [[NSNotificationCenter defaultCenter]postNotificationName:@"maketou1267" object:nil];
+//
+//    }else{
+//        NSString *result_Message=[NSString stringWithFormat:@"%@",dic[@"ret_msg"]];
+//
+//        [MBProgressHUD showError:result_Message];
+//    }
+//
+//
+//}
 @end

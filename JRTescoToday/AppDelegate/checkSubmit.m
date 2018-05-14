@@ -102,14 +102,7 @@ static checkSubmit *_instance;
     NSString *onlineVersion;
     
     if (!([string isEqualToString:@""] || string == nil)) {
-        
-        
-        
-        
-        
-        
         NSDictionary *dic = [self dictionaryWithJsonString:string];
-        
                 NSInteger resultCount = [[dic objectForKey:@"resultCount"] integerValue];
                 if (resultCount == 1) {
                     NSArray *result = [dic objectForKey:@"results"];
@@ -118,13 +111,8 @@ static checkSubmit *_instance;
                 }else{
                     return NSOrderedDescending;
                 }
-        
-        
     }
-    
     NSString *nowVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-    
-    
     NSComparisonResult result = [nowVersion compare:onlineVersion];
 //    NSLog(@"_+_+_++_+%ld",(long)result);
     return result;
