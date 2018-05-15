@@ -102,6 +102,9 @@
 		42A579AE208F16FF001A762A /* JROrderDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B801B32065109A00FC07E7 /* JROrderDetailCell.xib */; };
 		42AB78B0205776390024EA22 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB78AF205776390024EA22 /* Foundation+Log.m */; };
 		42B48C3420AAA9EA00577EDA /* shareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B48C3320AAA9EA00577EDA /* shareModel.m */; };
+		42B48C3720AAD9E900577EDA /* bannerActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B48C3620AAD9E900577EDA /* bannerActivitiesViewController.m */; };
+		42B48C3A20AADA4A00577EDA /* bannerActivitiesHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B48C3920AADA4A00577EDA /* bannerActivitiesHeadView.m */; };
+		42B48C3C20AADA5900577EDA /* bannerActivitiesHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B48C3B20AADA5900577EDA /* bannerActivitiesHeadView.xib */; };
 		42B801AF20650F0600FC07E7 /* JRUserOrderManagerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B801AD20650E9900FC07E7 /* JRUserOrderManagerCell.xib */; };
 		42B9B69E208D8BCC000DE7D4 /* checkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B9B69D208D8BCC000DE7D4 /* checkTool.m */; };
 		42B9B6A1208DBCA6000DE7D4 /* noOrdersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B9B6A0208DBCA6000DE7D4 /* noOrdersView.m */; };
@@ -1187,6 +1190,11 @@
 		42AB78AF205776390024EA22 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		42B48C3220AAA9EA00577EDA /* shareModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shareModel.h; sourceTree = "<group>"; };
 		42B48C3320AAA9EA00577EDA /* shareModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shareModel.m; sourceTree = "<group>"; };
+		42B48C3520AAD9E900577EDA /* bannerActivitiesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bannerActivitiesViewController.h; sourceTree = "<group>"; };
+		42B48C3620AAD9E900577EDA /* bannerActivitiesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bannerActivitiesViewController.m; sourceTree = "<group>"; };
+		42B48C3820AADA4A00577EDA /* bannerActivitiesHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bannerActivitiesHeadView.h; sourceTree = "<group>"; };
+		42B48C3920AADA4A00577EDA /* bannerActivitiesHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bannerActivitiesHeadView.m; sourceTree = "<group>"; };
+		42B48C3B20AADA5900577EDA /* bannerActivitiesHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bannerActivitiesHeadView.xib; sourceTree = "<group>"; };
 		42B801AC20650E9900FC07E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JRUserOrderManagerCell.xib; sourceTree = "<group>"; };
 		42B801B22065109A00FC07E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JROrderDetailCell.xib; sourceTree = "<group>"; };
 		42B9B69C208D8BCC000DE7D4 /* checkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = checkTool.h; sourceTree = "<group>"; };
@@ -3744,6 +3752,8 @@
 				42C94A0B20A05638002F44A5 /* activityImageDetailsViewController.xib */,
 				4293538E20A986CE00457B3B /* listThreeMajorActivitiesViewController.h */,
 				4293538F20A986CE00457B3B /* listThreeMajorActivitiesViewController.m */,
+				42B48C3520AAD9E900577EDA /* bannerActivitiesViewController.h */,
+				42B48C3620AAD9E900577EDA /* bannerActivitiesViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3797,6 +3807,9 @@
 				4293539420A9887200457B3B /* listThreeMajorActivitiesTableViewCell.h */,
 				4293539520A9887200457B3B /* listThreeMajorActivitiesTableViewCell.m */,
 				4293539B20A992EB00457B3B /* listThreeMajorActivitiesTableViewCell.xib */,
+				42B48C3820AADA4A00577EDA /* bannerActivitiesHeadView.h */,
+				42B48C3920AADA4A00577EDA /* bannerActivitiesHeadView.m */,
+				42B48C3B20AADA5900577EDA /* bannerActivitiesHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5659,6 +5672,7 @@
 				9DFB99FF1F56441B0041FEB2 /* table3-10@3x.png in Resources */,
 				9D815CFD1F6BD1FE00231E51 /* DuoMeheadView.xib in Resources */,
 				9D3BA4781F60E12500DED773 /* search1@2x.png in Resources */,
+				42B48C3C20AADA5900577EDA /* bannerActivitiesHeadView.xib in Resources */,
 				9DD3E8FC1F4BD772009B4E88 /* sg_seleted@2x.png in Resources */,
 				9DD3E8AC1F4BD666009B4E88 /* CommentTableViewCell.xib in Resources */,
 				9DB50D2B1F78FF8600DF7622 /* ZhucEXieYiViewController.xib in Resources */,
@@ -5834,6 +5848,7 @@
 				9DBE0894201B152E0051B641 /* JRBusinessOrderModel.m in Sources */,
 				9DD3E8D21F4BD6E3009B4E88 /* MJPropertyKey.m in Sources */,
 				9DD3E7BD1F4A7F1E009B4E88 /* DCNavSearchBarView.m in Sources */,
+				42B48C3720AAD9E900577EDA /* bannerActivitiesViewController.m in Sources */,
 				9DF9381B1FA6C94F00A90CB5 /* Reachability.m in Sources */,
 				9DD3E8D71F4BD6E3009B4E88 /* NSObject+MJProperty.m in Sources */,
 				9DD3E72A1F4A6FD1009B4E88 /* IQTitleBarButtonItem.m in Sources */,
@@ -6092,6 +6107,7 @@
 				9D9828291FD126E0003495FB /* CategoriesModel2.m in Sources */,
 				9DD3E6E01F4A6C53009B4E88 /* ChangeLoginPwdController.m in Sources */,
 				9DD3E8181F4ADC49009B4E88 /* UIButton+WebCache.m in Sources */,
+				42B48C3A20AADA4A00577EDA /* bannerActivitiesHeadView.m in Sources */,
 				9DF9391D1FB414C300A90CB5 /* XWCircleSpreadTransition.m in Sources */,
 				9DD3E8A01F4BD666009B4E88 /* HomeHear2.m in Sources */,
 				9D815D331F6D381100231E51 /* TiXianTableViewCell.m in Sources */,

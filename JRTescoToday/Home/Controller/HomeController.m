@@ -45,6 +45,7 @@
 #import "listThreeMajorActivitiesViewController.h"
 #import "activityImageDetailsViewController.h"
 #import "shareModel.h"
+#import "bannerActivitiesViewController.h"
 
 static NSString* const UMS_Title = @"【友盟+】社会化组件U-Share";
 static NSString* const UMS_THUMB_IMAGE = @"https://mobile.umeng.com/images/pic/home/social/img-1.png";
