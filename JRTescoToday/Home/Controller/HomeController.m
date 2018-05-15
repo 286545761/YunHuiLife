@@ -44,6 +44,7 @@
 #import "JRAppVersionCore.h"
 #import "listThreeMajorActivitiesViewController.h"
 #import "activityImageDetailsViewController.h"
+#import "shareModel.h"
 
 static NSString* const UMS_Title = @"【友盟+】社会化组件U-Share";
 static NSString* const UMS_THUMB_IMAGE = @"https://mobile.umeng.com/images/pic/home/social/img-1.png";
@@ -88,6 +89,10 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
  *banner list 列表
  */
 @property(copy,nonatomic)NSMutableArray *bannerListArray;
+/*
+ *
+ */
+@property(strong,nonatomic)shareModel *sharemodel;
 @end
 
 @implementation HomeController
@@ -96,6 +101,10 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
    
      self.navigationController.navigationBarHidden = YES;
     [super viewWillAppear:animated];
+    if (_homeTableView) {
+          [self downLoad];
+    }
+   
     
 
 }
@@ -105,6 +114,13 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
     }
     
     return _bannerListArray;
+}
+-(shareModel *)sharemodel{
+    if (!_sharemodel) {
+        _sharemodel =[[shareModel alloc]init];
+    }
+    
+    return _sharemodel;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -166,12 +182,6 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
     
     UITapGestureRecognizer *veryAffordableTap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(veryAffordableAction)];
     [headerView.veryAffordableImageView addGestureRecognizer:veryAffordableTap];
-    
-    
-    
-    
-    
-    
     [view addSubview:headerView];
     headerView.delegate = self;
     UITapGestureRecognizer *activityTap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(gotoSeeActivit)];
@@ -221,7 +231,9 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
     
     activityImageDetailsViewController *activityImageDetailsVC=
     [[activityImageDetailsViewController alloc]initWithNibName:@"activityImageDetailsViewController" bundle:nil];
-
+    
+    
+    activityImageDetailsVC.sharemodel=self.sharemodel;
     
     
     
@@ -906,12 +918,22 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
 -(void)downLoad
 {
     
-    
 
-    [HttpTool getWithBaseURL:kBaseURL  path:@"" params:nil success:^(id data) {
+      NSDictionary *dicPath;
+    if([FNUserDefaults objectForKey:@"usersid"])
+    {
+        
+         dicPath=@{@"access_token":[FNUserDefaults objectForKey:@"usersid"]};
+        
+    }
+    
+  
+  
+
+    [HttpTool getWithBaseURL:kBaseURL  path:@"" params:dicPath success:^(id data) {
         NSLog(@"%@",kBaseURL);
 
-        
+//        NSLog(@"data=======%@",data);
         CategoryArray=[[NSMutableArray alloc] init];
         CategoryArray1=[[NSMutableArray alloc] init];
         for (NSDictionary *sre1 in data[@"recommend"][@"merchantCategoryOneLevelModels"]) {
@@ -945,6 +967,10 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
         }
         [BussArray addObjectsFromArray:nihao];
          [_homeTableView reloadData];
+        [self.sharemodel initWithDict:data[@"share"]];
+        
+        
+        
     } failure:^(NSError *error) {
         NSLog(@"%@",kBaseURL);
     } alertInfo:^(NSString *alertInfo) {
@@ -1002,6 +1028,7 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
     
     
 }
+
 
 
 

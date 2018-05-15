@@ -45,14 +45,13 @@
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="avN-xM-wNW"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5q-ih-DDJ">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5q-ih-DDJ">
                     <rect key="frame" x="0.0" y="442" width="395" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="OOp-oA-9H8"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                    <state key="normal" title="优惠专区">
+                    <state key="normal" title="  优惠专区" image="youhui">
                         <color key="titleColor" red="0.39995324609999999" green="0.40002685789999998" blue="0.39994865660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
@@ -158,5 +157,6 @@
         <image name="tuiguang" width="375" height="100"/>
         <image name="veryAffordable" width="357" height="102"/>
         <image name="whereToGo" width="177" height="102"/>
+        <image name="youhui" width="19" height="19"/>
     </resources>
 </document>

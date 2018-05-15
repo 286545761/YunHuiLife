@@ -26,7 +26,7 @@
                         <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activityImageDetails" translatesAutoresizingMaskIntoConstraints="NO" id="Qwf-YK-6gd">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="1054"/>
                         </imageView>
-                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ea-KF-12q">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ea-KF-12q">
                             <rect key="frame" x="20" y="994" width="335" height="40"/>
                             <color key="backgroundColor" red="0.9980532527" green="0.75737565760000003" blue="0.1999986768" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>

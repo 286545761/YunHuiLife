@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "shareModel.h"
 @interface activityImageDetailsViewController : UIViewController
+
+
+/*
+ *<# #>
+ */
+@property(strong,nonatomic)shareModel *sharemodel;
 
 @end

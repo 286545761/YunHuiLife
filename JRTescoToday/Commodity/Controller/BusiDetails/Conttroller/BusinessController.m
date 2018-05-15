@@ -256,7 +256,13 @@ static NSString* const UMS_WebLink = @"https://bbs.umeng.com/";
     febxuangString=@"";
  
     self.navigationController.navigationBarHidden=YES;
-  [self downLoad233455];
+    
+    if([FNUserDefaults objectForKey:@"usersid"])
+    {
+        [self downLoad233455];
+    }
+    
+
     if(mm){
         [self downLoad];
     }

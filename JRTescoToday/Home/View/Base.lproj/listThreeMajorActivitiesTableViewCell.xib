@@ -6,8 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,35 +17,21 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="listThreeMajorActivitiesTableViewCell">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="263.5"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Lt-kk-GL4">
+                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Lt-kk-GL4">
                         <rect key="frame" x="10" y="10" width="90" height="90"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7uX-b4-tyn">
                                 <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                 <color key="backgroundColor" red="1" green="0.79350417849999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="HpP-mm-ljP"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="LMb-Yx-yB5"/>
-                                    <constraint firstAttribute="width" secondItem="7uX-b4-tyn" secondAttribute="height" multiplier="1:1" id="Udl-98-bga"/>
-                                    <constraint firstAttribute="height" constant="90" id="Xcw-rv-QRF"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="abJ-7T-Yfy"/>
-                                </constraints>
                             </imageView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="7uX-b4-tyn" firstAttribute="top" secondItem="7Lt-kk-GL4" secondAttribute="topMargin" id="Edn-yN-0aA"/>
-                            <constraint firstItem="7uX-b4-tyn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7Lt-kk-GL4" secondAttribute="leadingMargin" id="hIc-8O-U5U"/>
-                            <constraint firstItem="7uX-b4-tyn" firstAttribute="top" secondItem="7Lt-kk-GL4" secondAttribute="topMargin" constant="10" id="v6A-me-I6n"/>
-                        </constraints>
                     </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.5km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nM6-0h-Gy0">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.5km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nM6-0h-Gy0">
                         <rect key="frame" x="315" y="10" width="50" height="18"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="50" id="ZQO-IX-gMa"/>
-                            <constraint firstAttribute="height" constant="18" id="iDc-2V-mTD"/>
-                        </constraints>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.59136172279999999" green="0.59136172279999999" blue="0.59136172279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -58,10 +42,9 @@
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qc-Za-sml">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dingwei" translatesAutoresizingMaskIntoConstraints="NO" id="4qc-Za-sml">
                         <rect key="frame" x="110" y="41" width="13" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.99942404029999998" green="0.96435174199999996" blue="0.4320235919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="总部广场14号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTm-mN-f1p">
                         <rect key="frame" x="128" y="41" width="202" height="21"/>
@@ -127,13 +110,27 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="nM6-0h-Gy0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Nqf-Uu-Ffg"/>
-                    <constraint firstAttribute="trailing" secondItem="nM6-0h-Gy0" secondAttribute="trailing" constant="10" id="R7L-jE-9UU"/>
-                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
-            <point key="canvasLocation" x="218.5" y="141"/>
+            <connections>
+                <outlet property="addressIconImageView" destination="4qc-Za-sml" id="Ue2-hm-tVb"/>
+                <outlet property="addressLabel" destination="aTm-mN-f1p" id="0XJ-qU-cdj"/>
+                <outlet property="discountLabel" destination="bWU-xa-2vg" id="2pB-EC-0Iy"/>
+                <outlet property="discountTextLabel" destination="k2D-vN-8Ms" id="vtd-Xs-bHt"/>
+                <outlet property="distanceLable" destination="nM6-0h-Gy0" id="duJ-Ws-MEN"/>
+                <outlet property="fullReductionLabel" destination="EZN-yu-YWa" id="AaW-RK-hFi"/>
+                <outlet property="fullReductionTextLabel" destination="5j1-VF-xev" id="BVE-Xr-cyU"/>
+                <outlet property="headImageView" destination="7uX-b4-tyn" id="Axe-2V-Rhi"/>
+                <outlet property="nowPriceLabel" destination="zYL-Sr-SYo" id="zld-i6-ZUl"/>
+                <outlet property="nowPriceTextLabel" destination="fXE-e1-gGB" id="oJb-br-AMW"/>
+                <outlet property="oldPriceLabel" destination="cAE-tA-QBZ" id="g7o-ar-YIO"/>
+                <outlet property="oldPriceTextLabel" destination="hic-CF-4cI" id="qJQ-Fj-1Ea"/>
+                <outlet property="titileLabel" destination="OOd-nG-udX" id="OJM-Th-c2u"/>
+            </connections>
+            <point key="canvasLocation" x="203" y="-85"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="dingwei" width="17" height="23"/>
+    </resources>
 </document>

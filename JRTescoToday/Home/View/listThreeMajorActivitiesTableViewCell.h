@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface listThreeMajorActivitiesTableViewCell : UITableViewCell
-
+/*
+ *
+ */
+@property(assign,nonatomic)NSInteger index;
+/*
+ *
+ */
+@property(copy,nonatomic)void (^mapNavigationBlock)(NSInteger index);
 @end

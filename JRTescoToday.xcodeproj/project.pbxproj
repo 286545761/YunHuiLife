@@ -101,6 +101,7 @@
 		4293539920A992EB00457B3B /* listThreeMajorActivitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4293539B20A992EB00457B3B /* listThreeMajorActivitiesTableViewCell.xib */; };
 		42A579AE208F16FF001A762A /* JROrderDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B801B32065109A00FC07E7 /* JROrderDetailCell.xib */; };
 		42AB78B0205776390024EA22 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB78AF205776390024EA22 /* Foundation+Log.m */; };
+		42B48C3420AAA9EA00577EDA /* shareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B48C3320AAA9EA00577EDA /* shareModel.m */; };
 		42B801AF20650F0600FC07E7 /* JRUserOrderManagerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B801AD20650E9900FC07E7 /* JRUserOrderManagerCell.xib */; };
 		42B9B69E208D8BCC000DE7D4 /* checkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B9B69D208D8BCC000DE7D4 /* checkTool.m */; };
 		42B9B6A1208DBCA6000DE7D4 /* noOrdersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B9B6A0208DBCA6000DE7D4 /* noOrdersView.m */; };
@@ -1184,6 +1185,8 @@
 		4293539520A9887200457B3B /* listThreeMajorActivitiesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = listThreeMajorActivitiesTableViewCell.m; sourceTree = "<group>"; };
 		4293539A20A992EB00457B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/listThreeMajorActivitiesTableViewCell.xib; sourceTree = "<group>"; };
 		42AB78AF205776390024EA22 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		42B48C3220AAA9EA00577EDA /* shareModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shareModel.h; sourceTree = "<group>"; };
+		42B48C3320AAA9EA00577EDA /* shareModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shareModel.m; sourceTree = "<group>"; };
 		42B801AC20650E9900FC07E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JRUserOrderManagerCell.xib; sourceTree = "<group>"; };
 		42B801B22065109A00FC07E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JROrderDetailCell.xib; sourceTree = "<group>"; };
 		42B9B69C208D8BCC000DE7D4 /* checkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = checkTool.h; sourceTree = "<group>"; };
@@ -3756,6 +3759,8 @@
 				9D98281F1FD0F23E003495FB /* CategoresModel.m */,
 				9D98282A1FD13ABB003495FB /* AllCategoriesmerchanModel.h */,
 				9D98282B1FD13ABB003495FB /* AllCategoriesmerchanModel.m */,
+				42B48C3220AAA9EA00577EDA /* shareModel.h */,
+				42B48C3320AAA9EA00577EDA /* shareModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -5796,6 +5801,7 @@
 				9DBE08F0201EBE8F0051B641 /* ShangPinMingCheng00ViewController.m in Sources */,
 				9DD3E6C11F4A6BAB009B4E88 /* DHTabBarButton.m in Sources */,
 				9DD3E7C01F4A8A93009B4E88 /* HomeHearView.m in Sources */,
+				42B48C3420AAA9EA00577EDA /* shareModel.m in Sources */,
 				9DFCA9B91F886E4A00881F5B /* TLCity.m in Sources */,
 				186FB1E61FCFC67200E71AF7 /* JREditCategoryViewController.m in Sources */,
 				9DD3E5AE1F4A6AE4009B4E88 /* HomeTabTableViewCell.m in Sources */,

@@ -43,38 +43,6 @@
             endingLineNumber = "105"
             landmarkName = "-downLoad"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[AllCategoriesController downLoad]_block_invoke.91"
-                  moduleName = "JRTescoToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/Home/Controller/AllCategoriesController.m"
-                  timestampString = "547985584.13282"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "106"
-                  endingLineNumber = "106"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[AllCategoriesController downLoad]_block_invoke_2"
-                  moduleName = "JRTescoToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/Home/Controller/AllCategoriesController.m"
-                  timestampString = "547985584.136178"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "108"
-                  endingLineNumber = "108"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -100,11 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.029222"
+            timestampString = "548061654.617061"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1020"
-            endingLineNumber = "1020"
+            startingLineNumber = "1026"
+            endingLineNumber = "1026"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -116,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.030008"
+            timestampString = "548061654.6172971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1061"
-            endingLineNumber = "1061"
+            startingLineNumber = "1067"
+            endingLineNumber = "1067"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -132,7 +100,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Login/LoginController.m"
-            timestampString = "547626491.491273"
+            timestampString = "548059110.5068491"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "591"
@@ -148,7 +116,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Login/LoginController.m"
-            timestampString = "547626491.491381"
+            timestampString = "548059110.507569"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "725"
@@ -164,12 +132,12 @@
                   moduleName = "JRTescoToday"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/Login/LoginController.m"
-                  timestampString = "547985584.17093"
+                  timestampString = "548061654.989012"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "726"
                   endingLineNumber = "726"
-                  offsetFromSymbolStart = "1627">
+                  offsetFromSymbolStart = "1692">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -179,12 +147,12 @@
                   moduleName = "JRTescoToday"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/Login/LoginController.m"
-                  timestampString = "547985584.174606"
+                  timestampString = "548061654.9912159"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "727"
                   endingLineNumber = "727"
-                  offsetFromSymbolStart = "61">
+                  offsetFromSymbolStart = "72">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -194,12 +162,12 @@
                   moduleName = "JRTescoToday"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/Login/LoginController.m"
-                  timestampString = "547985584.177983"
+                  timestampString = "548061654.993072"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "726"
                   endingLineNumber = "726"
-                  offsetFromSymbolStart = "4">
+                  offsetFromSymbolStart = "0">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -211,7 +179,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/My/Controller/MyController.m"
-            timestampString = "547640546.891349"
+            timestampString = "548061654.617506"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "454"
@@ -243,7 +211,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/My/Controller/MyController.m"
-            timestampString = "547640546.891475"
+            timestampString = "548061654.617649"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "436"
@@ -275,7 +243,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Login/LoginController.m"
-            timestampString = "547626491.49192"
+            timestampString = "548059110.508267"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "394"
@@ -291,7 +259,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Login/LoginController.m"
-            timestampString = "547626491.492012"
+            timestampString = "548059110.509208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "966"
@@ -307,7 +275,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Login/LoginController.m"
-            timestampString = "547626491.492111"
+            timestampString = "548059110.510141"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "924"
@@ -339,11 +307,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.0311379"
+            timestampString = "548061654.617926"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1796"
-            endingLineNumber = "1796"
+            startingLineNumber = "1802"
+            endingLineNumber = "1802"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -419,12 +387,12 @@
                   moduleName = "JRTescoToday"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/Controller/MyPingJiaViewController.m"
-                  timestampString = "547985584.270785"
+                  timestampString = "548061655.049931"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "262"
                   endingLineNumber = "262"
-                  offsetFromSymbolStart = "50">
+                  offsetFromSymbolStart = "60">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -434,12 +402,12 @@
                   moduleName = "JRTescoToday"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/Controller/MyPingJiaViewController.m"
-                  timestampString = "547985584.274495"
+                  timestampString = "548061655.051778"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "262"
                   endingLineNumber = "262"
-                  offsetFromSymbolStart = "79">
+                  offsetFromSymbolStart = "76">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -467,12 +435,12 @@
                   moduleName = "JRTescoToday"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/Controller/MyPingJiaViewController.m"
-                  timestampString = "547985584.28294"
+                  timestampString = "548061655.05677"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "225"
                   endingLineNumber = "225"
-                  offsetFromSymbolStart = "50">
+                  offsetFromSymbolStart = "60">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -482,12 +450,12 @@
                   moduleName = "JRTescoToday"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/Controller/MyPingJiaViewController.m"
-                  timestampString = "547985584.286611"
+                  timestampString = "548061655.058664"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "225"
                   endingLineNumber = "225"
-                  offsetFromSymbolStart = "79">
+                  offsetFromSymbolStart = "76">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -602,38 +570,6 @@
             endingLineNumber = "111"
             landmarkName = "-clickRelease:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__34-[JRCreatActiveCell clickRelease:]_block_invoke"
-                  moduleName = "JRTescoToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/View/JRCreatActiveCell.m"
-                  timestampString = "547985584.333702"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "111"
-                  endingLineNumber = "111"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__34-[JRCreatActiveCell clickRelease:]_block_invoke_2"
-                  moduleName = "JRTescoToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/View/JRCreatActiveCell.m"
-                  timestampString = "547985584.33637"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "112"
-                  endingLineNumber = "112"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -659,7 +595,7 @@
                   moduleName = "JRTescoToday"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/View/JRCreatActiveCell.m"
-                  timestampString = "547985584.3433779"
+                  timestampString = "548061655.092386"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "116"
@@ -670,31 +606,16 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__34-[JRCreatActiveCell clickRelease:]_block_invoke_4"
-                  moduleName = "JRTescoToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/View/JRCreatActiveCell.m"
-                  timestampString = "547985584.345613"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "117"
-                  endingLineNumber = "117"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
                   symbolName = "__destroy_helper_block_"
                   moduleName = "JRTescoToday"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/View/JRCreatActiveCell.m"
-                  timestampString = "547985584.347977"
+                  timestampString = "548061655.0943331"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "116"
                   endingLineNumber = "116"
-                  offsetFromSymbolStart = "4">
+                  offsetFromSymbolStart = "0">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -754,7 +675,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Login/LoginController.m"
-            timestampString = "547626491.494284"
+            timestampString = "548059110.511297"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "492"
@@ -770,7 +691,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Login/LoginController.m"
-            timestampString = "547626491.4944299"
+            timestampString = "548059110.511893"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "572"
@@ -786,7 +707,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Login/LoginController.m"
-            timestampString = "547626491.494532"
+            timestampString = "548059110.512378"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "655"
@@ -802,11 +723,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.032704"
+            timestampString = "548061654.618677"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1067"
-            endingLineNumber = "1067"
+            startingLineNumber = "1073"
+            endingLineNumber = "1073"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -818,11 +739,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.0330091"
+            timestampString = "548061654.618852"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1088"
-            endingLineNumber = "1088"
+            startingLineNumber = "1094"
+            endingLineNumber = "1094"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -834,11 +755,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.0333591"
+            timestampString = "548061654.618963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1239"
-            endingLineNumber = "1239"
+            startingLineNumber = "1245"
+            endingLineNumber = "1245"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -850,11 +771,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.033623"
+            timestampString = "548061654.6190701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1290"
-            endingLineNumber = "1290"
+            startingLineNumber = "1296"
+            endingLineNumber = "1296"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -866,11 +787,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.0338759"
+            timestampString = "548061654.619176"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1305"
-            endingLineNumber = "1305"
+            startingLineNumber = "1311"
+            endingLineNumber = "1311"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -882,11 +803,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.034146"
+            timestampString = "548061654.6192811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1814"
-            endingLineNumber = "1814"
+            startingLineNumber = "1820"
+            endingLineNumber = "1820"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -898,11 +819,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.034434"
+            timestampString = "548061654.6193891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1070"
-            endingLineNumber = "1070"
+            startingLineNumber = "1076"
+            endingLineNumber = "1076"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -921,38 +842,6 @@
             endingLineNumber = "42"
             landmarkName = "-downLoad23"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__43-[YinhangkaguanliViewController downLoad23]_block_invoke.60"
-                  moduleName = "JRTescoToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/Controller/YinhangkaguanliViewController.m"
-                  timestampString = "547985584.442118"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__43-[YinhangkaguanliViewController downLoad23]_block_invoke_2"
-                  moduleName = "JRTescoToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/Controller/YinhangkaguanliViewController.m"
-                  timestampString = "547985584.445138"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1081,38 +970,6 @@
             endingLineNumber = "86"
             landmarkName = "-loadRealName"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__42-[ShiNameBngKaViewController loadRealName]_block_invoke.61"
-                  moduleName = "JRTescoToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/Controller/ShiNameBngKaViewController.m"
-                  timestampString = "547985584.506273"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__42-[ShiNameBngKaViewController loadRealName]_block_invoke_2"
-                  moduleName = "JRTescoToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/Controller/ShiNameBngKaViewController.m"
-                  timestampString = "547985584.509684"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1209,38 +1066,6 @@
             endingLineNumber = "302"
             landmarkName = "-downLoad14"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__34-[TiXianViewController downLoad14]_block_invoke.277"
-                  moduleName = "JRTescoToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/Controller/TiXianViewController.m"
-                  timestampString = "547985584.598387"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "303"
-                  endingLineNumber = "303"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__34-[TiXianViewController downLoad14]_block_invoke_2"
-                  moduleName = "JRTescoToday"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/My/Controller/TiXianViewController.m"
-                  timestampString = "547985584.600734"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "305"
-                  endingLineNumber = "305"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1314,7 +1139,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Login/LoginController.m"
-            timestampString = "547626491.497681"
+            timestampString = "548059110.513642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "694"
@@ -1442,7 +1267,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Login/LoginController.m"
-            timestampString = "547626491.498577"
+            timestampString = "548059110.514747"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "908"
@@ -1464,22 +1289,6 @@
             startingLineNumber = "16"
             endingLineNumber = "16"
             landmarkName = "+saveTOKEN:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JRTescoToday/Login/LoginController.m"
-            timestampString = "547626491.4987741"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "792"
-            endingLineNumber = "792"
-            landmarkName = "-GeRenZuCe:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1586,11 +1395,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.037226"
+            timestampString = "548061654.6203279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "905"
-            endingLineNumber = "905"
+            startingLineNumber = "911"
+            endingLineNumber = "911"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1602,11 +1411,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.037663"
+            timestampString = "548061654.620453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "947"
-            endingLineNumber = "947"
+            startingLineNumber = "953"
+            endingLineNumber = "953"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1618,11 +1427,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.0380369"
+            timestampString = "548061654.6205519"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "988"
-            endingLineNumber = "988"
+            startingLineNumber = "994"
+            endingLineNumber = "994"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1634,11 +1443,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Commodity/Controller/BusiDetails/Conttroller/BusinessController.m"
-            timestampString = "547714504.03844"
+            timestampString = "548061654.620646"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1026"
-            endingLineNumber = "1026"
+            startingLineNumber = "1032"
+            endingLineNumber = "1032"
             landmarkName = "-shareWebPageToPlatformType:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1698,12 +1507,12 @@
                   moduleName = "JRTescoToday"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/Business/BusinessCenter/Controller/ChildViewController/JROnSchelvesViewController.m"
-                  timestampString = "547985585.547375"
+                  timestampString = "548061655.477872"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
                   endingLineNumber = "180"
-                  offsetFromSymbolStart = "167">
+                  offsetFromSymbolStart = "176">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1713,12 +1522,12 @@
                   moduleName = "JRTescoToday"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/Business/BusinessCenter/Controller/ChildViewController/JROnSchelvesViewController.m"
-                  timestampString = "547985585.551303"
+                  timestampString = "548061655.480432"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "183"
                   endingLineNumber = "183"
-                  offsetFromSymbolStart = "53">
+                  offsetFromSymbolStart = "64">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1728,12 +1537,12 @@
                   moduleName = "JRTescoToday"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiphone/Desktop/%E5%8D%8E%E8%9E%8D%E6%99%BA%E4%BF%A1/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/JinRIYiGou/JRTescoToday/JRTescoToday/Business/BusinessCenter/Controller/ChildViewController/JROnSchelvesViewController.m"
-                  timestampString = "547985585.555913"
+                  timestampString = "548061655.483557"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "180"
                   endingLineNumber = "180"
-                  offsetFromSymbolStart = "10">
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1777,27 +1586,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Home/Controller/HomeController.m"
-            timestampString = "547985583.787299"
+            timestampString = "548061654.620891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1001"
-            endingLineNumber = "1001"
-            landmarkName = "-cycleScrollView:didSelectItemAtIndex:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JRTescoToday/Home/Controller/HomeController.m"
-            timestampString = "547985583.787388"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "-whereToGoTapAction"
             landmarkType = "7">
          </BreakpointContent>
@@ -1809,11 +1602,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Home/Controller/HomeController.m"
-            timestampString = "547985583.787443"
+            timestampString = "548061654.621004"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "-veryAffordableAction"
             landmarkType = "7">
          </BreakpointContent>
@@ -1825,12 +1618,92 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JRTescoToday/Home/Controller/HomeController.m"
-            timestampString = "547985583.787493"
+            timestampString = "548061654.621096"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
             landmarkName = "-polyFashionAction"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JRTescoToday/Home/View/listThreeMajorActivitiesTableViewCell.m"
+            timestampString = "548061654.621191"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "-MapNavigation"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JRTescoToday/Login/OtherWaysLoginController.m"
+            timestampString = "548058866.369921"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "-loginBtnClick:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JRTescoToday/Business/Controller/BusinessUserViewController.m"
+            timestampString = "548059432.5992481"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "-viewWillAppear:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JRTescoToday/Business/Controller/BusinessUserViewController.m"
+            timestampString = "548059433.791783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "-viewWillAppear:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JRTescoToday/Business/Controller/BusinessUserViewController.m"
+            timestampString = "548059481.598263"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "-viewWillAppear:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
