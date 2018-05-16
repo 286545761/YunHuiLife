@@ -19,10 +19,10 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self =[super initWithFrame:frame];
     if (self) {
-    self.activityIntroducedLable.layer.cornerRadius=5.f;
+     self=[[NSBundle mainBundle]  loadNibNamed:@"bannerActivitiesHeadView" owner:nil options:nil][0];
     self.activityIntroducedLable.layer.borderColor=[UIColor whiteColor].CGColor;
     
-    self.activityIntroducedLable.layer.borderWidth=1.f;
+        self.activityIntroducedLable.layer.cornerRadius=5.f; self.activityIntroducedLable.layer.borderWidth=1.f;
         self.activityIntroducedLable.layer.masksToBounds=YES;
         
     }

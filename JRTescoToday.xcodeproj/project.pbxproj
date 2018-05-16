@@ -99,6 +99,8 @@
 		4293539020A986CE00457B3B /* listThreeMajorActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4293538F20A986CE00457B3B /* listThreeMajorActivitiesViewController.m */; };
 		4293539720A9887200457B3B /* listThreeMajorActivitiesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4293539520A9887200457B3B /* listThreeMajorActivitiesTableViewCell.m */; };
 		4293539920A992EB00457B3B /* listThreeMajorActivitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4293539B20A992EB00457B3B /* listThreeMajorActivitiesTableViewCell.xib */; };
+		4294B63C20AC1399009439EF /* bannerActivitiesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4294B63A20AC1399009439EF /* bannerActivitiesTableViewCell.m */; };
+		4294B63D20AC1399009439EF /* bannerActivitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4294B63B20AC1399009439EF /* bannerActivitiesTableViewCell.xib */; };
 		42A579AE208F16FF001A762A /* JROrderDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B801B32065109A00FC07E7 /* JROrderDetailCell.xib */; };
 		42AB78B0205776390024EA22 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB78AF205776390024EA22 /* Foundation+Log.m */; };
 		42B48C3420AAA9EA00577EDA /* shareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B48C3320AAA9EA00577EDA /* shareModel.m */; };
@@ -1187,6 +1189,9 @@
 		4293539420A9887200457B3B /* listThreeMajorActivitiesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = listThreeMajorActivitiesTableViewCell.h; sourceTree = "<group>"; };
 		4293539520A9887200457B3B /* listThreeMajorActivitiesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = listThreeMajorActivitiesTableViewCell.m; sourceTree = "<group>"; };
 		4293539A20A992EB00457B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/listThreeMajorActivitiesTableViewCell.xib; sourceTree = "<group>"; };
+		4294B63920AC1399009439EF /* bannerActivitiesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bannerActivitiesTableViewCell.h; sourceTree = "<group>"; };
+		4294B63A20AC1399009439EF /* bannerActivitiesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bannerActivitiesTableViewCell.m; sourceTree = "<group>"; };
+		4294B63B20AC1399009439EF /* bannerActivitiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = bannerActivitiesTableViewCell.xib; sourceTree = "<group>"; };
 		42AB78AF205776390024EA22 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		42B48C3220AAA9EA00577EDA /* shareModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shareModel.h; sourceTree = "<group>"; };
 		42B48C3320AAA9EA00577EDA /* shareModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shareModel.m; sourceTree = "<group>"; };
@@ -3810,6 +3815,9 @@
 				42B48C3820AADA4A00577EDA /* bannerActivitiesHeadView.h */,
 				42B48C3920AADA4A00577EDA /* bannerActivitiesHeadView.m */,
 				42B48C3B20AADA5900577EDA /* bannerActivitiesHeadView.xib */,
+				4294B63920AC1399009439EF /* bannerActivitiesTableViewCell.h */,
+				4294B63A20AC1399009439EF /* bannerActivitiesTableViewCell.m */,
+				4294B63B20AC1399009439EF /* bannerActivitiesTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5290,6 +5298,7 @@
 				9D58C2011F8B82790013A766 /* shangjia_no@3x.png in Resources */,
 				9D58C1F91F8B82790013A766 /* nav_btn_share@2x.png in Resources */,
 				9DD3E8A71F4BD666009B4E88 /* pingLunbussView.xib in Resources */,
+				4294B63D20AC1399009439EF /* bannerActivitiesTableViewCell.xib in Resources */,
 				9D58C1FF1F8B82790013A766 /* shangjia@3x.png in Resources */,
 				9DF938771FB1783B00A90CB5 /* makeGuiZe.xib in Resources */,
 				9D58C2031F8B82790013A766 /* shouye@3x.png in Resources */,
@@ -5760,6 +5769,7 @@
 				9DD3E5AB1F4A6AE4009B4E88 /* HomeController.m in Sources */,
 				9DF9381C1FA6C94F00A90CB5 /* ViewController.m in Sources */,
 				9DF938BE1FB2CA6F00A90CB5 /* UIViewController+alterView.m in Sources */,
+				4294B63C20AC1399009439EF /* bannerActivitiesTableViewCell.m in Sources */,
 				427F2E3C2069007800C4B8EA /* homeTheStoreListTableViewCell.m in Sources */,
 				9D815D1B1F6CEF3700231E51 /* ShopshouchangTableViewCell.m in Sources */,
 				9DBE0884201B151C0051B641 /* UIButton+Time.m in Sources */,

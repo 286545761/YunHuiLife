@@ -1023,11 +1023,12 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
 #pragma mark ---------SDCycleScrollViewDelegate----------
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index{
     
+    bannerActivitiesViewController *bannerActivitiesVC=[[bannerActivitiesViewController alloc]init];
+    bannerActivitiesVC.title=@"活动商家";
+//    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:bannerActivitiesVC];
     
     
-    
-    
-    
+    [self.navigationController pushViewController:bannerActivitiesVC animated:YES];
 }
 
 

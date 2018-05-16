@@ -41,7 +41,6 @@
                     <rect key="frame" x="107" y="102" width="268" height="40"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="268" id="Kxl-qh-VT9"/>
                         <constraint firstAttribute="height" constant="40" id="Tdm-Sm-M6Y"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -144,6 +143,7 @@
             </subviews>
             <color key="backgroundColor" red="0.89141414139999997" green="0.89141414139999997" blue="0.89141414139999997" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="p8V-lN-veT" secondAttribute="trailing" id="2kY-1m-fV3"/>
                 <constraint firstItem="o0z-fF-GWj" firstAttribute="leading" secondItem="Png-sU-7OL" secondAttribute="trailing" id="2sJ-xB-1g0"/>
                 <constraint firstItem="kgO-kz-Cd8" firstAttribute="leading" secondItem="pb1-iQ-dha" secondAttribute="trailing" id="4db-Kr-6jZ"/>
                 <constraint firstItem="pb1-iQ-dha" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7it-yw-RFU"/>
