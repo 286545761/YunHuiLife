@@ -99,8 +99,10 @@ static NSString *homeListCell=@"homeTheStoreListTableViewCell";
 @implementation HomeController
 - (void)viewWillAppear:(BOOL)animated
 {
+    [self setNavgationBackgroundColor:RGB(252, 199, 46) andTitleColor:[UIColor blackColor]];
    
      self.navigationController.navigationBarHidden = YES;
+    
     [super viewWillAppear:animated];
     if (_homeTableView) {
           [self downLoad];

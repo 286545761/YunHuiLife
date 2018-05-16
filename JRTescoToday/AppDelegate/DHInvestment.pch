@@ -81,6 +81,7 @@
 #import "LoginController.h"
 //#import "CheckNet.h"
 #import "UIImage+Orientation.h"
+#import "UIViewController+BaseMethods.h"
 
 #define kAllViewBgColor @"#f6f6f6"  // 所有控制器View的背景色
 #define kNavHeadBgColor @"#ffa103"  // 所有导航头部的背景色

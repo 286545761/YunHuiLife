@@ -10,7 +10,7 @@
 #import "UIImage+ImageColor.h"
 @implementation UIViewController (BaseMethods)
 - (void)setNavgationBackgroundColor:(UIColor *)color andTitleColor:(UIColor *)titleColor {
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:titleColor, NSFontAttributeName:[UIFont boldSystemFontOfSize:20]};
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:titleColor, NSFontAttributeName:[UIFont boldSystemFontOfSize:17]};
     [self.navigationController.navigationBar setBarTintColor:color];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:color] forBarMetrics:UIBarMetricsDefault];
 }
